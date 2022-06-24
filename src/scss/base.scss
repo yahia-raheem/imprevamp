@@ -1,0 +1,35 @@
+@use "helpers" as h;
+
+@import "./helpers/helpers";
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@import "./base/normalize";
+
+// Bootstrap customization
+@import "../../node_modules/bootstrap/scss/functions";
+
+@import "./base/bootstrap-cust";
+@import "../../node_modules/bootstrap/scss/variables";
+@import "../../node_modules/bootstrap/scss/mixins";
+@import "../../node_modules/bootstrap/scss/root";
+
+@import "../../node_modules/bootstrap/scss/bootstrap-grid.scss";
+
+// components
+
+@import "./components/navigation";
+@import "./components/sidenav";
+
+
+
+// fonts
+@import "./base/font-face";
+@import "./base/font-cust";
+@import "../../fonts/icomoon/style.css";
