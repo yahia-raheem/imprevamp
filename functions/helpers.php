@@ -1,6 +1,6 @@
 <?php
 
-function _themename_customization($wp_customize)
+function imp_customization($wp_customize)
 {
     $wp_customize->add_section('social_media_section', array('title' => 'Social Media',));
     $wp_customize->add_setting('facebook', array('default' => '',));
@@ -34,7 +34,7 @@ function _themename_customization($wp_customize)
         )
     ));
 }
-add_action('customize_register', '_themename_customization');
+add_action('customize_register', 'imp_customization');
 
 function determine_the_title($echo = true)
 {
