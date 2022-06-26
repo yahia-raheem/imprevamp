@@ -6,6 +6,8 @@ define("THEME_DIR_URI", get_template_directory_uri());
 
 require THEME_DIR . '/functions/theme-support.php';
 require_once THEME_DIR . '/classes/classes.php';
+require_once THEME_DIR . '/templates/blocks/blocks.php';
+
 
 function imp_assets()
 {
