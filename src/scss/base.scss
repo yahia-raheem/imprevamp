@@ -22,8 +22,9 @@
 
 @import "../../node_modules/bootstrap/scss/bootstrap-grid.scss";
 
-// components
+@import "./third-party/splide";
 
+// components
 @import "./components/navigation";
 @import "./components/sidenav";
 

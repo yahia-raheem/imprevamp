@@ -1,9 +1,8 @@
-// import "./components/my-navbar";
-// import "./components/navigator";
+// Components
 import "./components/sidebar";
-// import './components/shared';
+// Blocks
+import "./blocks/home-slider";
 
+document.addEventListener("DOMContentLoaded", () => {
 
-
-document.addEventListener("DOMContentLoaded", () => { });
-
+});

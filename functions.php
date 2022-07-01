@@ -6,7 +6,6 @@ define("THEME_DIR_URI", get_template_directory_uri());
 
 require THEME_DIR . '/functions/theme-support.php';
 require_once THEME_DIR . '/classes/classes.php';
-require_once THEME_DIR . '/templates/blocks/blocks.php';
 
 
 function imp_assets()
@@ -14,6 +13,7 @@ function imp_assets()
     wp_deregister_script('jquery');
     wp_enqueue_style('imp-stylesheet-base', get_stylesheet_directory_uri() . '/dist/assets/css/base.css', array(), '1.0.0', 'all');
     wp_enqueue_script('imp-scripts', get_stylesheet_directory_uri() . '/dist/assets/js/bundle.js', array(), '1.0.0', true);
+    wp_enqueue_script('fontawesome', 'https://kit.fontawesome.com/18b7943afb.js', array(), '1.0.0', true);
 }
 
 add_action('wp_enqueue_scripts', 'imp_assets');
@@ -55,3 +55,5 @@ function wk_blocks_categories($categories)
     );
 };
 add_action('block_categories', 'wk_blocks_categories', 10, 9);
+
+require_once THEME_DIR . '/templates/blocks/blocks.php';
