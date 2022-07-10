@@ -239,7 +239,7 @@ export const compress = () => {
 };
 
 export const watchForChanges = () => {
-  watch("src/scss/**/*.scss").on("all", series(styles, rtlStyles));
+  watch(["src/scss/**/*.scss", "templates/blocks/**/*.scss"]).on("all", series(styles, blockStyles, rtlStyles));
   watch(["src/**/*", "!src/{js,scss}", "!src/{js,scss}/**/*"]).on("all", copy);
   watch("src/js/**/*.js").on("all", series(scripts, styles));
   watch("src/styleguide/**").on("all", series(styleGuide));

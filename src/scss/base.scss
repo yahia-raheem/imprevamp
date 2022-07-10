@@ -10,6 +10,11 @@
   box-sizing: border-box;
 }
 
+a {
+  text-decoration: none;
+  color: h.$primary;
+}
+
 @import "./base/normalize";
 
 // Bootstrap customization
@@ -22,11 +27,12 @@
 
 @import "../../node_modules/bootstrap/scss/bootstrap-grid.scss";
 
-@import "./third-party/splide";
+@import "../../node_modules/@splidejs/splide/src/css/themes/default/index.scss";
 
 // components
 @import "./components/navigation";
 @import "./components/sidenav";
+@import "./components/course-price";
 
 
 

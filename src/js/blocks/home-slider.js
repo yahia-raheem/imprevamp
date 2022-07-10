@@ -30,6 +30,7 @@ const init = () => {
       const slider = new splide(sliderEl, {
         width: "100%",
         autoplay: false,
+        pagination: false,
         interval: 10000,
         rewind: true,
         draggable: false,

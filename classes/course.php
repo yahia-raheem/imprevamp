@@ -111,6 +111,7 @@ class IMPCourse
         $level = self::get_course_property('course_level', $courseId);
         $hours = self::get_course_property('course_hours', $courseId);
         $rating = self::get_course_property('course_rating', $courseId);
-        return new IMPCourseFeatures($price, $isDiscounted, $discountPrice, $recorded, $hours, $level, $rating);
+        $currency = self::get_course_property('course_currency', $courseId);
+        return new IMPCourseFeatures($price, $isDiscounted, $discountPrice, $recorded, $hours, $level, $rating, $currency);
     }
 }

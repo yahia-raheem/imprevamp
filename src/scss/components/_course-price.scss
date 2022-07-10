@@ -1,0 +1,13 @@
+.course-price {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+    &.discounted {
+        .original {
+           text-decoration: line-through;
+           opacity: 0.5;
+           transform: scale(0.8);
+        }
+    }
+}

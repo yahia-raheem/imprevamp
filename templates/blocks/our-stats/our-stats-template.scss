@@ -1,0 +1,64 @@
+@use "../../../src/scss/helpers" as h;
+
+section.our-stats {
+  background-color: #21225f;
+  padding: 106px 0;
+
+  .stats {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+    color: white;
+
+    .stat {
+      display: flex;
+      gap: 42px;
+      flex-wrap: wrap;
+      position: relative;
+      margin: 0 auto;
+
+      * {
+        transition: all 0.5s;
+      }
+
+      &:hover {
+        i {
+            transform: translateY(-4px);
+        }
+
+        &::before {
+            transform: translateX(-50%) scale(1.1);
+        }
+      }
+
+      &::before {
+        transition: all 0.5s;
+        content: "";
+        @include h.circle(40px);
+        background-color: #1f80be;
+        position: absolute;
+        left: 50px;
+        bottom: 0;
+        transform: translateX(-50%) scale(1);
+      }
+
+      i {
+        font-size: 50px;
+        position: relative;
+        z-index: 1;
+      }
+
+      .content {
+        .number {
+          font-size: 35px;
+          margin-bottom: 5px;
+        }
+
+        .desc {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}

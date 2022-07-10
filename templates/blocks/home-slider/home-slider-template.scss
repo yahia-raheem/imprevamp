@@ -1,0 +1,153 @@
+@use "../../../src/scss/helpers" as h;
+
+section.home-slider {
+  padding: 60px 0;
+  background-color: #F6F8FA;
+
+  .splide__arrows {
+    button {
+      background-color: white;
+      width: 48px;
+      height: 98px;
+      border-radius: 25px;
+    }
+
+    .splide__arrow--prev {
+      left: -5rem;
+    }
+
+    .splide__arrow--next {
+      right: -5rem;
+    }
+  }
+
+  .course-slide {
+    display: flex;
+    justify-content: stretch;
+    align-items: center;
+    gap: 65px;
+
+    .course-image {
+      max-width: 500px;
+      width: 45%;
+      border-radius: 10px;
+      overflow: hidden;
+
+      .img-container {
+        @include h.box-ratio(16, 11);
+      }
+    }
+
+    .data-container {
+      width: calc(55% - 65px);
+      display: flex;
+      flex-direction: column;
+      gap: 36px;
+
+      .specs-row {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        & > div {
+          display: flex;
+          justify-content: flex-start;
+          gap: 60px;
+
+          .course-spec {
+            display: flex;
+            gap: 5px;
+
+            .avatar {
+              @include h.circle(40px);
+              display: flex;
+              justify-content: center;
+              align-items: center;
+
+              i {
+                color: h.$primary;
+              }
+            }
+
+            .content {
+              span {
+                font-size: 13px;
+                color: #ababab;
+              }
+
+              p {
+                font-size: 15px;
+              }
+            }
+          }
+        }
+      }
+
+      .course-title {
+        text-decoration: none;
+        color: black;
+
+        .title {
+          transition: all 0.5s;
+          font-size: 32px;
+          font-weight: 300;
+        }
+
+        &:hover {
+          .title {
+            color: h.$primary;
+          }
+        }
+      }
+
+      .attributes-row {
+        display: flex;
+        gap: 40px;
+
+        .course-attribute {
+            font-size: 15px;
+            text-transform: capitalize;
+
+            i {
+                color: h.$primary;
+                margin-inline-end: 5px;
+            }
+        }
+      }
+
+      .price-btn {
+        position: relative;
+        padding: 20px;
+        border-radius: 10px;
+        background-color: h.$primary;
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        max-width: 300px;
+        width: 100%;
+        font-size: 20px;
+        align-items: center;
+        overflow: hidden;
+
+        .cta-text, .course-price {
+          position: relative;
+          z-index: 1;
+        }
+
+        &::before {
+          content: "";
+          transition: all 0.5s;
+          transform: translateX(-100%);
+          position: absolute;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-color: darken($color: h.$primary, $amount: 5);
+        }
+
+        &:hover::before {
+          transform: translateX(0);
+        }
+      }
+    }
+  }
+}

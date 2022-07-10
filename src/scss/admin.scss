@@ -2,4 +2,11 @@
 
 @import "./helpers/helpers";
 
+// third party
+@import "../../node_modules/@splidejs/splide/src/css/themes/default/index.scss";
+
+// components
+@import "./components/course-price";
+
+
 @import "../../node_modules/bootstrap/scss/bootstrap-grid.scss";
