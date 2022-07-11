@@ -10,3 +10,9 @@
 
 
 @import "../../node_modules/bootstrap/scss/bootstrap-grid.scss";
+
+.wp-block {
+    max-width: 100%;
+    margin-inline-start: 4vw;
+    margin-inline-end: 4vw;
+}
