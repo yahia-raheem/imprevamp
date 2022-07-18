@@ -20,20 +20,12 @@ function imp_categories_overview( $meta_boxes ) {
             'align' => [''],
         ],
         'type'     => 'block',
+        'parent'   => ['meta-box/section-title-block'],
         'render_template' => get_template_directory() . '/templates/blocks/categories-overview/categories-overview-template.php',
         'enqueue_style'   => get_stylesheet_directory_uri() . '/dist/assets/css/blocks/categories-overview/categories-overview-template' . $_RTL . '.css',
         'context'  => 'side',
         'fields'   => [
-            [
-                'name' => __( 'Block Title', 'imp' ),
-                'id'   => $prefix . 'block_title',
-                'type' => 'text',
-            ],
-            [
-                'name' => __( 'Block Subtitle', 'imp' ),
-                'id'   => $prefix . 'block_subtitle',
-                'type' => 'text',
-            ],
+            
             [
                 'name'              => __( 'course Category', 'imp' ),
                 'id'                => $prefix . 'course_category',

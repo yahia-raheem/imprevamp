@@ -1,7 +1,6 @@
 .course-price {
     display: flex;
     flex-direction: column;
-    gap: 5px;
 
     &.discounted {
         .original {

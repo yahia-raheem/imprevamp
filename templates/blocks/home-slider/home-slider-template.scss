@@ -115,7 +115,7 @@ section.home-slider {
       }
 
       .price-btn {
-        @include h.hover-slide(h.$primary);
+        @include h.hover-slide(darken($color: h.$primary, $amount: 5));
         padding: 20px;
         border-radius: 10px;
         background-color: h.$primary;

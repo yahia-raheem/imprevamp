@@ -10,20 +10,17 @@
   box-sizing: border-box;
 }
 
-a {
-  text-decoration: none;
-  color: h.$primary;
-}
-
-@import "./base/normalize";
+// @import "./base/normalize";
 
 // Bootstrap customization
 @import "../../node_modules/bootstrap/scss/functions";
 
 @import "./base/bootstrap-cust";
+
 @import "../../node_modules/bootstrap/scss/variables";
 @import "../../node_modules/bootstrap/scss/mixins";
 @import "../../node_modules/bootstrap/scss/root";
+@import "../../node_modules/bootstrap/scss/reboot";
 
 @import "../../node_modules/bootstrap/scss/bootstrap-grid.scss";
 
@@ -33,6 +30,7 @@ a {
 @import "./components/navigation";
 @import "./components/sidenav";
 @import "./components/course-price";
+@import "./components/course-card";
 
 
 
@@ -40,3 +38,9 @@ a {
 @import "./base/font-face";
 @import "./base/font-cust";
 @import "../../fonts/icomoon/style.css";
+
+
+a {
+  text-decoration: none;
+  color: h.$primary;
+}
