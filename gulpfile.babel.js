@@ -122,8 +122,6 @@ export const scripts = () => {
   return src([
     "src/js/bundle.js",
     "src/js/bundle-rtl.js",
-    "src/js/blocks/**/*.js",
-    "src/js/pages/**/*.js",
   ])
     .pipe(named())
     .pipe(

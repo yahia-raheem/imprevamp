@@ -3,8 +3,12 @@
 section.section-title {
   background-color: #f6f8fa;
 
-  &.has-padding {
-    padding: 106px 0;
+  &.has-padding-top {
+    padding-top: 106px;
+  }
+
+  &.has-padding-bottom {
+    padding-bottom: 106px;
   }
 
   .section-title {

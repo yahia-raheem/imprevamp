@@ -18,9 +18,10 @@ if (!empty($attributes['align'])) {
 $title = mb_get_block_field('section_title');
 $subtitle = mb_get_block_field('section_subtitle');
 $buttonLink = mb_get_block_field('call_to_action');
-$hasPadding = mb_get_block_field('has_padding');
+$hasPaddingTop = mb_get_block_field('has_padding_top');
+$hasPaddingBottom = mb_get_block_field('has_padding_bottom');
 ?>
-<section id="<?= $id ?>" class="<?= $class ?> <?php if ($hasPadding): ?> has-padding <?php endif; ?>">
+<section id="<?= $id ?>" class="<?= $class ?> <?php if ($hasPaddingTop): ?> has-padding-top <?php endif; if ($hasPaddingBottom): ?> has-padding-bottom <?php endif; ?>">
     <div class="container">
         <div class="row">
             <div class="col-12">

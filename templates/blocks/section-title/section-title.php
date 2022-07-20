@@ -41,10 +41,16 @@ function imp_section_title_block( $meta_boxes ) {
                 'field_type' => 'select_advanced',
             ],
             [
-                'name'              => __( 'Has Padding', 'imp' ),
-                'id'                => $prefix . 'has_padding',
+                'name'              => __( 'Has Padding Top', 'imp' ),
+                'id'                => $prefix . 'has_padding_top',
                 'type'              => 'checkbox',
-                'label_description' => __( 'Should a 150px padding be added to the section\'s top and bottom?', 'imp' ),
+                'label_description' => __( 'Should a 150px padding top be added to the section\'s top and bottom?', 'imp' ),
+            ],
+            [
+                'name'              => __( 'Has Padding Bottom', 'imp' ),
+                'id'                => $prefix . 'has_padding_bottom',
+                'type'              => 'checkbox',
+                'label_description' => __( 'Should a 150px padding bottom be added to the section\'s top and bottom?', 'imp' ),
             ],
         ],
     ];

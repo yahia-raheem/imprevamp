@@ -1,0 +1,32 @@
+@use "../../../src/scss/helpers" as h;
+
+section.clients-slider {
+    padding: 100px 0;
+    background-color: #F5F5F5;
+
+    .title-row {
+        margin-bottom: 45px;
+
+        text-align: center;
+
+        strong {
+            color: h.$primary;
+        }
+    }
+
+    .splide__slide {
+        &:hover .img-container {
+            opacity: 1;
+        }
+
+        .img-container {
+            @include h.box-ratio(16, 9);
+            opacity: 0.5;
+            transition: all 0.5s;
+
+            img {
+                object-fit: contain;
+            }
+        }
+    } 
+}
