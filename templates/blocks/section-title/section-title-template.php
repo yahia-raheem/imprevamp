@@ -41,6 +41,7 @@ $hasPaddingBottom = mb_get_block_field('has_padding_bottom');
     </div>
     <InnerBlocks allowedBlocks="<?= esc_attr(json_encode([
                                                 'meta-box/categories-overview-block',
-                                                'meta-box/courses-list-block'
+                                                'meta-box/courses-list-block',
+                                                'meta-box/news-list-block'
                                             ])) ?>"/>
 </section>
