@@ -31,17 +31,19 @@ const init = () => {
         width: "100%",
         autoplay: false,
         pagination: false,
-        interval: 10000,
         rewind: true,
         draggable: false,
         swipeToSlide: false,
         touchMove: false,
         breakpoints: {
-          740: {
+          992: {
             draggable: true,
             swipeToSlide: true,
             touchMove: true,
-          }
+            arrows: false,
+            autoplay: true,
+            interval: 5000,
+          },
         },
       }).mount();
     });

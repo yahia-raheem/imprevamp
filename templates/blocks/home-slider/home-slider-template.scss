@@ -2,7 +2,7 @@
 
 section.home-slider {
   padding: 60px 0;
-  background-color: #F6F8FA;
+  background-color: #f6f8fa;
 
   .splide__arrows {
     button {
@@ -23,13 +23,11 @@ section.home-slider {
 
   .course-slide {
     display: flex;
-    justify-content: stretch;
-    align-items: center;
-    gap: 65px;
+    flex-direction: column;
+    gap: 25px;
 
     .course-image {
-      max-width: 500px;
-      width: 45%;
+      width: 100%;
       border-radius: 10px;
       overflow: hidden;
 
@@ -39,10 +37,10 @@ section.home-slider {
     }
 
     .data-container {
-      width: calc(55% - 65px);
+      width: 100%;
       display: flex;
       flex-direction: column;
-      gap: 36px;
+      gap: 25px;
 
       .specs-row {
         display: flex;
@@ -50,21 +48,24 @@ section.home-slider {
         width: 100%;
         & > div {
           display: flex;
-          justify-content: flex-start;
-          gap: 60px;
+          justify-content: space-between;
+          gap: 25px;
+          flex-wrap: wrap;
 
           .course-spec {
             display: flex;
             gap: 5px;
 
             .avatar {
-              @include h.circle(40px);
+              @include h.circle(30px);
               display: flex;
               justify-content: center;
               align-items: center;
+              top: 7px;
 
               i {
                 color: h.$primary;
+                font-size: 26px;
               }
             }
 
@@ -88,7 +89,7 @@ section.home-slider {
 
         .title {
           transition: all 0.5s;
-          font-size: 32px;
+          font-size: 24px;
           font-weight: 300;
         }
 
@@ -101,16 +102,17 @@ section.home-slider {
 
       .attributes-row {
         display: flex;
-        gap: 40px;
+        justify-content: space-between;
+        flex-wrap: wrap;
 
         .course-attribute {
-            font-size: 15px;
-            text-transform: capitalize;
+          font-size: 15px;
+          text-transform: capitalize;
 
-            i {
-                color: h.$primary;
-                margin-inline-end: 5px;
-            }
+          i {
+            color: h.$primary;
+            margin-inline-end: 5px;
+          }
         }
       }
 
@@ -120,12 +122,108 @@ section.home-slider {
         border-radius: 10px;
         background-color: h.$primary;
         color: white;
-        display: flex;
         justify-content: space-between;
-        max-width: 300px;
         width: 100%;
-        font-size: 20px;
+        font-size: 16px;
         align-items: center;
+      }
+    }
+  }
+
+  @include h.media(">992px") {
+    padding: 60px 0;
+
+    .splide__arrows {
+      button {
+        width: 48px;
+        height: 98px;
+        border-radius: 25px;
+      }
+
+      .splide__arrow--prev {
+        left: -5rem;
+      }
+
+      .splide__arrow--next {
+        right: -5rem;
+      }
+    }
+
+    .course-slide {
+      gap: 65px;
+      justify-content: stretch;
+      align-items: center;
+      flex-direction: row;
+
+      .course-image {
+        max-width: 500px;
+        width: 45%;
+        border-radius: 10px;
+
+        .img-container {
+          @include h.box-ratio(16, 11);
+        }
+      }
+
+      .data-container {
+        width: calc(55% - 65px);
+        gap: 36px;
+
+        .specs-row {
+          & > div {
+            justify-content: flex-start;
+            gap: 60px;
+
+            .course-spec {
+              .avatar {
+                @include h.circle(40px);
+                top: 0;
+
+                i {
+                  font-size: 2em;
+                }
+              }
+
+              .content {
+                span {
+                  font-size: 13px;
+                }
+
+                p {
+                  font-size: 15px;
+                }
+              }
+            }
+          }
+        }
+
+        .course-title {
+          .title {
+            font-size: 32px;
+          }
+        }
+
+        .attributes-row {
+          justify-content: flex-start;
+          gap: 40px;
+
+          .course-attribute {
+            font-size: 15px;
+
+            i {
+              margin-inline-end: 5px;
+            }
+          }
+        }
+
+        .price-btn {
+          @include h.hover-slide(darken($color: h.$primary, $amount: 5));
+          padding: 20px;
+          border-radius: 10px;
+          max-width: 300px;
+          width: 100%;
+          font-size: 20px;
+        }
       }
     }
   }

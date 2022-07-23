@@ -5,7 +5,7 @@
 @mixin hover-slide($color) {
   position: relative;
   overflow: hidden;
-  display: inline-block;
+  display: flex;
 
   &::before {
     content: "";
