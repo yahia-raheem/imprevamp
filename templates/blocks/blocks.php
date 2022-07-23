@@ -7,3 +7,4 @@ require_once THEME_DIR . '/templates/blocks/courses-list/courses-list.php';
 require_once THEME_DIR . '/templates/blocks/clients-slider/clients-slider.php';
 require_once THEME_DIR . '/templates/blocks/news-list/news-list.php';
 require_once THEME_DIR . '/templates/blocks/imp-content/imp-content.php';
+require_once THEME_DIR . '/templates/blocks/imp-banner/imp-banner.php';

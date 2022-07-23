@@ -1,0 +1,19 @@
+@use "../../../src/scss/helpers" as h;
+
+section.imp-banner {
+  background-color: h.$primary;
+  padding: 100px 0;
+
+  .banner-text {
+    font-size: 35px;
+    color: white;
+  }
+
+  .banner-btn {
+    @include h.hover-slide(darken($color: white, $amount: 5));
+    text-align: center;
+    padding: 15px 35px;
+    background-color: white;
+    color: h.$primary;
+  }
+}
