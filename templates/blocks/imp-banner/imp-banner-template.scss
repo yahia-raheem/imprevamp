@@ -2,11 +2,13 @@
 
 section.imp-banner {
   background-color: h.$primary;
-  padding: 100px 0;
+  padding: 50px 0;
 
   .banner-text {
-    font-size: 35px;
+    font-size: 28px;
+    font-weight: 700;
     color: white;
+    margin-bottom: 20px;
   }
 
   .banner-btn {
@@ -15,5 +17,18 @@ section.imp-banner {
     padding: 15px 35px;
     background-color: white;
     color: h.$primary;
+  }
+
+  @include h.media(">992px") {
+    padding: 100px 0;
+
+    .banner-text {
+      font-size: 35px;
+      margin-bottom: 0;
+    }
+
+    .banner-btn {
+      padding: 15px 35px;
+    }
   }
 }
