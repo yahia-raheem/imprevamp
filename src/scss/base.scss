@@ -33,15 +33,20 @@
 @import "./components/course-card";
 @import "./components/news-card";
 
-
-
 // fonts
 @import "./base/font-face";
 @import "./base/font-cust";
 @import "../../fonts/icomoon/style.css";
 
-
 a {
   text-decoration: none;
   color: h.$primary;
+}
+
+body {
+  font-size: 15px;
+
+  @include h.media(">992px") {
+    font-size: 16px;
+  }
 }

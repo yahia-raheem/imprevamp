@@ -27,28 +27,44 @@
   .content {
     display: flex;
     flex-direction: column;
-    gap: 17px;
-    padding: 30px;
+    gap: 12px;
+    padding: 25px 20px;
 
     .meta {
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-        gap: 16px;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 15px;
 
-        i {
-            color: h.$primary;
-        }
+      i {
+        color: h.$primary;
+      }
     }
 
     .title {
-      font-size: 22px;
+      font-size: 21px;
       transition: all 0.7s;
+      font-weight: 700;
     }
 
     .read-more {
       color: h.$theme-black;
       transition: all 0.7s;
+    }
+  }
+
+  @include h.media(">992px") {
+    .content {
+      gap: 17px;
+      padding: 30px;
+
+      .meta {
+        gap: 16px;
+      }
+
+      .title {
+        font-size: 22px;
+      }
     }
   }
 }
