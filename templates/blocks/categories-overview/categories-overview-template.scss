@@ -34,7 +34,7 @@
     }
 
     .icon {
-      @include h.circle(60px);
+      @include h.circle(50px);
       background-color: lighten($color: h.$primary, $amount: 40);
       display: flex;
       justify-content: center;
@@ -43,13 +43,37 @@
 
       i {
         color: h.$primary;
-        font-size: 25px;
+        font-size: 18px;
       }
     }
 
     h3.name {
-      font-size: 22px;
+      font-size: 21px;
       transition: color 0.5s;
+      font-weight: 700;
+    }
+  }
+
+  @include h.media(">992px") {
+    .container {
+      margin-bottom: -30px;
+    }
+    .category-block {
+      padding: 40px 30px;
+      margin-bottom: 30px;
+      gap: 15px;
+      box-shadow: 0 0 15px rgb(0 0 0 / 6%);
+
+      .icon {
+        @include h.circle(60px);
+        i {
+          font-size: 25px;
+        }
+      }
+
+      h3.name {
+        font-size: 22px;
+      }
     }
   }
 }

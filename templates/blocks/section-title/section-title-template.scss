@@ -19,6 +19,7 @@ section.section-title {
       h2 {
         font-size: 28px;
         margin-bottom: 10px;
+        font-weight: 700;
       }
 
       p {
@@ -33,55 +34,6 @@ section.section-title {
       background-color: h.$primary;
       color: white;
       font-size: 14px;
-    }
-  }
-
-  .category-block {
-    @include h.hover-slide(h.$primary);
-    width: 100%;
-    padding: 40px 30px;
-    margin-bottom: 30px;
-    display: flex;
-    align-items: center;
-    gap: 15px;
-    box-shadow: 0 0 15px rgb(0 0 0 / 6%);
-    background-color: white;
-
-    &::before {
-      background-color: white;
-    }
-
-    &:hover {
-      &::before {
-        background-color: h.$primary;
-      }
-
-      .icon {
-        background-color: white;
-      }
-
-      h3.name {
-        color: white;
-      }
-    }
-
-    .icon {
-      @include h.circle(60px);
-      background-color: lighten($color: h.$primary, $amount: 40);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      transition: background-color 0.5s;
-
-      i {
-        color: h.$primary;
-        font-size: 25px;
-      }
-    }
-
-    h3.name {
-      font-size: 22px;
-      transition: color 0.5s;
     }
   }
 
@@ -112,25 +64,6 @@ section.section-title {
         @include h.hover-slide(darken($color: h.$primary, $amount: 5));
         padding: 15px 35px;
         font-size: 16px;
-      }
-    }
-
-    .category-block {
-      @include h.hover-slide(h.$primary);
-      padding: 40px 30px;
-      margin-bottom: 30px;
-      gap: 15px;
-
-      .icon {
-        @include h.circle(60px);
-
-        i {
-          font-size: 25px;
-        }
-      }
-
-      h3.name {
-        font-size: 22px;
       }
     }
   }
