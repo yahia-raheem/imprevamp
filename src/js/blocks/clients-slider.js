@@ -40,11 +40,18 @@ const init = () => {
         swipeToSlide: false,
         touchMove: false,
         breakpoints: {
-          740: {
+          992: {
             draggable: true,
             swipeToSlide: true,
             touchMove: true,
-          }
+            perPage: 4,
+          },
+          740: {
+            perPage: 3,
+          },
+          500: {
+            perPage: 2,
+          },
         },
       }).mount();
     });
