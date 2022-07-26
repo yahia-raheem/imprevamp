@@ -1,0 +1,88 @@
+@use "../../../src/scss/helpers" as h;
+
+section.inner-header {
+  position: relative;
+
+  .vail {
+    background-color: h.$theme-black;
+    opacity: 0.9;
+  }
+
+  .content {
+    padding: 70px 0;
+    position: relative;
+    z-index: 2;
+
+    .content-col {
+      gap: 10px;
+
+      .page-title {
+        text-align: center;
+        font-size: 30px;
+        color: white;
+      }
+
+      .breadcrumbs {
+        color: white;
+
+        span[property="name"] {
+          font-size: 16px;
+
+          &:not(.current-item) {
+            color: white;
+            transition: all 0.5s;
+
+            &:hover {
+              color: h.$primary;
+            }
+          }
+
+          &.current-item {
+            color: h.$primary;
+          }
+        }
+
+        span[property="itemListElement"], span.paged {
+          &:first-of-type {
+            margin-inline-end: 10px;
+          }
+
+          &:not(:first-of-type) {
+            margin: 0 10px;
+          }
+        }
+      }
+    }
+  }
+
+  @include h.media(">992px") {
+    .content {
+      padding: 120px 0;
+
+      .content-col {
+        gap: 15px;
+
+        .page-title {
+          font-size: 36px;
+        }
+
+        .breadcrumbs {
+
+          span[property="name"] {
+            font-size: 18px;
+          }
+
+          span[property="itemListElement"] {
+            &:first-of-type {
+              margin-inline-end: 10px;
+            }
+
+            &:not(:first-of-type) {
+              margin: 0 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -14,7 +14,7 @@ function imp_courses_list_block( $meta_boxes ) {
         ],
         'render_template' => get_template_directory() . '/templates/blocks/courses-list/courses-list-template.php',
         'type'     => 'block',
-        'parent'   => ['meta-box/section-title-block'],
+        'parent'   => ['meta-box/section-title-block', 'meta-box/imp-content-block'],
         'context'  => 'side',
         'fields'   => [
             [

@@ -38,7 +38,7 @@ function imp_content_block($meta_boxes)
                 'name' => __('Background Color', 'imp'),
                 'id'   => $prefix . 'background_color',
                 'type' => 'color',
-                'label_description' => __('Input #fea203 for primary theme color and #21225F for theme dark blue', 'your-text-domain'),
+                'label_description' => __('Input #fea203 for primary theme color and #21225F for theme dark blue and #f6f8fa for light grey', 'your-text-domain'),
             ],
         ],
     ];

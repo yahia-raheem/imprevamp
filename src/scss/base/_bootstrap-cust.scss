@@ -3,12 +3,14 @@ $container-max-widths: (
   md: 720px,
   lg: 960px,
   xl: 1169px,
-  xxl: 1300px,
+  xxl: 1320px,
 );
 
 $grid-gutter-width: 30px;
 $body-color: h.$body-color;
 $headings-color: h.$theme-black;
+
+$grid-gutter-width: 24px;
 
 $headings-margin-bottom: 0;
 
