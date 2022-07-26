@@ -82,7 +82,7 @@ $postslist = new WP_Query($args);
         </div>
         <?php if (($numOfPosts != -1 || $filter == 'all') && $filter != 'custom') :  ?>
             <div class="row">
-                <div class="col-12">
+                <div class="col-12 pagination d-flex justify-content-center align-items-center">
                     <?php echo my_pagination($postslist->max_num_pages); ?>
                 </div>
             </div>

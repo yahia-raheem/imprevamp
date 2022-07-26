@@ -19,8 +19,7 @@ $paddingTop = mb_get_block_field('padding_top');
 $paddingBottom = mb_get_block_field('padding_bottom');
 $bgColor = mb_get_block_field('background_color');
 ?>
-<section id="<?= $id ?>" class="<?= $class ?>"
-    style="padding-top: <?php echo $paddingTop; ?>px; padding-bottom: <?php echo $paddingBottom; ?>px; background-color: <?php echo $bgColor; ?>;">
+<section id="<?= $id ?>" class="<?= $class ?>" data-padding-top="<?php echo $paddingTop; ?>px" data-padding-bottom="<?php echo $paddingBottom; ?>px" style="background-color: <?php echo $bgColor; ?>;">
     <div class="container">
         <div class="row">
             <div class="col-12">

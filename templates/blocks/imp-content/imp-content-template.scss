@@ -1,0 +1,11 @@
+@use "../../../src/scss/helpers" as h;
+
+section.imp-content {
+  padding-top: calc(var(--elm-ptop) / 2);
+  padding-bottom: calc(var(--elm-pbottom) / 2);
+
+  @include h.media(">992px") {
+    padding-top: var(--elm-ptop);
+    padding-bottom: var(--elm-pbottom);
+  }
+}
