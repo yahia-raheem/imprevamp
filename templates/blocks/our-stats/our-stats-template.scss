@@ -2,7 +2,6 @@
 
 section.our-stats {
   background-color: #21225f;
-  padding: 50px 0;
 
   .stats {
     display: flex;
@@ -64,7 +63,6 @@ section.our-stats {
   }
 
   @include h.media(">992px") {
-    padding: 106px 0;
 
     .stats {
       gap: 30px;

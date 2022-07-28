@@ -1,0 +1,7 @@
+.imp-section {
+    padding: 50px 0;
+
+    @include h.media('>992px') {
+        padding: 106px 0;
+    }
+}

@@ -17,7 +17,7 @@ if (!empty($attributes['align'])) {
 }
 $statsGroup = mb_get_block_field('stat_group');
 ?>
-<section id="<?= $id ?>" class="<?= $class ?>">
+<section id="<?= $id ?>" class="<?= $class ?> imp-section">
     <div class="container">
         <div class="row">
             <div class="col-12">

@@ -22,18 +22,20 @@ $categories = mb_get_block_field('course_category');
         <div class="row">
             <?php foreach ($categories as $category) : ?>
                 <div class="col-xxl-3 col-xl-4 col-lg-6 col-12">
-                    <div class="category-block">
+                    <div class="icon-card light has-shadow p-lg">
                         <div class="icon">
                             <?php
                             $icon = get_term_meta($category->term_id, 'font_awesome_classes', true);
                             ?>
                             <i class="<?php echo $icon; ?>"></i>
                         </div>
-                        <a href="<?php echo get_term_link($category, 'course-category'); ?>">
-                            <h3 class="name">
-                                <?php echo $category->name; ?>
-                            </h3>
-                        </a>
+                        <div class="content">
+                            <a href="<?php echo get_term_link($category, 'course-category'); ?>">
+                                <h3 class="name">
+                                    <?php echo $category->name; ?>
+                                </h3>
+                            </a>
+                        </div>
                     </div>
                 </div>
             <?php endforeach; ?>

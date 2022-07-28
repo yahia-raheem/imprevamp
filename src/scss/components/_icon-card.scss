@@ -1,0 +1,111 @@
+.icon-card {
+  @include h.hover-slide(h.$primary);
+  padding: 30px;
+  width: 100%;
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+
+  &.has-shadow {
+    box-shadow: 0 0 15px rgb(0 0 0 / 6%);
+  }
+
+  &.rounded {
+    border-radius: 5px;
+  }
+
+  &.p-lg {
+    padding: 40px 30px;
+  }
+
+  &.light {
+    background-color: white;
+
+    .icon {
+      background-color: lighten($color: h.$primary, $amount: 40);
+
+      i {
+        color: h.$primary;
+      }
+    }
+  }
+
+  &.dark {
+    background-color: #f5f5f5;
+
+    .icon {
+      background-color: h.$primary;
+
+      i {
+        color: white;
+      }
+    }
+  }
+
+  &:hover {
+    &::before {
+      background-color: h.$primary;
+    }
+
+    .icon {
+      background-color: white;
+    }
+
+    h3.name {
+      color: white;
+    }
+  }
+
+  &::before {
+    background-color: white;
+  }
+
+  .icon {
+    @include h.circle(50px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.5s;
+    align-self: flex-start;
+
+    i {
+      font-size: 18px;
+    }
+  }
+
+  h3.name {
+    font-size: 21px;
+    transition: color 0.5s;
+  }
+
+  ul {
+    padding: 0;
+    list-style: none;
+    margin-top: 5px;
+  }
+
+  .content {
+    width: calc(100% - 65px);
+  }
+
+  @include h.media(">992px") {
+    margin-bottom: 30px;
+    gap: 15px;
+
+    .icon {
+      @include h.circle(60px);
+      i {
+        font-size: 25px;
+      }
+    }
+
+    h3.name {
+      font-size: 22px;
+    }
+
+    .content {
+      width: calc(100% - 75px);
+    }
+  }
+}

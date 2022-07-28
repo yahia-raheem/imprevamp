@@ -18,7 +18,7 @@ if (!empty($attributes['align'])) {
 $bannerText = mb_get_block_field('banner_text');
 $bannerButton = mb_get_block_field('banner_button');
 ?>
-<section id="<?= $id ?>" class="<?= $class ?>">
+<section id="<?= $id ?>" class="<?= $class ?> imp-section">
     <div class="container">
         <div class="row">
             <div class="col-lg-8 d-flex justify-content-start align-items-center">

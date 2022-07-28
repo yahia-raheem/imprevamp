@@ -6,9 +6,11 @@
 @import "../../node_modules/@splidejs/splide/src/css/themes/default/index.scss";
 
 // components
+@import "./components/imp-section";
 @import "./components/course-price";
 @import "./components/course-card";
 @import "./components/news-card";
+@import "./components/icon-card";
 
 
 @import "../../node_modules/bootstrap/scss/bootstrap-grid.scss";
