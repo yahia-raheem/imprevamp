@@ -178,3 +178,39 @@ export const getViewportSize = () => {
 
   return { width: x, height: y };
 };
+/**
+ * Method used to encapsolate block JS.
+ * This method mainly checks the wp editor if the block is loaded, and if so then it runs the block's JS callback provided.
+ * The block has a failsafe `times` counter, so that if the block isn't loaded after checking for five times then the check will stop
+ * @param {number} times - The number of times the function will try to check if the block is loaded 
+ * @param {*} func - The callback function to run in case the editor signals that the block is loaded. This function has to return a boolean for performance considerations.
+ */
+export const wpEditorDone = (times = 5, func) => {
+  if (typeof wp !== "undefined" && typeof wp.data !== "undefined") {
+    const { select, subscribe } = wp.data;
+  
+    const closeListener = subscribe(() => {
+      const isReady = select("core/editor").__unstableIsEditorReady();
+      if (!isReady) {
+        return;
+      }
+      closeListener();
+      let counter = 0
+      const ticker = setInterval(() => {
+        const result = func();
+        if (result === true || counter > times) {
+          clearInterval(ticker);
+        }
+        counter++
+      }, 1000);
+    });
+  } else {
+    const callback = () => {
+      const result = func()
+      if (result === false) {
+        document.removeEventListener("DOMContentLoaded", callback)
+      }
+    }
+    document.addEventListener("DOMContentLoaded", callback);
+  }
+}

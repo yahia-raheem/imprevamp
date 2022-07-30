@@ -21,7 +21,7 @@ $contactCards = mb_get_block_field('contact_card');
     <div class="container">
         <div class="row">
             <?php foreach ($contactCards as $contact) : ?>
-                <div class="col-xxl-3 col-xl-4 col-lg-6 col-12">
+                <div class="col-xl-4 col-lg-6 col-12">
                     <div class="icon-card dark rounded">
                         <div class="icon">
                             <?php if ($contact['type'] === 'phone') : ?>

@@ -55,6 +55,12 @@
     h3.name {
       color: white;
     }
+
+    &.dark {
+      .icon i {
+        color: h.$primary;
+      }
+    }
   }
 
   &::before {

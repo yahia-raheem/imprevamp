@@ -350,7 +350,7 @@
 }
 
 @mixin appDirValue($property, $ltr_value, $rtl_value) {
-  #{$property}: $ltr_value #{"/*rtl:" + $rtl_value + "*/"}
+  #{$property}: $ltr_value #{"/*rtl:" + $rtl_value + "*/"};
 }
 
 @mixin rings($duration, $delay) {
@@ -613,14 +613,8 @@
         }
       }
       .wpcf7-list-item {
-        @include appDirLtr() {
-          margin-left: 0;
-          margin-right: $field-margin-between-cols;
-        }
-        @include appDirRtl() {
-          margin-right: 0;
-          margin-left: $field-margin-between-cols;
-        }
+        margin-left: 0;
+        margin-right: $field-margin-between-cols;
         label {
           display: flex;
           flex-direction: column;

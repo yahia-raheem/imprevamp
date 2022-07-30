@@ -1,26 +1,5 @@
 import splide from "@splidejs/splide";
-
-if (typeof wp !== "undefined" && typeof wp.data !== "undefined") {
-  const { select, subscribe } = wp.data;
-
-  const closeListener = subscribe(() => {
-    const isReady = select("core/editor").__unstableIsEditorReady();
-    if (!isReady) {
-      return;
-    }
-    closeListener();
-    const ticker = setInterval(() => {
-      const result = init();
-      if (result === true) {
-        clearInterval(ticker);
-      }
-    }, 1000);
-  });
-} else {
-  document.addEventListener("DOMContentLoaded", () => {
-    init();
-  });
-}
+import { wpEditorDone } from "../components/helper-funcs";
 
 const init = () => {
   const sliderSections = document.querySelectorAll("section.clients-slider");
@@ -60,3 +39,5 @@ const init = () => {
     return false;
   }
 };
+
+wpEditorDone(3, init);

@@ -48,6 +48,10 @@ a {
 body {
   font-size: 15px;
 
+  @include h.contact_form_seven(
+    $field-bg: white, $field-placeholder-color: black, $field-border-radius: 0, $submit-bg: h.$primary
+  );
+
   @include h.media(">992px") {
     font-size: 16px;
   }

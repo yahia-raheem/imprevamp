@@ -24,6 +24,11 @@ function imp_section_title_block( $meta_boxes ) {
         'context'  => 'side',
         'fields'   => [
             [
+                'name' => __( 'Section Title Prefix', 'imp' ),
+                'id'   => $prefix . 'section_title_prefix',
+                'type' => 'text',
+            ],
+            [
                 'name' => __( 'Section title', 'imp' ),
                 'id'   => $prefix . 'section_title',
                 'type' => 'text',
@@ -51,6 +56,12 @@ function imp_section_title_block( $meta_boxes ) {
                 'id'                => $prefix . 'has_padding_bottom',
                 'type'              => 'checkbox',
                 'label_description' => __( 'Should a 150px padding bottom be added to the section\'s top and bottom?', 'imp' ),
+            ],
+            [
+                'name'              => __( 'Light mode', 'imp' ),
+                'id'                => $prefix . 'light_mode',
+                'type'              => 'checkbox',
+                'label_description' => __( 'This removes the grey background of this section', 'imp' ),
             ],
         ],
     ];
