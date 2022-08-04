@@ -43,7 +43,7 @@ function register_menu()
 add_action('init', 'register_menu');
 
 
-function wk_blocks_categories($categories)
+function imp_blocks_category($categories)
 {
 
     return array_merge(
@@ -56,6 +56,6 @@ function wk_blocks_categories($categories)
         ]
     );
 };
-add_action('block_categories', 'wk_blocks_categories', 10, 9);
+add_action('block_categories', 'imp_blocks_category', 10, 9);
 
 require_once THEME_DIR . '/templates/blocks/blocks.php';

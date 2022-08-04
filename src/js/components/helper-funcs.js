@@ -185,8 +185,8 @@ export const getViewportSize = () => {
  * @param {number} times - The number of times the function will try to check if the block is loaded 
  * @param {*} func - The callback function to run in case the editor signals that the block is loaded. This function has to return a boolean for performance considerations.
  */
-export const wpEditorDone = (times = 5, func) => {
-  if (typeof wp !== "undefined" && typeof wp.data !== "undefined") {
+export const wpEditorDone = (times = 5, func, onlyAdmin = false, onlyClient = false) => {
+  if (typeof wp !== "undefined" && typeof wp.data !== "undefined" && onlyClient === false) {
     const { select, subscribe } = wp.data;
   
     const closeListener = subscribe(() => {
@@ -204,7 +204,7 @@ export const wpEditorDone = (times = 5, func) => {
         counter++
       }, 1000);
     });
-  } else {
+  } else if (onlyAdmin === false) {
     const callback = () => {
       const result = func()
       if (result === false) {

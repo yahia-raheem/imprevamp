@@ -24,6 +24,12 @@ class IMPCourse
 
     public static function init_by_id(int $courseId)
     {
+        self::$_current = self::local_init_by_id($courseId);
+        return self::$_current;
+    }
+
+    public static function local_init_by_id(int $courseId)
+    {
         $post = get_post($courseId);
         $title = $post->post_title;
         $excerpt = $post->post_excerpt;
@@ -32,8 +38,7 @@ class IMPCourse
         $features = self::initiate_features($courseId);
         $instructorId = self::get_course_property('course_instructor', $courseId);
         $instructor = $instructorId != null ? IMPInstructor::get_by_id($instructorId) : null;
-        self::$_current = new self($courseId, $title, $excerpt, $content, $thumbnailId, $features, $instructor);
-        return self::$_current;
+        return new self($courseId, $title, $excerpt, $content, $thumbnailId, $features, $instructor);
     }
 
     public static function get_current()
