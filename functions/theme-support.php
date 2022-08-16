@@ -107,6 +107,56 @@ function webkeyz_theme_support()
         ),
     ));
 
+    //IMP Widgets
+	function widgets_init() {
+		register_sidebar(array(
+			'name'          => esc_html__('Primary Sidebar', 'imp'),
+			'id'            => 'primary',
+			'description'   => esc_html__('Widgets displayed at left & Right side of content.', 'imp'),
+			'before_widget' => '<div id="%1$s" class="theme-widget theme_widget_sidebar %2$s">',
+			'after_widget'  => '</div>',
+			'before_title'  => '<h6 class="theme-widget-title">',
+			'after_title'   => '</h6>',
+		));
+		register_sidebar(array(
+			'name'          => esc_html__('Footer #1 column', 'imp'),
+			'id'            => 'footer_1',
+			'description'   => esc_html__('Widgets displayed at footer.', 'imp'),
+			'before_widget' => '<div id="%1$s" class="theme-widget theme_widget_footer %2$s">',
+			'after_widget'  => '</div>',
+			'before_title'  => '<h6 class="theme-widget-title">',
+			'after_title'   => '</h6>',
+		));
+		register_sidebar(array(
+			'name'          => esc_html__('Footer #2 column', 'imp'),
+			'id'            => 'footer_2',
+			'description'   => esc_html__('Widgets displayed at footer.', 'imp'),
+			'before_widget' => '<div id="%1$s" class="theme-widget theme_widget_footer %2$s">',
+			'after_widget'  => '</div>',
+			'before_title'  => '<h6 class="theme-widget-title">',
+			'after_title'   => '</h6>',
+		));
+		register_sidebar(array(
+			'name'          => esc_html__('Footer #3 column', 'imp'),
+			'id'            => 'footer_3',
+			'description'   => esc_html__('Widgets displayed at footer.', 'imp'),
+			'before_widget' => '<div id="%1$s" class="theme-widget theme_widget_footer %2$s">',
+			'after_widget'  => '</div>',
+			'before_title'  => '<h6 class="theme-widget-title">',
+			'after_title'   => '</h6>',
+		));
+		register_sidebar(array(
+			'name'          => esc_html__('Footer #4 column', 'imp'),
+			'id'            => 'footer_4',
+			'description'   => esc_html__('Widgets displayed at footer.', 'imp'),
+			'before_widget' => '<div id="%1$s" class="theme-widget theme_widget_footer %2$s">',
+			'after_widget'  => '</div>',
+			'before_title'  => '<h6 class="theme-widget-title">',
+			'after_title'   => '</h6>',
+		));
+	}
+    add_action('widgets_init', 'widgets_init');
+
     // add_theme_support('custom-spacing');
 
 

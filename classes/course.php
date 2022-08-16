@@ -119,4 +119,79 @@ class IMPCourse
         $currency = self::get_course_property('course_currency', $courseId);
         return new IMPCourseFeatures($price, $isDiscounted, $discountPrice, $recorded, $hours, $level, $rating, $currency);
     }
+
+    public static function icon_language_flags($section = 'header') {
+		if (function_exists('icl_get_languages')) {
+			$languages = icl_get_languages('skip_missing=0&orderby=code');
+			// print_r($languages);
+			if (!empty($languages)) {
+				foreach ($languages as $language) { ?>
+					<?php if (!$language['active']) { ?>
+					<div class="wbkz-languages-switcher  inline-module">			
+						<a href="<?php echo esc_url($language['url'])?>">
+							<span><?php echo esc_attr($language['native_name'])?></span>
+						</a>					
+					</div>
+					<?php } ?>
+				<?php }
+			}
+		}
+	}
+
+    	//Menu popup button
+	public static function icon_popup_menu() {
+		?>
+		<div class="imp-side-menu-wrapper">
+			<a class="imp-side-menu-button" href="javascript:void(0)">
+				<span class="imp-side-menu-icon">
+					<span class="imp-lines">
+						<span class="imp-line imp-line-1"></span>
+						<span class="imp-line imp-line-2"></span>
+						<span class="imp-line imp-line-3"></span>
+					</span>
+				</span>
+			</a>
+		</div>
+		<?php
+		get_template_part( 'templates/header/popup-menu' );
+	}
+
+    public function icon_social_share_small() {
+        $socials = array(
+            'facebook',
+            'twitter',
+            'google',
+            'linkedin',
+            'pinterest',
+            'whatsapp',
+        );
+        $socials = apply_filters( 'cps_social_share', $socials );?>
+            <div class="social-share-button cps-social-icons cps_social_icon_style_1">
+                <span class="social-shar-title"><?php echo esc_html__('Share', 'cps')?></span>
+                <ul class="social-icons circular_shape small_shape background_shape">
+                <?php if ( in_array( 'facebook', $socials ) ) : ?>
+                    <li class="facebook-f"><a href="https://www.facebook.com/sharer/sharer.php?u=<?php the_permalink(); ?>" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                <?php endif; ?>
+
+                <?php if ( in_array( 'twitter', $socials ) ) : ?>
+                    <li class="twitter"><a href="https://twitter.com/intent/tweet?url=<?php echo the_permalink(); ?>&text=<?php echo htmlspecialchars(urlencode(html_entity_decode(get_the_title(), ENT_COMPAT, 'UTF-8')), ENT_COMPAT, 'UTF-8'); ?>" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                <?php endif; ?>
+
+                <?php if ( in_array( 'google', $socials ) ) : ?>
+                    <li class="google"><a href="https://plus.google.com/share?url=<?php the_permalink(); ?>" target="_blank"><i class="fab fa-google-plus-g"></i></a></li>
+                <?php endif; ?>
+
+                <?php if ( in_array( 'pinterest', $socials ) ) : ?>
+                    <li class="pinterest"><a target="_blank" href="http://pinterest.com/pin/create/button/?url=<?php the_permalink(); ?>&amp;media=&amp;description=<?php echo rawurlencode(get_the_title()); ?>"><i class="fab fa-pinterest-p"></i></a></li>
+                <?php endif; ?>
+
+                <?php if ( in_array( 'whatsapp', $socials ) ) : ?>
+                    <li class="whatsapp"><a href="whatsapp://send?text=<?php the_permalink(); ?>" data-action="share/whatsapp/share"><i class="fab fa-whatsapp" aria-hidden="true"></i></a></li>
+                <?php endif; ?>
+
+                </ul>
+            </div>
+        <?php
+	}
+    
 }

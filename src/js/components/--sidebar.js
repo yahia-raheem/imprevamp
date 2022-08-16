@@ -2,9 +2,9 @@ let isOpen = false;
 const sideBar = document.getElementById("wkSideNar");
 document.addEventListener("DOMContentLoaded", () => {
   if (sideBar !== null) {
-    const togglebtn = document.querySelector(".imp-side-menu-icon");
-    const closebtn = document.querySelector(".imp-close-button");
-    const sidemenuItems = document.querySelectorAll(".fullscreen-menu-wrap .menu-item");
+    const togglebtn = document.querySelector(".navbar-toggler");
+    const closebtn = document.querySelector(".closebtn");
+    const sidemenuItems = document.querySelectorAll(".mobile-menu .menu-item");
 
     sidemenuItems.forEach((item) => {
       item.addEventListener("click", (e) => {
@@ -15,12 +15,10 @@ document.addEventListener("DOMContentLoaded", () => {
             item.classList.remove("child-menu-opened");
             submenu.classList.remove("opened");
             submenu.style.maxHeight = 0;
-            openMenu();
           } else {
             item.classList.add("child-menu-opened");
             submenu.classList.add("opened");
             submenu.style.maxHeight = `${submenu.scrollHeight}px`;
-            openMenu();
           }
         }
       });
@@ -36,20 +34,17 @@ document.addEventListener("DOMContentLoaded", () => {
     closebtn.addEventListener("click", () => {
       closeNav();
     });
-
   }
 });
 
 const openNav = () => {
   sideBar.style.width = "100vw";
-  sideBar.classList.add("sidebar-open");
   hideBodyScroll();
 };
 
 const closeNav = () => {
   sideBar.style.width = "0";
   isOpen = false;
-  sideBar.classList.remove("sidebar-open");
   removeClickListener();
   retrieveBodyScroll();
 };

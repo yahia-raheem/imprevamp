@@ -27,6 +27,7 @@
 @import "../../node_modules/@splidejs/splide/src/css/themes/default/index.scss";
 
 // components
+@import "./components/header";
 @import "./components/imp-section";
 @import "./components/navigation";
 @import "./components/sidenav";
@@ -34,6 +35,9 @@
 @import "./components/course-card";
 @import "./components/news-card";
 @import "./components/icon-card";
+@import "./components/footer";
+@import "./components/widgets";
+@import "./components/single_post";
 
 // fonts
 @import "./base/font-face";
@@ -54,5 +58,8 @@ body {
 
   @include h.media(">992px") {
     font-size: 16px;
+  }
+  .imp-site-wrapper {
+    margin-block-end: 30px;
   }
 }

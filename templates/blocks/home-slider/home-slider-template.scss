@@ -13,11 +13,11 @@ section.home-slider {
     }
 
     .splide__arrow--prev {
-      left: -5rem;
+      left: -2rem;
     }
 
     .splide__arrow--next {
-      right: -5rem;
+      right: -2rem;
     }
   }
 
@@ -28,7 +28,7 @@ section.home-slider {
 
     .course-image {
       width: 100%;
-      border-radius: 10px;
+      border-radius: 5px;
       overflow: hidden;
 
       .img-container {
@@ -54,6 +54,8 @@ section.home-slider {
 
           .course-spec {
             display: flex;
+            align-content: center;
+            align-items: center;
             gap: 5px;
 
             .avatar {
@@ -118,8 +120,8 @@ section.home-slider {
 
       .price-btn {
         @include h.hover-slide(darken($color: h.$primary, $amount: 5));
-        padding: 20px;
-        border-radius: 10px;
+        padding: 5px 20px;
+        border-radius: 0;
         background-color: h.$primary;
         color: white;
         justify-content: space-between;
@@ -135,17 +137,17 @@ section.home-slider {
 
     .splide__arrows {
       button {
-        width: 48px;
-        height: 98px;
-        border-radius: 25px;
+        width: 60px;
+        height: 60px;
+        border-radius: 60px;
       }
 
       .splide__arrow--prev {
-        left: -5rem;
+        left: -2rem;
       }
 
       .splide__arrow--next {
-        right: -5rem;
+        right: -2rem;
       }
     }
 
@@ -218,8 +220,8 @@ section.home-slider {
 
         .price-btn {
           @include h.hover-slide(darken($color: h.$primary, $amount: 5));
-          padding: 20px;
-          border-radius: 10px;
+          padding: 7px 20px;
+          border-radius: 0;
           max-width: 300px;
           width: 100%;
           font-size: 20px;

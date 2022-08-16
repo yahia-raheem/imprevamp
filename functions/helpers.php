@@ -85,6 +85,128 @@ function my_pagination($max_num_of_pages)
     return $pagination;
 }
 
+if ( ! function_exists( 'cps_content_nav' ) ) :
+function cps_content_nav( $nav_id ) {
+	add_filter('next_posts_link_attributes', 'posts_link_attributes');
+	add_filter('previous_posts_link_attributes', 'posts_link_attributes');
+
+	function posts_link_attributes() {
+	    return 'class="primary-bg-hover"';
+	}
+	global $wp_query, $post;
+	if ( is_single() ) {
+		$previous = ( is_attachment() ) ? get_post( $post->post_parent ) : get_adjacent_post( false, '', true );
+		$next = get_adjacent_post( false, '', false );
+		if ( ! $next && ! $previous )
+			return;
+	}
+	if ( $wp_query->max_num_pages < 2 && ( is_home() || is_archive() || is_search() ) )
+		return;
+	$nav_class = ( is_single() ) ? 'cps-post-navigation clearfix' : 'cps-pagination-nav-wrapper clearfix';
+	$homeLink = esc_url( home_url( '/' ) );
+	?>
+
+	<div class="<?php echo esc_attr($nav_class); ?>">
+	<?php if ( is_single() ) : ?>
+		<?php if (  get_next_post_link() ) {
+			$empty_class = "next_posts";
+		} elseif (  get_previous_post_link() ) {
+			$empty_class = "previous_posts";
+		}
+		?>
+		<ul class="cps-post-nav <?php echo esc_attr($empty_class);?>">
+			<?php previous_post_link( '<li class="cps-nav-previous previous">%link</li>', '<i class="ti ti-arrow-left"></i><div class="cps-nav-text"><span>'. esc_html__( 'Previous post', 'cps' ) . '</span><h4>%title</h4></div>' ); ?>
+			<a href="<?php echo esc_url($homeLink)?>" class="cps-icon-grid"><i class="ti ti-view-grid"></i></a>
+			<?php next_post_link( '<li class="cps-nav-next next">%link</li>', '<div class="cps-nav-text"><span>'. esc_html__( 'Next post', 'cps' ) . '</span><h4>%title</h4></div><i class="ti ti-arrow-right"></i>' ); ?>
+		</ul>
+	<?php elseif ( $wp_query->max_num_pages > 1 && ( is_home() || is_archive() || is_search() ) ) : ?>
+		<ul class="cps-pagination-nav">
+			<?php if ( get_next_posts_link() ) : ?>
+			<li class="cps-posts-nav cps-posts-prev">
+				<?php next_posts_link( '<i class="ti ti-arrow-left"></i>'. esc_html__( 'Older posts', 'cps' )); ?>
+			</li>
+			<?php endif; ?>
+			<?php if ( get_previous_posts_link() ) : ?>
+			<li class="cps-posts-nav cps-posts-next">
+				<?php previous_posts_link(esc_html__( 'Newer posts', 'cps' ). '<i class="ti ti-arrow-right"></i>'); ?>
+			</li>
+			<?php endif; ?>
+		</ul>
+	<?php endif; ?>
+	</div>
+	<?php
+}
+endif;
+
+if ( ! function_exists( 'cps_post_tag' ) ) :
+	function cps_post_tag() {
+		if(has_tag()) {
+		$posttags = get_the_tags();
+		?>
+		<span class="tags-title"><?php esc_html_e('Tags', 'cps'); ?></span>
+		<ul>
+			<?php if ($posttags) {
+				$return = '';
+				foreach($posttags as $tag) {
+					$return .= '<li><a href="'. get_tag_link($tag->term_id).'" title="'. get_tag_link($tag->name).'" class="tag-link">' . $tag->name . '</a></li>';
+				}
+				echo substr($return, 0, -1);
+			} ?>
+		</ul>
+<?php } } endif;
+
+function cps_get_post_views($postID){
+	$count_key = 'post_views_count';
+	$count = get_post_meta($postID, $count_key, true);
+	if($count==''){
+			delete_post_meta($postID, $count_key);
+			add_post_meta($postID, $count_key, '0');
+			return 0;
+	}
+	return $count;
+}
+
+function cps_set_post_views($postID) {
+	if (is_single()) {
+		$count_key = 'post_views_count';
+		$count = get_post_meta($postID, $count_key, true);
+		if($count==''){
+			$count = 0;
+			delete_post_meta($postID, $count_key);
+			add_post_meta($postID, $count_key, '0');
+		}else{
+			$count++;
+			update_post_meta($postID, $count_key, $count);
+		}
+	}
+}
+
+function cps_category_name_color(){
+	if (! is_search() ) {
+		$categories = get_the_category( get_the_ID() );
+		$catname = $categories[0]->name;
+		$class = strtolower($catname);
+		$class = str_replace(' ', '-', $class);
+		$class = sanitize_title($class);
+
+		$categories_category = "";
+		$categories_category = get_the_category( get_the_ID() );
+		$categories_firstCategory = $categories_category[0]->cat_ID;
+?>
+<div class="cps-post-cat">
+	<a  class="primary-bg cat-id-<?php echo esc_html($categories_firstCategory) ?>" href="<?php echo esc_url( get_category_link( $categories[0]->term_id ) ) ?> "><?php echo esc_html( $categories[0]->name ) ?></a>
+</div>
+<?php }	}
+
+if ( ! function_exists( 'cps_post_comments_count' ) ) :
+	function cps_post_comments_count() {
+		if ( ! post_password_required() && ( comments_open() || get_comments_number() ) ) {
+			comments_popup_link( esc_html__( '0 COMMENT', 'cps' ), esc_html__( '1 COMMENT', 'cps' ), esc_html__( '% COMMENT', 'cps' ) );
+		}
+	}
+endif;
+
+
 # function theme_lang_switcher()
 # {
 #     $languages = icl_get_languages('skip_missing=1');

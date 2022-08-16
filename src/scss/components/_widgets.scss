@@ -1,0 +1,117 @@
+.theme-widget {
+    p {
+        font-size: h.$font-size-14;
+    }
+    .theme-widget-title {
+        font-weight: 700;
+        color: h.$black;
+        font-size: h.$font-size-18;
+        margin-block-end: 20px;
+    }
+    .cps_widget_content {
+        //Social Media
+        .cps-widget-social-icons {
+            .cps-social-icons {
+                display: flex;
+                align-items: center;
+                align-content: center;
+                padding: 0;
+                list-style: none;
+                margin-block-start: 20px;
+                li {
+                    margin-inline-end: 15px;
+                    a {
+                        display: inline-block;
+                        font-size: h.$font-size-20;
+                        color: h.$gray;
+                    }
+                }
+            }
+        }
+    }
+    //Contact Info
+    .cps-contact-list-widget {
+        .contact-list-wrapper {
+            padding: 0;
+            list-style: none;
+            padding-inline-end: 15px;
+            li {
+                font-size: h.$font-size-14;
+                color: h.$gray;
+                margin-block-end: 5px;
+                a {
+                    color: h.$gray;
+                    &:hover {
+                        color: h.$primary;
+                    }
+                }
+                &:first-child {
+                    margin-block-end: 20px;
+                }
+                &:last-child {
+                    margin-block-start: 20px;
+                }
+            }
+        }
+    }
+    //Menu
+    .menu {
+        display: grid;
+        grid-auto-flow: row dense;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 0 15px;
+        padding: 0;
+        list-style: none;
+        li {
+            a {
+                font-size: h.$font-size-14;
+                color: h.$gray;
+                &:hover {
+                    color: h.$primary;
+                }
+            }
+        }
+    }
+    //Posts
+    .cps-posts-widget {
+        position: relative;
+        .cps-posts-block {
+            display: grid;
+            grid-auto-flow: row dense;
+            grid-template-columns: 80px 1fr;
+            grid-gap: 0 15px;
+            padding: 0;
+            list-style: none;
+            margin-block-end: 10px;
+            .post-image {
+                img {
+                    max-width: 100%;
+                    max-height: 80px;
+                }
+            }
+            .post-details {
+                .post-title {
+                    margin-block-end: 10px;
+                    .entry-title {
+                        color: #aaa;
+                        font-size: h.$font-size-14;
+                        a {
+                            color: #aaa;
+                            &:hover {
+                                color: h.$primary;
+                            }
+                        }
+                    }
+                }
+                .post-meta {
+                    list-style: none;
+                    padding: 0;
+                    li {
+                        color: #aaa;
+                        font-size: h.$font-size-12;
+                    }
+                }
+            }
+        }
+    }
+}

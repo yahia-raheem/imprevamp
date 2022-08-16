@@ -38,6 +38,7 @@ function register_menu()
 {
     register_nav_menus(array(
         'header-menu' => 'Header Menu',
+        'toggle-menu' => 'Login Mobile Header Menu',
     ));
 }
 add_action('init', 'register_menu');
@@ -59,3 +60,11 @@ function imp_blocks_category($categories)
 add_action('block_categories', 'imp_blocks_category', 10, 9);
 
 require_once THEME_DIR . '/templates/blocks/blocks.php';
+
+// Widgets Require
+require_once THEME_DIR .'/functions/widgets/imp-contact-list.php';
+require_once THEME_DIR .'/functions/widgets/imp-posts.php';
+require_once THEME_DIR .'/functions/widgets/imp-social-links.php';
+
+// Breadcrumb Require
+require_once THEME_DIR .'/functions/breadcrumb.php';
