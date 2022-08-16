@@ -8,7 +8,7 @@ section.about-header {
   }
 
   .block-content {
-    padding-inline-start: 25px;
+    padding-top: 25px;
 
     .prefix {
       color: h.$primary;
@@ -16,8 +16,8 @@ section.about-header {
     }
 
     .title {
-      margin-bottom: 15px;
-      font-size: 35px;
+      margin-bottom: 10px;
+      font-size: 28px;
     }
 
     .description {
@@ -27,7 +27,7 @@ section.about-header {
     .btn {
       @include h.hover-slide(darken($color: h.$primary, $amount: 5));
       border-radius: 50px;
-      padding: 15px 35px;
+      padding: 10px 24px;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -46,17 +46,17 @@ section.about-header {
     flex-wrap: wrap;
 
     li {
-      margin-bottom: 20px;
+      margin-bottom: 15px;
       display: flex;
       justify-content: flex-start;
       align-items: center;
-      font-size: 18px;
+      font-size: 16px;
       font-weight: 600;
       color: h.$theme-black;
-      width: 50%;
+      width: 100%;
 
       .check {
-        @include h.circle(40px);
+        @include h.circle(30px);
         background-color: lighten($color: h.$primary, $amount: 0.4);
         margin-inline-end: 15px;
         display: flex;
@@ -65,7 +65,54 @@ section.about-header {
 
         i {
           color: white;
-          font-size: 22px;
+          font-size: 16px;
+        }
+      }
+    }
+  }
+
+  @include h.media('>992px') {
+    .img-container {
+      border-radius: 10px;
+      }
+  
+    .block-content {
+      padding-inline-start: 25px;
+      padding-top: 0;
+  
+      .prefix {
+        margin-bottom: 7px;
+      }
+  
+      .title {
+        margin-bottom: 15px;
+        font-size: 35px;
+      }
+  
+      .description {
+        margin-bottom: 20px;
+      }
+  
+      .btn {
+        padding: 15px 35px;
+        background-color: h.$primary;
+      }
+    }
+  
+    .bullets {  
+      li {
+        margin-bottom: 20px;
+        font-size: 18px;
+        font-weight: 600;
+        color: h.$theme-black;
+        width: 50%;
+  
+        .check {
+          margin-inline-end: 15px;
+
+          i {
+            font-size: 22px;
+          }
         }
       }
     }
