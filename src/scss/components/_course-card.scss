@@ -19,6 +19,17 @@
     @include h.box-ratio(16, 10);
   }
 
+  .live {
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    padding: 5px 10px;
+    font-size: 15px;
+    background-color: h.$primary;
+    color: white;
+    border-radius: 5px;
+  }
+
   .content {
     display: flex;
     flex-direction: column;
