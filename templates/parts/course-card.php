@@ -6,6 +6,13 @@ if ($course instanceof IMPCourse) :
         <div class="course-image img-container">
             <a href="<?php echo get_the_permalink($course->courseId); ?>" class="clickable-space"></a>
             <?php echo wp_get_attachment_image($course->thumbnailId, 'large', false, ['class' => 'bg-image']); ?>
+            <?php if ($course->features->recorded) : ?>
+                <?php if ($course->features->recorded == 1) : ?>
+                    <div class="live"><?php _e('Recorded', 'imp'); ?></div>
+                <?php else : ?>
+                    <div class="live"><?php _e('Live', 'imp'); ?></div>
+                <?php endif; ?>
+            <?php endif; ?>
         </div>
         <div class="content">
             <div class="attributes">

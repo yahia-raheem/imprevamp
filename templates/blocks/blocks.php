@@ -12,5 +12,5 @@ require_once THEME_DIR . '/templates/blocks/inner-header/inner-header.php';
 require_once THEME_DIR . '/templates/blocks/contact-cards/contact-cards.php';
 require_once THEME_DIR . '/templates/blocks/course-sidebar/course-sidebar.php';
 require_once THEME_DIR . '/templates/blocks/course-tabs/course-tabs.php';
-// require_once THEME_DIR . '/templates/blocks/tab/tab.php';
 require_once THEME_DIR . '/templates/blocks/accordion/accordion.php';
+require_once THEME_DIR . '/templates/blocks/about-header/about-header.php';
