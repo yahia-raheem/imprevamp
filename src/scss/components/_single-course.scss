@@ -1,0 +1,43 @@
+.imp-single-course-details {
+    position: relative;
+    padding-block-start: 30px;
+    .imp-single-course--action {
+        .cta-row {
+            margin-block-end: 30px;
+            .price-btn {
+                @include h.hover-slide(darken($color: h.$primary, $amount: 5));
+                padding: 5px 20px;
+                border-radius: 0;
+                background-color: h.$primary;
+                color: white;
+                justify-content: space-between;
+                width: 100%;
+                font-size: 16px;
+                align-items: center;
+            }
+        }
+    }
+    .imp-single-course-details--action {
+        .attributes-row {
+            position: relative;
+            .course-attribute {
+                display: flex;
+                align-items: center;
+                align-content: center;
+                justify-content: space-between;
+                padding-block: 15px;
+                border-bottom: 1px Solid #f0f4fa;
+                * {
+                    color: h.$theme-black;
+                }
+                i {
+                    color: h.$primary;
+                    font-size: h.$font-size-h2;
+                }
+                &:last-child {
+                    border: 0;
+                }
+            }
+        }
+    }
+}

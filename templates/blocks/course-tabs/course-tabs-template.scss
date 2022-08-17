@@ -1,0 +1,256 @@
+@use "../../../src/scss/helpers" as h;
+
+.single-course {
+  margin-block-start: 30px;
+  .nav-pills {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 0 0 50px;
+    border-bottom: 0;
+    background-color: #f0f4fa;
+    li {
+      button {
+        width: 100%;
+        padding: 16px 10px 20px;
+        margin: 0;
+        border: 0!important;
+        border-top: 3px solid #f0f4fa!important;
+        border-radius: 0;
+        font-size: 15px;
+        font-weight: 600;
+        background-color: #f0f4fa;
+        text-align: center;
+        color: #273044;
+        &.active {
+          border-top-color: h.$primary !important;
+          background-color: #fff;
+          color: #273044!important;
+        }
+      }
+    }
+  }
+  .tab-content {
+    .tab-pane {
+      padding-block-start: 30px;
+      .imp-accordion-list {
+        position: relative;
+        margin: 0 0 15px;
+        border: 1px solid #e1e2e4;
+        box-shadow: none;
+        .accordion {
+          display: flex;
+          width: 100%;
+          align-items: center;
+          align-content: center;
+          justify-content: space-between;
+          cursor: pointer;
+          padding: 30px;
+          * {
+            font-size: 18px;
+            font-weight: bold;
+            line-height: 2.5;
+            text-align: left;
+            color: #32323c;
+            margin-bottom: 0;
+            @include h.media("<sm") {
+              font-size: 16px;
+              font-weight: bold;
+              line-height: 1.5;
+              color: #20203c;
+            }
+          }
+          &:after {
+            content: '\f107';
+            font-family: "Font Awesome\ 5 Free";
+            color: #777;
+            font-weight: bold;
+            float: right;
+            margin-left: 5px;
+          }
+          &.active {
+            &:after {
+              content: '\f106';
+              font-family: "Font Awesome\ 5 Free";
+            }
+          }
+        }
+        .panel {
+          padding: 0;
+          max-height: 0;
+          overflow: hidden;
+          transition: max-height 0.2s ease-out;
+          * {
+            font-size: 18px;
+            font-weight: normal;
+            line-height: 1.44;
+            text-align: left;
+            color: #32323c;
+            margin-bottom: 0;
+            padding: 0px 30px 30px;
+          }
+        }
+      }
+      .imp-announcement-list {
+        margin-bottom: 50px;
+        h3 {
+          font-size: h.$font-size-18;
+          margin-bottom: 15px;
+        }
+        ol, ul {
+          li {
+            font-size: h.$font-size-14;
+            color: h.$gray-text;
+            line-height: 1.7;
+          }
+        }
+      }
+      .imp-accordion-curriculum-list {
+        position: relative;
+        margin: 0 0 15px;
+        background-color: #f0f4fa;
+        box-shadow: none;
+        .accordion {
+          display: flex;
+          width: 100%;
+          align-items: center;
+          align-content: center;
+          justify-content: space-between;
+          cursor: pointer;
+          padding: 15px;
+          i {
+            color: h.$primary;
+            font-size: h.$font-size-16;
+            margin-inline-end: 10px;
+          }
+          background-color: #f0f4fa;
+          * {
+            font-size: 18px;
+            font-weight: bold;
+            line-height: 2.5;
+            text-align: left;
+            color: #32323c;
+            margin-bottom: 0;
+            @include h.media("<sm") {
+              font-size: 16px;
+              font-weight: bold;
+              line-height: 1.5;
+              color: #20203c;
+            }
+          }
+          &:after {
+            content: '\f107';
+            font-family: "Font Awesome\ 5 Free";
+            color: #777;
+            font-weight: bold;
+            float: right;
+            margin-left: 5px;
+          }
+          &.active {
+            &:after {
+              content: '\f106';
+              font-family: "Font Awesome\ 5 Free";
+            }
+          }
+        }
+        .panel {
+          padding: 0;
+          max-height: 0;
+          overflow: hidden;
+          transition: max-height 0.2s ease-out;
+          * {
+            font-size: 18px;
+            font-weight: normal;
+            line-height: 1.44;
+            text-align: left;
+            color: #32323c;
+            margin-bottom: 0;
+            padding: 0px 30px 30px;
+          }
+        }
+      }
+      .imp-curriculum-tab {
+        h2 {
+          font-size: h.$font-size-16;
+          margin-block-end: 30px;
+        }
+      }
+    }
+  
+  }
+}
+
+section.section-title {
+  &:not(.light) {
+    background-color: #f6f8fa;
+  }
+
+  &.has-padding-top {
+    padding-top: 50px;
+  }
+
+  &.has-padding-bottom {
+    padding-bottom: 30px;
+  }
+
+  .section-title {
+    margin-bottom: 50px;
+    gap: 20px;
+
+    .main {
+      .prefix {
+        color: h.$primary;
+        margin-bottom: 7px;
+        text-transform: uppercase;
+      }
+
+      h2 {
+        font-size: 28px;
+        margin-bottom: 10px;
+      }
+
+      p {
+        font-size: 15px;
+      }
+    }
+
+    .cta .btn {
+      @include h.hover-slide(darken($color: h.$primary, $amount: 5));
+      text-align: center;
+      padding: 10px 24px;
+      background-color: h.$primary;
+      color: white;
+      font-size: 14px;
+    }
+  }
+
+  @include h.media(">992px") {
+    &.has-padding-top {
+      padding-top: 106px;
+    }
+
+    &.has-padding-bottom {
+      padding-bottom: 106px;
+    }
+
+    .section-title {
+      margin-bottom: 50px;
+
+      .main {
+        h2 {
+          font-size: 35px;
+          margin-bottom: 15px;
+        }
+
+        p {
+          font-size: 16px;
+        }
+      }
+
+      .cta .btn {
+        @include h.hover-slide(darken($color: h.$primary, $amount: 5));
+        padding: 15px 35px;
+        font-size: 16px;
+      }
+    }
+  }
+}

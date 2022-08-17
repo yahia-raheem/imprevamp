@@ -10,7 +10,7 @@ if(!function_exists('cps_breadcrumb')):
 function cps_breadcrumb() {
 	echo '<div class="cps-breadcrumb-wrapper">';
 	 	$showOnHome = 0; // 1 - show breadcrumbs on the homepage, 0 - don't show
-	  $delimiter = '<i class="ti ti-angle-right"></i>'; // delimiter between crumbs
+	  $delimiter = '/'; // delimiter between crumbs
 	  $home = esc_html__('Home','cps'); // text for the 'Home' link
 	  $showCurrent = 1; // 1 - show current post/page title in breadcrumbs, 0 - don't show
 	  $before = '<span class="current">'; // tag before the current crumb

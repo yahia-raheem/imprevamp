@@ -1,0 +1,86 @@
+@use "../../../src/scss/helpers" as h;
+
+.imp-accordion-wrapper {
+  @include h.media("<sm") {
+    padding-top: 0rem !important;
+  }
+  .imp-accordion-section {
+    .imp-accordion-list {
+      padding-block: 30px;
+      border-bottom: 1px Solid #e5e7ec;
+      .accordion {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        align-content: center;
+        justify-content: space-between;
+        cursor: pointer;
+        * {
+          font-size: 18px;
+          font-weight: bold;
+          line-height: 2.5;
+          text-align: left;
+          color: #32323c;
+          margin-bottom: 0;
+          @include h.media("<sm") {
+            font-size: 16px;
+            font-weight: bold;
+            line-height: 1.5;
+            color: #20203c;
+          }
+        }
+        &:after {
+          content: url('../../../../images/accordion.svg');
+          color: #777;
+          font-weight: bold;
+          float: right;
+          margin-left: 5px;
+        }
+        &.active {
+          &:after {
+            content: url('../../../../images/accordion_active.svg');
+          }
+        }
+      }
+    }
+
+  
+    
+    .panel {
+      padding: 0;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.2s ease-out;
+      * {
+        font-size: 18px;
+        font-weight: normal;
+        line-height: 1.44;
+        text-align: left;
+        color: #32323c;
+        margin-bottom: 0;
+        padding: 30px 0;
+      }
+    }
+  }
+  &.style2 {
+    .imp-accordion-lists {
+      display: grid;
+      grid-gap: 1.25rem;
+      grid-auto-flow: row dense;
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: 0 30px;
+      .imp-accordion-list {
+        position: relative;
+        display: flex;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        border-radius: 6px;
+        border: solid 1px #e5e7ec;
+        min-height: 222px;
+        max-height: 222px;
+        margin-bottom: 30px;
+      }
+    }
+  }
+}

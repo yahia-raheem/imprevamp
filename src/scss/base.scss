@@ -11,6 +11,7 @@
 }
 
 // @import "./base/normalize";
+@import "./base/reset";
 
 // Bootstrap customization
 @import "../../node_modules/bootstrap/scss/functions";
@@ -23,6 +24,7 @@
 @import "../../node_modules/bootstrap/scss/reboot";
 
 @import "../../node_modules/bootstrap/scss/bootstrap-grid.scss";
+@import "../../node_modules/bootstrap/scss/nav";
 
 @import "../../node_modules/@splidejs/splide/src/css/themes/default/index.scss";
 
@@ -38,6 +40,8 @@
 @import "./components/footer";
 @import "./components/widgets";
 @import "./components/single_post";
+@import "./components/page-title";
+@import "./components/single-course";
 
 // fonts
 @import "./base/font-face";

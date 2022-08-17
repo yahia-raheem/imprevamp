@@ -76,7 +76,10 @@ class IMPCourse
         if (is_null(self::$_current)) {
             return false;
         }
-        $args = array('post_parent' => $this->courseId);
+        $args = array(
+            'post_parent' => $this->courseId,
+            'post_type' => 'lecture'
+        );
         return get_children($args);
     }
 
@@ -138,7 +141,15 @@ class IMPCourse
 		}
 	}
 
-    	//Menu popup button
+    public static function imp_string_limit_words($string, $word_limit) {
+        $words = explode(' ', $string, ($word_limit + 1));
+        if(count($words) > $word_limit) {
+            array_pop($words);
+        }
+        return implode(' ', $words);
+    }
+
+    //Menu popup button
 	public static function icon_popup_menu() {
 		?>
 		<div class="imp-side-menu-wrapper">

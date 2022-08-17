@@ -1,0 +1,41 @@
+.cps-page-title-wrapper {
+    position: relative;
+    padding-block: 120px;
+    background-size: cover;
+    background-position: center;
+    .title-wrapper-bg-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #21225F;
+        opacity: 0.9;
+        z-index: 1;
+    }
+    .cps-page-title-block {
+        position: relative;
+        text-align: center;
+        z-index: 111;
+        .cps-entry-title {
+            font-size: 36px;
+            color: h.$white;
+            margin-block-end: 30px;
+        }
+    }
+    .cps-breadcrumb-wrapper {
+        .cps-crumbs-wrapper {
+            font-size: h.$font-size-18;
+            color: h.$white;
+            a {
+                color: h.$white;
+                &:hover {
+                    color: h.$primary;
+                }
+            }
+            .current {
+                color: h.$primary;
+            }
+        }
+    }
+}

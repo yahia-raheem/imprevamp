@@ -202,3 +202,57 @@ function imp_register_lectures()
 
     register_post_type('lecture', $args);
 }
+
+add_action( 'init', 'imp_register_courses_category' );
+function imp_register_courses_category() {
+	$labels = [
+		'name'                       => esc_html__( 'Course Categories', 'imp' ),
+		'singular_name'              => esc_html__( 'Course Category', 'imp' ),
+		'menu_name'                  => esc_html__( 'Course Categories', 'imp' ),
+		'search_items'               => esc_html__( 'Search Course Categories', 'imp' ),
+		'popular_items'              => esc_html__( 'Popular Course Categories', 'imp' ),
+		'all_items'                  => esc_html__( 'All Course Categories', 'imp' ),
+		'parent_item'                => esc_html__( 'Parent Course Category', 'imp' ),
+		'parent_item_colon'          => esc_html__( 'Parent Course Category', 'imp' ),
+		'edit_item'                  => esc_html__( 'Edit Course Category', 'imp' ),
+		'view_item'                  => esc_html__( 'View Course Category', 'imp' ),
+		'update_item'                => esc_html__( 'Update Course Category', 'imp' ),
+		'add_new_item'               => esc_html__( 'Add new course category', 'imp' ),
+		'new_item_name'              => esc_html__( 'New course category name', 'imp' ),
+		'separate_items_with_commas' => esc_html__( 'Separate course categories with commas', 'imp' ),
+		'add_or_remove_items'        => esc_html__( 'Add or remove course categories', 'imp' ),
+		'choose_from_most_used'      => esc_html__( 'Choose most used course categories', 'imp' ),
+		'not_found'                  => esc_html__( 'No course categories found', 'imp' ),
+		'no_terms'                   => esc_html__( 'No Course Categories', 'imp' ),
+		'filter_by_item'             => esc_html__( 'Filter by course category', 'imp' ),
+		'items_list_navigation'      => esc_html__( 'Course categories list pagination', 'imp' ),
+		'items_list'                 => esc_html__( 'Course Categories list', 'imp' ),
+		'most_used'                  => esc_html__( 'Most Used', 'imp' ),
+		'back_to_items'              => esc_html__( 'Back to course categories', 'imp' ),
+		'text_domain'                => esc_html__( 'imp', 'imp' ),
+	];
+	$args = [
+		'label'              => esc_html__( 'Course Categories', 'imp' ),
+		'labels'             => $labels,
+		'description'        => '',
+		'public'             => true,
+		'publicly_queryable' => true,
+		'hierarchical'       => false,
+		'show_ui'            => true,
+		'show_in_menu'       => true,
+		'show_in_nav_menus'  => true,
+		'show_in_rest'       => true,
+		'show_tagcloud'      => true,
+		'show_in_quick_edit' => true,
+		'show_admin_column'  => false,
+		'query_var'          => true,
+		'sort'               => false,
+		'meta_box_cb'        => 'post_tags_meta_box',
+		'rest_base'          => '',
+		'rewrite'            => [
+			'with_front'   => false,
+			'hierarchical' => false,
+		],
+	];
+	register_taxonomy( 'course-category', ['course'], $args );
+}

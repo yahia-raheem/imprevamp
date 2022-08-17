@@ -58,10 +58,10 @@
                         <div class="imp-header-auth">
                             <a href="#" class="imp-header-log-in">
                                 <i class="fa-regular fa-user"></i>
-                                <span>Log in</span>
+                                <span><?php echo esc_html__( 'Log in', 'imp' )?></span>
                             </a>
                             <a href="#" class="btn btn-default imp-header-sign-up">
-                                <span>Sign up</span>
+                                <span><?php echo esc_html__( 'Sign up', 'imp' )?></span>
                             </a>
                         </div>
                     </div>
