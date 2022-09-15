@@ -2,4 +2,9 @@
     position: relative;
     border-top: 1px solid #ccc;
     padding: 63px 0 25px;
+    .col-sm-12 {
+        @include h.media('<740px') {
+            margin-block-end: 30px;
+        }
+    }
 }

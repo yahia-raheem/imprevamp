@@ -2,12 +2,18 @@
 
 .single-course {
   margin-block-start: 30px;
+  .container {
+    padding: 0 10px;
+  }
   .nav-pills {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     margin: 0 0 50px;
     border-bottom: 0;
     background-color: #f0f4fa;
+    @include h.media("<sm") {
+      grid-template-columns: repeat(2, 1fr);
+    }
     li {
       button {
         width: 100%;
@@ -32,6 +38,14 @@
   .tab-content {
     .tab-pane {
       padding-block-start: 30px;
+              h1, h2, h3, h4, h5, h6 {
+          margin-block-end: 15px;
+        }
+        ul {
+          margin-block-end: 15px !important;
+          display: inline-block;
+          width: 100%;
+        }
       .imp-accordion-list {
         position: relative;
         margin: 0 0 15px;

@@ -3,10 +3,6 @@ $postId = $args['post_id'];
 $term_list = wp_get_post_terms($postId, 'blog-category');
 ?>
 <div class="news-card">
-    <div class="news-image img-container">
-        <a href="<?php echo get_the_permalink($postId); ?>" class="clickable-space"></a>
-        <?php echo wp_get_attachment_image(get_post_thumbnail_id($postId), 'large', false, ['class' => 'bg-image']); ?>
-    </div>
     <div class="content">
         <div class="meta">
             <div class="date">
@@ -14,14 +10,11 @@ $term_list = wp_get_post_terms($postId, 'blog-category');
                 <?php echo get_the_date('F j,Y', $postId); ?>
             </div>
             <div class="sep">/</div>
-            <div class="category">
-                <i class="fa-solid fa-tag"></i>
-                <?php echo $term_list[0]->name; ?>
-            </div>
         </div>
 
         <h3 class="title"><?php echo get_the_title($postId); ?></h3>
-        <p class="excerpt"><?php echo get_the_excerpt($postId); ?></p>
+        <p class="excerpt">
+        <?php echo imp_string_limit_words(get_the_excerpt(), 25);?> &hellip;</p>
         <a href="<?php echo get_the_permalink($postId); ?>" class="read-more"><?php _e('Read More', 'imp'); ?></a>
     </div>
 </div>

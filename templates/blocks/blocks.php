@@ -14,3 +14,4 @@ require_once THEME_DIR . '/templates/blocks/course-sidebar/course-sidebar.php';
 require_once THEME_DIR . '/templates/blocks/course-tabs/course-tabs.php';
 require_once THEME_DIR . '/templates/blocks/accordion/accordion.php';
 require_once THEME_DIR . '/templates/blocks/about-header/about-header.php';
+require_once THEME_DIR . '/templates/blocks/payment/payment.php';

@@ -1,6 +1,10 @@
 .imp-layout-header {
-    background-color: #2f4371;
+    background-color: #FFF;
     padding: 15px 0 0px;
+    border-bottom: 2px solid hsl(0deg, 0%, 87%);
+    @include h.media('>740px') {
+      // background-color: #21225F;
+    }
     .imp-layout-header--container {
       @include h.media('<740px') {
         display: none;
@@ -15,7 +19,99 @@
         justify-content: space-between;
         padding-block-end: 15px;
         margin-block-end: 15px;
-        border-bottom: 1px SOlid rgba(255,255,255,.15);
+        border-bottom: 1px solid hsl(0deg 0% 87%);
+        .imp-header--start {
+          position: relative;
+          .imp-language-action {
+            display: flex;
+            align-items: center;
+            align-content: center;
+            background-color: #2a3c61;
+            font-size: h.$font-size-14;
+            padding: 10px 23px;
+            border-radius: 3px;
+            o-transition: all .4s ease-out;
+            -ms-transition: all .4s ease-out;
+            -moz-transition: all .4s ease-out;
+            -webkit-transition: all .4s ease-out;
+            transition: all .4s ease-out;
+            &:hover {
+              background-color: h.$white;
+              color: h.$primary;
+              o-transition: all .4s ease-out;
+              -ms-transition: all .4s ease-out;
+              -moz-transition: all .4s ease-out;
+              -webkit-transition: all .4s ease-out;
+              transition: all .4s ease-out;
+            }
+          }
+          .imp-language-menu {
+            position: absolute;
+            top: 55px;
+            left: 0;
+            background-color: h.$white;
+            border-radius: 3px;
+            z-index: 11;
+            padding: 10px 15px;
+            max-width: 200px;
+            width: 200px;
+            opacity: 0;
+            visibility: hidden;
+            .imp-languages-switcher {
+              margin: 10px 0;
+              a {
+                span {
+                  color: h.$black;
+                  font-size: h.$font-size-14;
+                }
+                &:hover {
+                  span {
+                    color: h.$primary;
+                  }
+                }
+              }
+            }
+            &.active {
+              opacity: 1;
+              visibility: visible;
+            }
+          }
+          .imp-languages-switcher {
+            a {
+              font-size: 14px;
+              height: inherit;
+              line-height: inherit;
+              text-decoration: none;
+              background: #fea203;
+              padding: 8px 20px;
+              border-radius: 3px;
+              color: #FFF;
+              font-weight: 600;
+              position: relative;
+              overflow: hidden;
+              display: flex;
+              &::before {
+                content: "";
+                transition: all 0.5s;
+                transform: translateX(-100%);
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                background-color: #e79201;
+              }
+              &:hover::before {
+                transform: translateX(0);
+              }
+            
+              * {
+                position: relative;
+                z-index: 1;
+              }
+            }
+          }
+        }
         .imp-header--end {
           display: flex;
           align-items: center;
@@ -44,7 +140,7 @@
               li {
                 margin-inline-end: 10px;
                 a {
-                  color: h.$white;
+                  color: #2f4371;
                   &:hover {
                     color: h.$primary;
                   }
@@ -66,19 +162,20 @@
               box-sizing: border-box;
               background: transparent;
               li {
+                position: relative;
                 display: block;
                 float: left;
                 height: inherit;
                 a {
                   position: relative;
                   display: inline-block;
-                  margin: 0px 10px;
+                  margin: 10px 10px;
                   font-size: 12px;
                   font-weight: 400;
                   height: inherit;
                   line-height: inherit;
                   text-decoration: none;
-                  color: rgba(255,255,255,.5);
+                  color: #2f4371;
                   
                   i {
                     margin-right: 10px;
@@ -120,6 +217,8 @@
                   -webkit-transform: translateY(20px);
                   -ms-transform: translateY(20px);
                   transform: translateY(20px);
+                  z-index: 1111;
+                  background: #FFF;
                   
                   li {
                     position: relative;
@@ -131,8 +230,8 @@
                     a {
                       display: inline-block;
                       width: 100%;
-                      padding: 15px;
-                      font-size: 14px;
+                      padding: 5px 15px;
+                      font-size: 12px;
                       font-weight: 500;
                       text-transform: capitalize;
                       color: h.$gray;
@@ -211,7 +310,7 @@
                     &:after {
                       content: "";
                       position: absolute;
-                      top: 40%;
+                      top: 2px;
                       right: 17px;
                       width: 6px;
                       height: 6px;
@@ -348,7 +447,7 @@
             transition: all 0.3s ease-out;
             img {
               height: auto;
-              width: 80%;
+              width: 31%;
               -webkit-transition: opacity 0.2s ease;
               -moz-transition: opacity 0.2s ease;
               transition: opacity 0.2s ease;
@@ -455,7 +554,7 @@
             .imp-header-log-in {
               margin-inline-start: 30px;
               &:hover {
-                color: h.$white;
+                color: h.$black;
               }
             }
             .imp-header-sign-up {
@@ -472,6 +571,7 @@
             }
           }
         }
+
       }
       &.sticky {
         position: fixed;
@@ -567,7 +667,7 @@
                     li {
                       a {
                         font-size: 18px;
-                        color: h.$white;
+                        color: #000;
                         font-weight: 500;
                         padding: 0;
                       }
@@ -575,12 +675,17 @@
                   } //fullscreen-menu-wrap
                 }
                 .imp-languages-switcher {
-                  padding-bottom: 40px;
-                  border-bottom: 1px solid rgba(h.$white, 0.22);
+                  padding: 10px 30px;
                   a {
                     span {
                       font-size: 18px;
-                      color: h.$white;
+                      color: #000;
+                      font-weight: bold;
+                    }
+                    &:focus {
+                      span {
+                        color: h.$primary;
+                      }
                     }
                   }
                 }
@@ -591,6 +696,13 @@
                 }
                 .imp-button-text {
                   margin-left: 0px;
+                }
+              }
+              .imp-language-action {
+                span {
+                  display: block;
+                  font-size: h.$font-size-20;
+                  margin-block-end: 20px;
                 }
               }
               .imp-footer-sidebar {
@@ -639,7 +751,7 @@
               left: 0;
               height: 2px;
               width: 100%;
-              background-color: h.$white;
+              background-color: #21225F;
               border-radius: 12px;
               o-transition: all 0.3s ease-out;
               -ms-transition: all 0.3s ease-out;
@@ -650,7 +762,7 @@
                 top: 0px;
               }
               &.imp-line-2 {
-                top: 50%;
+                top: 49%;
               }
               &.imp-line-3 {
                 top: calc(100% - 2px);
@@ -731,7 +843,7 @@
             position: relative;
             display: inline-block;
             vertical-align: middle;
-            color: h.$white;
+            color: #000;
           }
         }
         .imp-sidebar-logo {
@@ -932,7 +1044,7 @@
           visibility: visible;
           opacity: 0.9;
           pointer-events: initial;
-          background: h.$theme-black;
+          background: #f5f5f5;
         }
       }
     } //imp-sidebar-navigation

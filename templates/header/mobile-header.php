@@ -4,7 +4,7 @@
 		<div class="imp-logo-aria">
 			<a class="navbar-logo header_logo_light" href="<?php echo esc_url(home_url( '/' )); ?>">
 				<img alt="<?php echo esc_attr(get_bloginfo('name')); ?>" title="<?php echo esc_attr(get_bloginfo('name')); ?>"
-					class="main-logo" src="<?php echo THEME_DIR_URI. '/src/images/logo.webp'; ?>"/>
+					class="main-logo" src="<?php echo THEME_DIR_URI. '/src/images/logo.png'; ?>"/>
 			</a>
 		</div>
 		<div class="sidebar-button">

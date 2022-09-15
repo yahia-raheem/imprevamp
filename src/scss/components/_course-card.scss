@@ -67,6 +67,10 @@
         font-size: 18px;
         color: h.$primary;
         font-weight: 600;
+        padding: 6px 0;
+        &.discounted {
+          padding: 0;
+        }
       }
     }
 

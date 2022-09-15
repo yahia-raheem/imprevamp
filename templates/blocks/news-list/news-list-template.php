@@ -24,7 +24,11 @@ $numOfPosts = mb_get_block_field('number_of_posts');
 
 
 $args = [
-    'post_type' => 'post',
+    'offset' => 0,
+    'orderby' => 'date',
+    'post_type' => 'blog',
+    'post_status' => 'publish',
+    'suppress_filters' => false
 ];
 if (($numOfPosts != -1 || $filter == 'all') && $filter != 'custom') {
     $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
@@ -37,7 +41,7 @@ if ($filter == 'category' && count($categories) != 0) {
     );
     foreach ($categories as $category) {
         $args['tax_query'][] = array(
-            'taxonomy' => 'category',
+            'taxonomy' => 'blog-category',
             'terms'    => $category->term_id
         );
     }

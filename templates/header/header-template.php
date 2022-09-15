@@ -31,16 +31,22 @@
                         </nav>
                         
                         <div class="imp-dropdown-header-dots">
-                            <ul class="imp-header-social-media">
-                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                                <li><a href="#"><i class="fab fa-behance"></i></a></li>
-                                <li><a href="#"><i class="fab fa-dribbble"></i></a></li>
-                                <li><a href="#"><i class="fab fa-flickr"></i></a></li>
-                                <li><a href="#"><i class="fab fa-git"></i></a></li>
-                                <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
-                                <li><a href="#"><i class="fab fa-pinterest"></i></a></li>
-                            </ul>
+                            <div class="imp-social-icon-wrapper">
+                                <ul class="imp-header-social-media">
+                                    <?php
+                                    $social_links = IMPOptions::get('header--social_links');
+                                    foreach ($social_links as $key => $social_link) {
+                                        if ($social_link) { ?>
+                                        <?php if ($key == 'link' || $key == 'envelope' || $key == 'map' || $key == 'map-marker-alt' ) { $icon_class = 'fas'; } else { $icon_class = 'fab'; } ?>
+                                        <li class="<?php echo esc_attr($key); ?>">
+                                            <a href="<?php echo esc_url(IMPOptions::get('social--' . $key)); ?>" target="_blank" class="social-links">
+                                                <i class="<?php echo esc_attr($icon_class);?>  fa-<?php echo esc_attr($key); ?>"></i>
+                                            </a>
+                                        </li>
+                                        <?php }
+                                    } ?>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -48,7 +54,7 @@
                     <div class="imp-header-bottom--logo">
                         <a class="navbar-logo header_logo_light" href="<?php echo esc_url(home_url( '/' )); ?>">
                             <img alt="<?php echo esc_attr(get_bloginfo('name')); ?>" title="<?php echo esc_attr(get_bloginfo('name')); ?>"
-                            class="main-logo" src="<?php echo THEME_DIR_URI. '/src/images/logo.webp'; ?>"/>
+                            class="main-logo" src="<?php echo THEME_DIR_URI. '/src/images/logo.png'; ?>"/>
                         </a>
                     </div>
                     <div class="imp-header-bottom--search">
@@ -56,12 +62,9 @@
                     </div>
                     <div class="imp-header-bottom--auth">
                         <div class="imp-header-auth">
-                            <a href="#" class="imp-header-log-in">
+                            <a target="_blank" href="https://lms.imanagementpro.com/login/index.php" class="imp-header-log-in">
                                 <i class="fa-regular fa-user"></i>
                                 <span><?php echo esc_html__( 'Log in', 'imp' )?></span>
-                            </a>
-                            <a href="#" class="btn btn-default imp-header-sign-up">
-                                <span><?php echo esc_html__( 'Sign up', 'imp' )?></span>
                             </a>
                         </div>
                     </div>

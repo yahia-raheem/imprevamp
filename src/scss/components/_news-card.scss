@@ -5,6 +5,7 @@
   position: relative;
   box-shadow: rgb(0 0 0 / 6%) 0 0 15px;
   transition: all 0.7s;
+  margin-block-end: 15px;
 
   &:hover {
     transform: translateY(-10px);

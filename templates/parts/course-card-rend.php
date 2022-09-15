@@ -1,6 +1,5 @@
 <?php
-$course = IMPCourse::get_current();
-if ($course instanceof IMPCourse) :
+$course = IMPCourse::init_by_id(get_the_ID());
 ?>
     <div class="course-card">
         <div class="course-image img-container">
@@ -56,6 +55,4 @@ if ($course instanceof IMPCourse) :
         </div>
     </div>
 <?php
-else : return;
-endif;
 ?>

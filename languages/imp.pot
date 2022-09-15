@@ -1,0 +1,4228 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: cps\n"
+"POT-Creation-Date: 2022-09-15 02:43+0200\n"
+"PO-Revision-Date: 2016-07-02 14:37+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.1.1\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: classes/Options.php:87 classes/Options.php:88
+msgid "Theme options"
+msgstr ""
+
+#: classes/Options.php:177 classes/Options.php:187
+msgid "Page options"
+msgstr ""
+
+#: classes/Options.php:198
+msgid "Team options"
+msgstr ""
+
+#: classes/Options.php:209
+msgid "Course options"
+msgstr ""
+
+#: classes/Theme.php:34 templates/blocks/imp-banner/imp-banner.php:43
+msgid "Custom Link"
+msgstr ""
+
+#: classes/Theme.php:35
+msgid "Mail"
+msgstr ""
+
+#: classes/Theme.php:36
+msgid "Map"
+msgstr ""
+
+#: classes/Theme.php:37
+msgid "Map marker"
+msgstr ""
+
+#: classes/Theme.php:38
+msgid "Facebook"
+msgstr ""
+
+#: classes/Theme.php:39
+msgid "Twitter"
+msgstr ""
+
+#: classes/Theme.php:40
+msgid "Instagram"
+msgstr ""
+
+#: classes/Theme.php:41
+msgid "Google+"
+msgstr ""
+
+#: classes/Theme.php:42
+msgid "YouTube"
+msgstr ""
+
+#: classes/Theme.php:43
+msgid "Tumblr"
+msgstr ""
+
+#: classes/Theme.php:44
+msgid "Pinterest"
+msgstr ""
+
+#: classes/Theme.php:45
+msgid "LinkedIn"
+msgstr ""
+
+#: classes/Theme.php:46
+msgid "Dribbble"
+msgstr ""
+
+#: classes/Theme.php:47
+msgid "Vimeo"
+msgstr ""
+
+#: classes/Theme.php:48
+msgid "WhatsApp"
+msgstr ""
+
+#: classes/Theme.php:49
+msgid "Telegram"
+msgstr ""
+
+#: classes/Theme.php:50
+msgid "Behance"
+msgstr ""
+
+#: classes/Theme.php:51
+msgid "Flickr"
+msgstr ""
+
+#: classes/Theme.php:52
+msgid "Skype"
+msgstr ""
+
+#: classes/Theme.php:53
+msgid "Medium"
+msgstr ""
+
+#: classes/Theme.php:54
+msgid "VK"
+msgstr ""
+
+#: classes/Theme.php:55
+msgid "Odnoklassniki"
+msgstr ""
+
+#: classes/Theme.php:56
+msgid "FourSquare"
+msgstr ""
+
+#: classes/Theme.php:57
+msgid "WordPress"
+msgstr ""
+
+#: classes/Theme.php:58
+msgid "StumbleUpon"
+msgstr ""
+
+#: classes/Theme.php:59
+msgid "SoundCloud"
+msgstr ""
+
+#: classes/Theme.php:60
+msgid "Vine"
+msgstr ""
+
+#: classes/Theme.php:61
+msgid "GitHub"
+msgstr ""
+
+#: classes/Theme.php:62
+msgid "Bitbucket"
+msgstr ""
+
+#: classes/Theme.php:63
+msgid "Twitch"
+msgstr ""
+
+#: classes/Theme.php:64
+msgid "Weibo"
+msgstr ""
+
+#: classes/Theme.php:65
+msgid "Tecent Weibo"
+msgstr ""
+
+#: classes/Theme.php:66
+msgid "RenRen"
+msgstr ""
+
+#: classes/Theme.php:67
+msgid "Xing"
+msgstr ""
+
+#: classes/Theme.php:68
+msgid "TripAdvisor"
+msgstr ""
+
+#: classes/course.php:150
+msgid "Language"
+msgstr ""
+
+#: classes/course.php:203
+msgid "Share"
+msgstr ""
+
+#: classes/menu.php:165
+#, php-format
+msgid "%s (Invalid)"
+msgstr ""
+
+#: classes/menu.php:169
+#, php-format
+msgid "%s (Pending)"
+msgstr ""
+
+#: classes/menu.php:178
+msgid "sub item"
+msgstr ""
+
+#: classes/menu.php:193
+msgid "Move up"
+msgstr ""
+
+#: classes/menu.php:206
+msgid "Move down"
+msgstr ""
+
+#: classes/menu.php:208 classes/menu.php:210
+msgid "Edit Menu Item"
+msgstr ""
+
+#: classes/menu.php:219
+msgid "URL"
+msgstr ""
+
+#: classes/menu.php:226
+msgid "Navigation Label"
+msgstr ""
+
+#: classes/menu.php:232
+msgid "Title Attribute"
+msgstr ""
+
+#: classes/menu.php:239
+msgid "Open link in a new window/tab"
+msgstr ""
+
+#: classes/menu.php:244
+msgid "CSS Classes (optional)"
+msgstr ""
+
+#: classes/menu.php:250
+msgid "Link Relationship (XFN)"
+msgstr ""
+
+#: classes/menu.php:256 templates/blocks/about-header/about-header.php:42
+#: templates/blocks/accordion/accordion.php:46
+#: templates/blocks/course-tabs/course-tabs.php:55
+#: templates/blocks/course-tabs/course-tabs.php:92
+#: templates/blocks/course-tabs/course-tabs.php:108
+msgid "Description"
+msgstr ""
+
+#: classes/menu.php:258
+msgid ""
+"The description will be displayed in the menu if the current theme supports "
+"it."
+msgstr ""
+
+#: classes/menu.php:264
+msgid "Move"
+msgstr ""
+
+#: classes/menu.php:265
+msgid "Up one"
+msgstr ""
+
+#: classes/menu.php:266
+msgid "Down one"
+msgstr ""
+
+#: classes/menu.php:269
+msgid "To the top"
+msgstr ""
+
+#: classes/menu.php:305
+msgid "Create Mega Menu for this item"
+msgstr ""
+
+#: classes/menu.php:321
+msgid "New"
+msgstr ""
+
+#: classes/menu.php:336
+msgid "Open Sub Menu On The Left"
+msgstr ""
+
+#: classes/menu.php:351
+msgid "Remove Link"
+msgstr ""
+
+#: classes/menu.php:360
+#, php-format
+msgid "Original: %s"
+msgstr ""
+
+#: classes/menu.php:373
+msgid "Remove"
+msgstr ""
+
+#: classes/menu.php:374
+msgid "Cancel"
+msgstr ""
+
+#: classes/options/bottom_footer.php:4
+msgid "Bottom footer"
+msgstr ""
+
+#: classes/options/bottom_footer.php:10 classes/options/footer.php:181
+msgid "Bottom footer settings"
+msgstr ""
+
+#: classes/options/bottom_footer.php:16 classes/options/footer.php:63
+#: classes/options/footer.php:187 classes/options/metaboxes/title_wrapper.php:9
+#: classes/options/title_wrapper.php:10
+msgid "Enable this layout part?"
+msgstr ""
+
+#: classes/options/bottom_footer.php:17 classes/options/footer.php:64
+#: classes/options/footer.php:188
+#: classes/options/metaboxes/title_wrapper.php:10
+#: classes/options/title_wrapper.php:11
+msgid "If on, this layout part will be displayed."
+msgstr ""
+
+#: classes/options/bottom_footer.php:24 classes/options/footer.php:212
+msgid "Left area columns"
+msgstr ""
+
+#: classes/options/bottom_footer.php:25 classes/options/footer.php:213
+msgid "Define columns number of bottom footer left area."
+msgstr ""
+
+#: classes/options/bottom_footer.php:35 classes/options/footer.php:298
+msgid "Right area columns"
+msgstr ""
+
+#: classes/options/bottom_footer.php:36 classes/options/footer.php:299
+msgid "Define columns number of bottom footer right area."
+msgstr ""
+
+#: classes/options/bottom_footer.php:46 classes/options/footer.php:223
+#: classes/options/footer.php:265 classes/options/footer.php:309
+msgid "Menu"
+msgstr ""
+
+#: classes/options/bottom_footer.php:47 classes/options/footer.php:224
+#: classes/options/footer.php:266 classes/options/footer.php:310
+msgid "If on, menu will be displayed."
+msgstr ""
+
+#: classes/options/bottom_footer.php:54 classes/options/footer.php:231
+#: classes/options/footer.php:274 classes/options/footer.php:318
+msgid "Text module"
+msgstr ""
+
+#: classes/options/bottom_footer.php:55 classes/options/footer.php:232
+#: classes/options/footer.php:275 classes/options/footer.php:319
+msgid "If on, a rich text module will be displayed."
+msgstr ""
+
+#: classes/options/bottom_footer.php:62 classes/options/footer.php:348
+msgid "Text module content"
+msgstr ""
+
+#: classes/options/bottom_footer.php:63 classes/options/bottom_footer.php:72
+#: classes/options/footer.php:349 classes/options/footer.php:356
+msgid "Place any text to be displayed in bottom footer."
+msgstr ""
+
+#: classes/options/bottom_footer.php:71 classes/options/footer.php:355
+msgid "Text module content AR"
+msgstr ""
+
+#: classes/options/bottom_footer.php:79 classes/options/footer.php:239
+#: classes/options/footer.php:282 classes/options/footer.php:326
+msgid "Social module"
+msgstr ""
+
+#: classes/options/bottom_footer.php:80 classes/options/footer.php:240
+#: classes/options/footer.php:283 classes/options/footer.php:327
+msgid "If on, a social icon module will be displayed."
+msgstr ""
+
+#: classes/options/bottom_footer.php:88 classes/options/content.php:18
+#: classes/options/footer.php:363 classes/options/social.php:13
+msgid "Social links"
+msgstr ""
+
+#: classes/options/bottom_footer.php:89 classes/options/content.php:19
+#: classes/options/footer.php:364
+msgid "Enable social links to be displayed."
+msgstr ""
+
+#: classes/options/bottom_footer.php:128 classes/options/footer.php:373
+msgid "Bottom footer styles"
+msgstr ""
+
+#: classes/options/bottom_footer.php:134 classes/options/footer.php:71
+#: classes/options/footer.php:195
+msgid "Color Scheme"
+msgstr ""
+
+#: classes/options/bottom_footer.php:136 classes/options/footer.php:73
+#: classes/options/footer.php:197
+msgid "Light"
+msgstr ""
+
+#: classes/options/bottom_footer.php:137 classes/options/footer.php:74
+#: classes/options/footer.php:198
+msgid "Dark"
+msgstr ""
+
+#: classes/options/bottom_footer.php:145
+msgid "First area align"
+msgstr ""
+
+#: classes/options/bottom_footer.php:147 classes/options/bottom_footer.php:159
+#: classes/options/footer.php:381 classes/options/footer.php:393
+#: classes/options/footer.php:405 classes/options/title_wrapper.php:43
+msgid "Left"
+msgstr ""
+
+#: classes/options/bottom_footer.php:148 classes/options/bottom_footer.php:160
+#: classes/options/footer.php:382 classes/options/footer.php:394
+#: classes/options/footer.php:406 classes/options/title_wrapper.php:44
+msgid "Center"
+msgstr ""
+
+#: classes/options/bottom_footer.php:149 classes/options/bottom_footer.php:161
+#: classes/options/footer.php:383 classes/options/footer.php:395
+#: classes/options/footer.php:407 classes/options/title_wrapper.php:45
+msgid "Right"
+msgstr ""
+
+#: classes/options/bottom_footer.php:157
+msgid "Second area align"
+msgstr ""
+
+#: classes/options/bottom_footer.php:169 classes/options/footer.php:415
+msgid "Bottom footer border"
+msgstr ""
+
+#: classes/options/bottom_footer.php:170 classes/options/footer.php:416
+msgid "Select a custom border to be applied in the bottom footer."
+msgstr ""
+
+#: classes/options/bottom_footer.php:180 classes/options/footer.php:426
+msgid "Bottom footer padding"
+msgstr ""
+
+#: classes/options/bottom_footer.php:187 classes/options/footer.php:433
+msgid "Bottom footer background"
+msgstr ""
+
+#: classes/options/content.php:11
+msgid "Content settings"
+msgstr ""
+
+#: classes/options/content.php:27
+msgid "Content padding"
+msgstr ""
+
+#: classes/options/content.php:36
+msgid "Content background"
+msgstr ""
+
+#: classes/options/custom.php:4 classes/options/metaboxes/custom.php:3
+msgid "Custom CSS/JS"
+msgstr ""
+
+#: classes/options/custom.php:11 classes/options/metaboxes/custom.php:9
+msgid "CSS code"
+msgstr ""
+
+#: classes/options/custom.php:12
+msgid ""
+"Insert your custom CSS code here. It will be displayed globally in the "
+"website."
+msgstr ""
+
+#: classes/options/custom.php:20 classes/options/metaboxes/custom.php:18
+msgid "JS code"
+msgstr ""
+
+#: classes/options/custom.php:21
+msgid ""
+"Insert your custom JS code here, e.g. Google Analytics code or whatever you "
+"want. It will be displayed globally in the website."
+msgstr ""
+
+#: classes/options/custom.php:29 classes/options/metaboxes/custom.php:27
+msgid "Head link tags"
+msgstr ""
+
+#: classes/options/custom.php:30
+msgid ""
+"Insert your custom tags to be displayed in the head, e.g. Google Fonts link "
+"tags and others."
+msgstr ""
+
+#: classes/options/custom.php:38 classes/options/metaboxes/custom.php:35
+msgid "HTML code"
+msgstr ""
+
+#: classes/options/custom.php:39 classes/options/metaboxes/custom.php:36
+msgid "Insert your custom HTML to be append after footer."
+msgstr ""
+
+#: classes/options/footer.php:4
+msgid "Footer"
+msgstr ""
+
+#: classes/options/footer.php:11
+msgid "General setting"
+msgstr ""
+
+#: classes/options/footer.php:39
+msgid "Fixed footer"
+msgstr ""
+
+#: classes/options/footer.php:40 classes/options/footer.php:48
+msgid ""
+"If on, footer and bottom footer will be fixed at screen bottom on page "
+"scroll."
+msgstr ""
+
+#: classes/options/footer.php:47
+msgid "Wide footer"
+msgstr ""
+
+#: classes/options/footer.php:57
+msgid "Top Footer settings"
+msgstr ""
+
+#: classes/options/footer.php:82
+msgid "#1 column width"
+msgstr ""
+
+#: classes/options/footer.php:83 classes/options/footer.php:94
+#: classes/options/footer.php:105 classes/options/footer.php:116
+#: classes/options/footer.php:127 classes/options/footer.php:138
+msgid "Define column width, max is 12 parts, set as 0 to disable this area."
+msgstr ""
+
+#: classes/options/footer.php:93
+msgid "#2 column width"
+msgstr ""
+
+#: classes/options/footer.php:104
+msgid "#3 column width"
+msgstr ""
+
+#: classes/options/footer.php:115
+msgid "#4 column width"
+msgstr ""
+
+#: classes/options/footer.php:126
+msgid "#5 column width"
+msgstr ""
+
+#: classes/options/footer.php:137
+msgid "#6 column width"
+msgstr ""
+
+#: classes/options/footer.php:149
+msgid "Top Footer styles"
+msgstr ""
+
+#: classes/options/footer.php:156
+msgid "Top Footer padding"
+msgstr ""
+
+#: classes/options/footer.php:163
+msgid "Top Footer border"
+msgstr ""
+
+#: classes/options/footer.php:164
+msgid "Select a custom border to be applied in the footer."
+msgstr ""
+
+#: classes/options/footer.php:173
+msgid "Top Footer background"
+msgstr ""
+
+#: classes/options/footer.php:205
+msgid "Footer Left Area"
+msgstr ""
+
+#: classes/options/footer.php:206
+msgid "In this section you can find Footer Left Area."
+msgstr ""
+
+#: classes/options/footer.php:247
+msgid "Footer Center Area"
+msgstr ""
+
+#: classes/options/footer.php:248 classes/options/footer.php:334
+msgid "In this section you can find Footer Center Area."
+msgstr ""
+
+#: classes/options/footer.php:255
+msgid "Center area columns"
+msgstr ""
+
+#: classes/options/footer.php:256
+msgid "Define columns number of bottom footer center area."
+msgstr ""
+
+#: classes/options/footer.php:290
+msgid "Footer Right Area"
+msgstr ""
+
+#: classes/options/footer.php:291
+msgid "In this section you can find Footer Right Area."
+msgstr ""
+
+#: classes/options/footer.php:333
+msgid "Footer Value Area"
+msgstr ""
+
+#: classes/options/footer.php:340
+msgid "Bottom Footer menu"
+msgstr ""
+
+#: classes/options/footer.php:341
+msgid "Select a menu to overwrite the Bottom Footer menu location."
+msgstr ""
+
+#: classes/options/footer.php:379
+msgid "Left area align"
+msgstr ""
+
+#: classes/options/footer.php:391
+msgid "Center area align"
+msgstr ""
+
+#: classes/options/footer.php:403
+msgid "Right area align"
+msgstr ""
+
+#: classes/options/metaboxes/custom.php:10
+msgid ""
+"Insert your custom CSS code here. It will be displayed only in this page."
+msgstr ""
+
+#: classes/options/metaboxes/custom.php:19
+msgid ""
+"Insert your custom JS code here, e.g. Google Analytics code or whatever you "
+"want. It will be displayed only in this page."
+msgstr ""
+
+#: classes/options/metaboxes/custom.php:28
+msgid ""
+"Insert your custom tags to be displayed in the head, e.g. Google Fonts "
+"<link> tags and others."
+msgstr ""
+
+#: classes/options/metaboxes/single_career.php:3
+msgid "Career"
+msgstr ""
+
+#: classes/options/metaboxes/single_career.php:4
+msgid "Change career templates and configurations."
+msgstr ""
+
+#: classes/options/metaboxes/single_career.php:9
+msgid "Employment type"
+msgstr ""
+
+#: classes/options/metaboxes/single_career.php:10
+#: classes/options/metaboxes/single_career.php:11
+msgid "Choose Employment type."
+msgstr ""
+
+#: classes/options/metaboxes/single_career.php:17
+msgid "Job Address"
+msgstr ""
+
+#: classes/options/metaboxes/single_career.php:18
+#: classes/options/metaboxes/single_career.php:19
+msgid "Choose Job Address."
+msgstr ""
+
+#: classes/options/metaboxes/single_career.php:25
+msgid "Job Url"
+msgstr ""
+
+#: classes/options/metaboxes/single_career.php:26
+#: classes/options/metaboxes/single_career.php:27
+msgid "Choose Job Url."
+msgstr ""
+
+#: classes/options/metaboxes/single_post.php:3
+msgid "Posts"
+msgstr ""
+
+#: classes/options/metaboxes/single_post.php:4
+msgid "Change posts templates and configurations."
+msgstr ""
+
+#: classes/options/metaboxes/single_post.php:9
+msgid "PDF Link"
+msgstr ""
+
+#: classes/options/metaboxes/single_post.php:10
+msgid "Please Add your PDF link here."
+msgstr ""
+
+#: classes/options/metaboxes/single_team.php:3
+msgid "Team"
+msgstr ""
+
+#: classes/options/metaboxes/single_team.php:4
+msgid "Change team templates and configurations."
+msgstr ""
+
+#: classes/options/metaboxes/single_team.php:9
+msgid "Position"
+msgstr ""
+
+#: classes/options/metaboxes/single_team.php:10
+#: classes/options/metaboxes/single_team.php:11
+msgid "Choose team position."
+msgstr ""
+
+#: classes/options/metaboxes/title_wrapper.php:3
+#: classes/options/title_wrapper.php:4
+msgid "Title wrapper"
+msgstr ""
+
+#: classes/options/metaboxes/title_wrapper.php:4
+msgid "Change the title wrapper section configuration."
+msgstr ""
+
+#: classes/options/metaboxes/title_wrapper.php:12
+msgid "On"
+msgstr ""
+
+#: classes/options/metaboxes/title_wrapper.php:13
+msgid "Default"
+msgstr ""
+
+#: classes/options/metaboxes/title_wrapper.php:14
+msgid "Off"
+msgstr ""
+
+#: classes/options/title_wrapper.php:18
+msgid "Full viewport height"
+msgstr ""
+
+#: classes/options/title_wrapper.php:19
+msgid "If on, title wrapper will have same height than viewport/window."
+msgstr ""
+
+#: classes/options/title_wrapper.php:26
+msgid "Description after title"
+msgstr ""
+
+#: classes/options/title_wrapper.php:34
+msgid "Breadcrumb"
+msgstr ""
+
+#: classes/options/title_wrapper.php:41
+msgid "Text align"
+msgstr ""
+
+#: classes/options/title_wrapper.php:53
+msgid "Title wrapper background"
+msgstr ""
+
+#: comments.php:16
+#, php-format
+msgctxt "comments title"
+msgid "One thought"
+msgid_plural "%1$s thoughts"
+msgstr[0] ""
+msgstr[1] ""
+
+#: comments.php:40
+msgid "Comments are closed."
+msgstr ""
+
+#: comments.php:56
+msgid "Your Comment"
+msgstr ""
+
+#: comments.php:57 comments.php:67 comments.php:83
+#: node_modules/gulp-cli/node_modules/yargs/lib/usage.js:250
+#: node_modules/sass-graph/node_modules/yargs/lib/usage.js:297
+#: node_modules/yargs/build/lib/usage.js:307
+msgid "required"
+msgstr ""
+
+#: comments.php:66
+msgid "Your Name"
+msgstr ""
+
+#: comments.php:82
+msgid "Your Email"
+msgstr ""
+
+#: dist/assets/js/bundle-rtl.js:12 dist/assets/js/bundle.js:12
+msgid "Y"
+msgstr ""
+
+#: functions.php:61
+msgid "IMP - Blocks"
+msgstr ""
+
+#: functions/breadcrumb.php:14
+msgid "Home"
+msgstr ""
+
+#: functions/breadcrumb.php:36
+msgid "Search results for "
+msgstr ""
+
+#: functions/breadcrumb.php:94
+msgid "Posts tagged "
+msgstr ""
+
+#: functions/breadcrumb.php:99
+msgid "Articles posted by "
+msgstr ""
+
+#: functions/breadcrumb.php:102
+msgid "error 404"
+msgstr ""
+
+#: functions/breadcrumb.php:107
+msgid "Page"
+msgstr ""
+
+#: functions/external-helpers.php:101
+msgid "Afghanistan"
+msgstr ""
+
+#: functions/external-helpers.php:102
+msgid "Albania"
+msgstr ""
+
+#: functions/external-helpers.php:103
+msgid "Algeria"
+msgstr ""
+
+#: functions/external-helpers.php:104
+msgid "American Samoa"
+msgstr ""
+
+#: functions/external-helpers.php:105
+msgid "Andorra"
+msgstr ""
+
+#: functions/external-helpers.php:106
+msgid "Angola"
+msgstr ""
+
+#: functions/external-helpers.php:107
+msgid "Anguilla"
+msgstr ""
+
+#: functions/external-helpers.php:108
+msgid "Antarctica"
+msgstr ""
+
+#: functions/external-helpers.php:109
+msgid "Antigua and Barbuda"
+msgstr ""
+
+#: functions/external-helpers.php:110
+msgid "Argentina"
+msgstr ""
+
+#: functions/external-helpers.php:111
+msgid "Armenia"
+msgstr ""
+
+#: functions/external-helpers.php:112
+msgid "Aruba"
+msgstr ""
+
+#: functions/external-helpers.php:113
+msgid "Australia"
+msgstr ""
+
+#: functions/external-helpers.php:114
+msgid "Austria"
+msgstr ""
+
+#: functions/external-helpers.php:115
+msgid "Azerbaijan"
+msgstr ""
+
+#: functions/external-helpers.php:116
+msgid "Bahamas"
+msgstr ""
+
+#: functions/external-helpers.php:117
+msgid "Bahrain"
+msgstr ""
+
+#: functions/external-helpers.php:118
+msgid "Bangladesh"
+msgstr ""
+
+#: functions/external-helpers.php:119
+msgid "Barbados"
+msgstr ""
+
+#: functions/external-helpers.php:120
+msgid "Belarus"
+msgstr ""
+
+#: functions/external-helpers.php:121
+msgid "Belgium"
+msgstr ""
+
+#: functions/external-helpers.php:122
+msgid "Belize"
+msgstr ""
+
+#: functions/external-helpers.php:123
+msgid "Benin"
+msgstr ""
+
+#: functions/external-helpers.php:124
+msgid "Bermuda"
+msgstr ""
+
+#: functions/external-helpers.php:125
+msgid "Bhutan"
+msgstr ""
+
+#: functions/external-helpers.php:126
+msgid "Bolivia"
+msgstr ""
+
+#: functions/external-helpers.php:127
+msgid "Bosnia and Herzegovina"
+msgstr ""
+
+#: functions/external-helpers.php:128
+msgid "Botswana"
+msgstr ""
+
+#: functions/external-helpers.php:129
+msgid "Bouvet Island"
+msgstr ""
+
+#: functions/external-helpers.php:130
+msgid "Brazil"
+msgstr ""
+
+#: functions/external-helpers.php:131
+msgid "British Antarctic Territory"
+msgstr ""
+
+#: functions/external-helpers.php:132
+msgid "British Indian Ocean Territory"
+msgstr ""
+
+#: functions/external-helpers.php:133
+msgid "British Virgin Islands"
+msgstr ""
+
+#: functions/external-helpers.php:134
+msgid "Brunei"
+msgstr ""
+
+#: functions/external-helpers.php:135
+msgid "Bulgaria"
+msgstr ""
+
+#: functions/external-helpers.php:136
+msgid "Burkina Faso"
+msgstr ""
+
+#: functions/external-helpers.php:137
+msgid "Burundi"
+msgstr ""
+
+#: functions/external-helpers.php:138
+msgid "Cambodia"
+msgstr ""
+
+#: functions/external-helpers.php:139
+msgid "Cameroon"
+msgstr ""
+
+#: functions/external-helpers.php:140
+msgid "Canada"
+msgstr ""
+
+#: functions/external-helpers.php:141
+msgid "Canton and Enderbury Islands"
+msgstr ""
+
+#: functions/external-helpers.php:142
+msgid "Cape Verde"
+msgstr ""
+
+#: functions/external-helpers.php:143
+msgid "Cayman Islands"
+msgstr ""
+
+#: functions/external-helpers.php:144
+msgid "Central African Republic"
+msgstr ""
+
+#: functions/external-helpers.php:145
+msgid "Chad"
+msgstr ""
+
+#: functions/external-helpers.php:146
+msgid "Chile"
+msgstr ""
+
+#: functions/external-helpers.php:147
+msgid "China"
+msgstr ""
+
+#: functions/external-helpers.php:148
+msgid "Christmas Island"
+msgstr ""
+
+#: functions/external-helpers.php:149
+msgid "Cocos [Keeling] Islands"
+msgstr ""
+
+#: functions/external-helpers.php:150
+msgid "Colombia"
+msgstr ""
+
+#: functions/external-helpers.php:151
+msgid "Comoros"
+msgstr ""
+
+#: functions/external-helpers.php:152
+msgid "Congo - Brazzaville"
+msgstr ""
+
+#: functions/external-helpers.php:153
+msgid "Congo - Kinshasa"
+msgstr ""
+
+#: functions/external-helpers.php:154
+msgid "Cook Islands"
+msgstr ""
+
+#: functions/external-helpers.php:155
+msgid "Costa Rica"
+msgstr ""
+
+#: functions/external-helpers.php:156
+msgid "Croatia"
+msgstr ""
+
+#: functions/external-helpers.php:157
+msgid "Cuba"
+msgstr ""
+
+#: functions/external-helpers.php:158
+msgid "Cyprus"
+msgstr ""
+
+#: functions/external-helpers.php:159
+msgid "Czech Republic"
+msgstr ""
+
+#: functions/external-helpers.php:160
+msgid "Côte d’Ivoire"
+msgstr ""
+
+#: functions/external-helpers.php:161
+msgid "Denmark"
+msgstr ""
+
+#: functions/external-helpers.php:162
+msgid "Djibouti"
+msgstr ""
+
+#: functions/external-helpers.php:163
+msgid "Dominica"
+msgstr ""
+
+#: functions/external-helpers.php:164
+msgid "Dominican Republic"
+msgstr ""
+
+#: functions/external-helpers.php:165
+msgid "Dronning Maud Land"
+msgstr ""
+
+#: functions/external-helpers.php:166
+msgid "East Germany"
+msgstr ""
+
+#: functions/external-helpers.php:167
+msgid "Ecuador"
+msgstr ""
+
+#: functions/external-helpers.php:168
+msgid "Egypt"
+msgstr ""
+
+#: functions/external-helpers.php:169
+msgid "El Salvador"
+msgstr ""
+
+#: functions/external-helpers.php:170
+msgid "Equatorial Guinea"
+msgstr ""
+
+#: functions/external-helpers.php:171
+msgid "Eritrea"
+msgstr ""
+
+#: functions/external-helpers.php:172
+msgid "Estonia"
+msgstr ""
+
+#: functions/external-helpers.php:173
+msgid "Ethiopia"
+msgstr ""
+
+#: functions/external-helpers.php:174
+msgid "Falkland Islands"
+msgstr ""
+
+#: functions/external-helpers.php:175
+msgid "Faroe Islands"
+msgstr ""
+
+#: functions/external-helpers.php:176
+msgid "Fiji"
+msgstr ""
+
+#: functions/external-helpers.php:177
+msgid "Finland"
+msgstr ""
+
+#: functions/external-helpers.php:178
+msgid "France"
+msgstr ""
+
+#: functions/external-helpers.php:179
+msgid "French Guiana"
+msgstr ""
+
+#: functions/external-helpers.php:180
+msgid "French Polynesia"
+msgstr ""
+
+#: functions/external-helpers.php:181
+msgid "French Southern Territories"
+msgstr ""
+
+#: functions/external-helpers.php:182
+msgid "French Southern and Antarctic Territories"
+msgstr ""
+
+#: functions/external-helpers.php:183
+msgid "Gabon"
+msgstr ""
+
+#: functions/external-helpers.php:184
+msgid "Gambia"
+msgstr ""
+
+#: functions/external-helpers.php:185
+msgid "Georgia"
+msgstr ""
+
+#: functions/external-helpers.php:186
+msgid "Germany"
+msgstr ""
+
+#: functions/external-helpers.php:187
+msgid "Ghana"
+msgstr ""
+
+#: functions/external-helpers.php:188
+msgid "Gibraltar"
+msgstr ""
+
+#: functions/external-helpers.php:189
+msgid "Greece"
+msgstr ""
+
+#: functions/external-helpers.php:190
+msgid "Greenland"
+msgstr ""
+
+#: functions/external-helpers.php:191
+msgid "Grenada"
+msgstr ""
+
+#: functions/external-helpers.php:192
+msgid "Guadeloupe"
+msgstr ""
+
+#: functions/external-helpers.php:193
+msgid "Guam"
+msgstr ""
+
+#: functions/external-helpers.php:194
+msgid "Guatemala"
+msgstr ""
+
+#: functions/external-helpers.php:195
+msgid "Guernsey"
+msgstr ""
+
+#: functions/external-helpers.php:196
+msgid "Guinea"
+msgstr ""
+
+#: functions/external-helpers.php:197
+msgid "Guinea-Bissau"
+msgstr ""
+
+#: functions/external-helpers.php:198
+msgid "Guyana"
+msgstr ""
+
+#: functions/external-helpers.php:199
+msgid "Haiti"
+msgstr ""
+
+#: functions/external-helpers.php:200
+msgid "Heard Island and McDonald Islands"
+msgstr ""
+
+#: functions/external-helpers.php:201
+msgid "Honduras"
+msgstr ""
+
+#: functions/external-helpers.php:202
+msgid "Hong Kong SAR China"
+msgstr ""
+
+#: functions/external-helpers.php:203
+msgid "Hungary"
+msgstr ""
+
+#: functions/external-helpers.php:204
+msgid "Iceland"
+msgstr ""
+
+#: functions/external-helpers.php:205
+msgid "India"
+msgstr ""
+
+#: functions/external-helpers.php:206
+msgid "Indonesia"
+msgstr ""
+
+#: functions/external-helpers.php:207
+msgid "Iran"
+msgstr ""
+
+#: functions/external-helpers.php:208
+msgid "Iraq"
+msgstr ""
+
+#: functions/external-helpers.php:209
+msgid "Ireland"
+msgstr ""
+
+#: functions/external-helpers.php:210
+msgid "Isle of Man"
+msgstr ""
+
+#: functions/external-helpers.php:211
+msgid "Israel"
+msgstr ""
+
+#: functions/external-helpers.php:212
+msgid "Italy"
+msgstr ""
+
+#: functions/external-helpers.php:213
+msgid "Jamaica"
+msgstr ""
+
+#: functions/external-helpers.php:214
+msgid "Japan"
+msgstr ""
+
+#: functions/external-helpers.php:215
+msgid "Jersey"
+msgstr ""
+
+#: functions/external-helpers.php:216
+msgid "Johnston Island"
+msgstr ""
+
+#: functions/external-helpers.php:217
+msgid "Jordan"
+msgstr ""
+
+#: functions/external-helpers.php:218
+msgid "Kazakhstan"
+msgstr ""
+
+#: functions/external-helpers.php:219
+msgid "Kenya"
+msgstr ""
+
+#: functions/external-helpers.php:220
+msgid "Kiribati"
+msgstr ""
+
+#: functions/external-helpers.php:221
+msgid "Kuwait"
+msgstr ""
+
+#: functions/external-helpers.php:222
+msgid "Kyrgyzstan"
+msgstr ""
+
+#: functions/external-helpers.php:223
+msgid "Laos"
+msgstr ""
+
+#: functions/external-helpers.php:224
+msgid "Latvia"
+msgstr ""
+
+#: functions/external-helpers.php:225
+msgid "Lebanon"
+msgstr ""
+
+#: functions/external-helpers.php:226
+msgid "Lesotho"
+msgstr ""
+
+#: functions/external-helpers.php:227
+msgid "Liberia"
+msgstr ""
+
+#: functions/external-helpers.php:228
+msgid "Libya"
+msgstr ""
+
+#: functions/external-helpers.php:229
+msgid "Liechtenstein"
+msgstr ""
+
+#: functions/external-helpers.php:230
+msgid "Lithuania"
+msgstr ""
+
+#: functions/external-helpers.php:231
+msgid "Luxembourg"
+msgstr ""
+
+#: functions/external-helpers.php:232
+msgid "Macau SAR China"
+msgstr ""
+
+#: functions/external-helpers.php:233
+msgid "Macedonia"
+msgstr ""
+
+#: functions/external-helpers.php:234
+msgid "Madagascar"
+msgstr ""
+
+#: functions/external-helpers.php:235
+msgid "Malawi"
+msgstr ""
+
+#: functions/external-helpers.php:236
+msgid "Malaysia"
+msgstr ""
+
+#: functions/external-helpers.php:237
+msgid "Maldives"
+msgstr ""
+
+#: functions/external-helpers.php:238
+msgid "Mali"
+msgstr ""
+
+#: functions/external-helpers.php:239
+msgid "Malta"
+msgstr ""
+
+#: functions/external-helpers.php:240
+msgid "Marshall Islands"
+msgstr ""
+
+#: functions/external-helpers.php:241
+msgid "Martinique"
+msgstr ""
+
+#: functions/external-helpers.php:242
+msgid "Mauritania"
+msgstr ""
+
+#: functions/external-helpers.php:243
+msgid "Mauritius"
+msgstr ""
+
+#: functions/external-helpers.php:244
+msgid "Mayotte"
+msgstr ""
+
+#: functions/external-helpers.php:245
+msgid "Metropolitan France"
+msgstr ""
+
+#: functions/external-helpers.php:246
+msgid "Mexico"
+msgstr ""
+
+#: functions/external-helpers.php:247
+msgid "Micronesia"
+msgstr ""
+
+#: functions/external-helpers.php:248
+msgid "Midway Islands"
+msgstr ""
+
+#: functions/external-helpers.php:249
+msgid "Moldova"
+msgstr ""
+
+#: functions/external-helpers.php:250
+msgid "Monaco"
+msgstr ""
+
+#: functions/external-helpers.php:251
+msgid "Mongolia"
+msgstr ""
+
+#: functions/external-helpers.php:252
+msgid "Montenegro"
+msgstr ""
+
+#: functions/external-helpers.php:253
+msgid "Montserrat"
+msgstr ""
+
+#: functions/external-helpers.php:254
+msgid "Morocco"
+msgstr ""
+
+#: functions/external-helpers.php:255
+msgid "Mozambique"
+msgstr ""
+
+#: functions/external-helpers.php:256
+msgid "Myanmar [Burma]"
+msgstr ""
+
+#: functions/external-helpers.php:257
+msgid "Namibia"
+msgstr ""
+
+#: functions/external-helpers.php:258
+msgid "Nauru"
+msgstr ""
+
+#: functions/external-helpers.php:259
+msgid "Nepal"
+msgstr ""
+
+#: functions/external-helpers.php:260
+msgid "Netherlands"
+msgstr ""
+
+#: functions/external-helpers.php:261
+msgid "Netherlands Antilles"
+msgstr ""
+
+#: functions/external-helpers.php:262
+msgid "Neutral Zone"
+msgstr ""
+
+#: functions/external-helpers.php:263
+msgid "New Caledonia"
+msgstr ""
+
+#: functions/external-helpers.php:264
+msgid "New Zealand"
+msgstr ""
+
+#: functions/external-helpers.php:265
+msgid "Nicaragua"
+msgstr ""
+
+#: functions/external-helpers.php:266
+msgid "Niger"
+msgstr ""
+
+#: functions/external-helpers.php:267
+msgid "Nigeria"
+msgstr ""
+
+#: functions/external-helpers.php:268
+msgid "Niue"
+msgstr ""
+
+#: functions/external-helpers.php:269
+msgid "Norfolk Island"
+msgstr ""
+
+#: functions/external-helpers.php:270
+msgid "North Korea"
+msgstr ""
+
+#: functions/external-helpers.php:271
+msgid "North Vietnam"
+msgstr ""
+
+#: functions/external-helpers.php:272
+msgid "Northern Mariana Islands"
+msgstr ""
+
+#: functions/external-helpers.php:273
+msgid "Norway"
+msgstr ""
+
+#: functions/external-helpers.php:274
+msgid "Oman"
+msgstr ""
+
+#: functions/external-helpers.php:275
+msgid "Pacific Islands Trust Territory"
+msgstr ""
+
+#: functions/external-helpers.php:276
+msgid "Pakistan"
+msgstr ""
+
+#: functions/external-helpers.php:277
+msgid "Palau"
+msgstr ""
+
+#: functions/external-helpers.php:278
+msgid "Palestinian Territories"
+msgstr ""
+
+#: functions/external-helpers.php:279
+msgid "Panama"
+msgstr ""
+
+#: functions/external-helpers.php:280
+msgid "Panama Canal Zone"
+msgstr ""
+
+#: functions/external-helpers.php:281
+msgid "Papua New Guinea"
+msgstr ""
+
+#: functions/external-helpers.php:282
+msgid "Paraguay"
+msgstr ""
+
+#: functions/external-helpers.php:283
+msgid "People's Democratic Republic of Yemen"
+msgstr ""
+
+#: functions/external-helpers.php:284
+msgid "Peru"
+msgstr ""
+
+#: functions/external-helpers.php:285
+msgid "Philippines"
+msgstr ""
+
+#: functions/external-helpers.php:286
+msgid "Pitcairn Islands"
+msgstr ""
+
+#: functions/external-helpers.php:287
+msgid "Poland"
+msgstr ""
+
+#: functions/external-helpers.php:288
+msgid "Portugal"
+msgstr ""
+
+#: functions/external-helpers.php:289
+msgid "Puerto Rico"
+msgstr ""
+
+#: functions/external-helpers.php:290
+msgid "Qatar"
+msgstr ""
+
+#: functions/external-helpers.php:291
+msgid "Romania"
+msgstr ""
+
+#: functions/external-helpers.php:292
+msgid "Russia"
+msgstr ""
+
+#: functions/external-helpers.php:293
+msgid "Rwanda"
+msgstr ""
+
+#: functions/external-helpers.php:294
+msgid "Saint Barthélemy"
+msgstr ""
+
+#: functions/external-helpers.php:295
+msgid "Saint Helena"
+msgstr ""
+
+#: functions/external-helpers.php:296
+msgid "Saint Kitts and Nevis"
+msgstr ""
+
+#: functions/external-helpers.php:297
+msgid "Saint Lucia"
+msgstr ""
+
+#: functions/external-helpers.php:298
+msgid "Saint Martin"
+msgstr ""
+
+#: functions/external-helpers.php:299
+msgid "Saint Pierre and Miquelon"
+msgstr ""
+
+#: functions/external-helpers.php:300
+msgid "Saint Vincent and the Grenadines"
+msgstr ""
+
+#: functions/external-helpers.php:301
+msgid "Samoa"
+msgstr ""
+
+#: functions/external-helpers.php:302
+msgid "San Marino"
+msgstr ""
+
+#: functions/external-helpers.php:303
+msgid "Saudi Arabia"
+msgstr ""
+
+#: functions/external-helpers.php:304
+msgid "Senegal"
+msgstr ""
+
+#: functions/external-helpers.php:305
+msgid "Serbia"
+msgstr ""
+
+#: functions/external-helpers.php:306
+msgid "Serbia and Montenegro"
+msgstr ""
+
+#: functions/external-helpers.php:307
+msgid "Seychelles"
+msgstr ""
+
+#: functions/external-helpers.php:308
+msgid "Sierra Leone"
+msgstr ""
+
+#: functions/external-helpers.php:309
+msgid "Singapore"
+msgstr ""
+
+#: functions/external-helpers.php:310
+msgid "Slovakia"
+msgstr ""
+
+#: functions/external-helpers.php:311
+msgid "Slovenia"
+msgstr ""
+
+#: functions/external-helpers.php:312
+msgid "Solomon Islands"
+msgstr ""
+
+#: functions/external-helpers.php:313
+msgid "Somalia"
+msgstr ""
+
+#: functions/external-helpers.php:314
+msgid "South Africa"
+msgstr ""
+
+#: functions/external-helpers.php:315
+msgid "South Georgia and the South Sandwich Islands"
+msgstr ""
+
+#: functions/external-helpers.php:316
+msgid "South Korea"
+msgstr ""
+
+#: functions/external-helpers.php:317
+msgid "Spain"
+msgstr ""
+
+#: functions/external-helpers.php:318
+msgid "Sri Lanka"
+msgstr ""
+
+#: functions/external-helpers.php:319
+msgid "Sudan"
+msgstr ""
+
+#: functions/external-helpers.php:320
+msgid "Suriname"
+msgstr ""
+
+#: functions/external-helpers.php:321
+msgid "Svalbard and Jan Mayen"
+msgstr ""
+
+#: functions/external-helpers.php:322
+msgid "Swaziland"
+msgstr ""
+
+#: functions/external-helpers.php:323
+msgid "Sweden"
+msgstr ""
+
+#: functions/external-helpers.php:324
+msgid "Switzerland"
+msgstr ""
+
+#: functions/external-helpers.php:325
+msgid "Syria"
+msgstr ""
+
+#: functions/external-helpers.php:326
+msgid "São Tomé and Príncipe"
+msgstr ""
+
+#: functions/external-helpers.php:327
+msgid "Taiwan"
+msgstr ""
+
+#: functions/external-helpers.php:328
+msgid "Tajikistan"
+msgstr ""
+
+#: functions/external-helpers.php:329
+msgid "Tanzania"
+msgstr ""
+
+#: functions/external-helpers.php:330
+msgid "Thailand"
+msgstr ""
+
+#: functions/external-helpers.php:331
+msgid "Timor-Leste"
+msgstr ""
+
+#: functions/external-helpers.php:332
+msgid "Togo"
+msgstr ""
+
+#: functions/external-helpers.php:333
+msgid "Tokelau"
+msgstr ""
+
+#: functions/external-helpers.php:334
+msgid "Tonga"
+msgstr ""
+
+#: functions/external-helpers.php:335
+msgid "Trinidad and Tobago"
+msgstr ""
+
+#: functions/external-helpers.php:336
+msgid "Tunisia"
+msgstr ""
+
+#: functions/external-helpers.php:337
+msgid "Turkey"
+msgstr ""
+
+#: functions/external-helpers.php:338
+msgid "Turkmenistan"
+msgstr ""
+
+#: functions/external-helpers.php:339
+msgid "Turks and Caicos Islands"
+msgstr ""
+
+#: functions/external-helpers.php:340
+msgid "Tuvalu"
+msgstr ""
+
+#: functions/external-helpers.php:341
+msgid "U.S. Minor Outlying Islands"
+msgstr ""
+
+#: functions/external-helpers.php:342
+msgid "U.S. Miscellaneous Pacific Islands"
+msgstr ""
+
+#: functions/external-helpers.php:343
+msgid "U.S. Virgin Islands"
+msgstr ""
+
+#: functions/external-helpers.php:344
+msgid "Uganda"
+msgstr ""
+
+#: functions/external-helpers.php:345
+msgid "Ukraine"
+msgstr ""
+
+#: functions/external-helpers.php:346
+msgid "Union of Soviet Socialist Republics"
+msgstr ""
+
+#: functions/external-helpers.php:347
+msgid "United Arab Emirates"
+msgstr ""
+
+#: functions/external-helpers.php:348
+msgid "United Kingdom"
+msgstr ""
+
+#: functions/external-helpers.php:349
+msgid "United States"
+msgstr ""
+
+#: functions/external-helpers.php:350
+msgid "Unknown or Invalid Region"
+msgstr ""
+
+#: functions/external-helpers.php:351
+msgid "Uruguay"
+msgstr ""
+
+#: functions/external-helpers.php:352
+msgid "Uzbekistan"
+msgstr ""
+
+#: functions/external-helpers.php:353
+msgid "Vanuatu"
+msgstr ""
+
+#: functions/external-helpers.php:354
+msgid "Vatican City"
+msgstr ""
+
+#: functions/external-helpers.php:355
+msgid "Venezuela"
+msgstr ""
+
+#: functions/external-helpers.php:356
+msgid "Vietnam"
+msgstr ""
+
+#: functions/external-helpers.php:357
+msgid "Wake Island"
+msgstr ""
+
+#: functions/external-helpers.php:358
+msgid "Wallis and Futuna"
+msgstr ""
+
+#: functions/external-helpers.php:359
+msgid "Western Sahara"
+msgstr ""
+
+#: functions/external-helpers.php:360
+msgid "Yemen"
+msgstr ""
+
+#: functions/external-helpers.php:361
+msgid "Zambia"
+msgstr ""
+
+#: functions/external-helpers.php:362
+msgid "Zimbabwe"
+msgstr ""
+
+#: functions/external-helpers.php:363
+msgid "Åland Islands"
+msgstr ""
+
+#: functions/helpers.php:119
+msgid "Previous post"
+msgstr ""
+
+#: functions/helpers.php:121
+msgid "Next post"
+msgstr ""
+
+#: functions/helpers.php:127
+msgid "Older posts"
+msgstr ""
+
+#: functions/helpers.php:132
+msgid "Newer posts"
+msgstr ""
+
+#: functions/helpers.php:147
+msgid "Tags"
+msgstr ""
+
+#: functions/helpers.php:205
+msgid "0 COMMENT"
+msgstr ""
+
+#: functions/helpers.php:205
+msgid "1 COMMENT"
+msgstr ""
+
+#: functions/helpers.php:205
+msgid "% COMMENT"
+msgstr ""
+
+#: functions/meta_boxes.php:9
+msgid "Course Category Custom Fields"
+msgstr ""
+
+#: functions/meta_boxes.php:14
+msgid "Font Awesome Category Icon"
+msgstr ""
+
+#: functions/meta_boxes.php:17
+msgid "Add space separated classes for the desired icon from font awesome"
+msgstr ""
+
+#: functions/meta_boxes.php:32
+msgid "course settings"
+msgstr ""
+
+#: functions/meta_boxes.php:38
+msgid "Is Discounted"
+msgstr ""
+
+#: functions/meta_boxes.php:43
+msgid "Course Price"
+msgstr ""
+
+#: functions/meta_boxes.php:48
+msgid "Discount Price"
+msgstr ""
+
+#: functions/meta_boxes.php:57 single-course.php:74
+#: templates/blocks/home-slider/home-slider-template.php:94
+msgid "Hours"
+msgstr ""
+
+#: functions/meta_boxes.php:62
+msgid "Level"
+msgstr ""
+
+#: functions/meta_boxes.php:66
+msgid "Basic"
+msgstr ""
+
+#: functions/meta_boxes.php:67
+msgid "Advanced"
+msgstr ""
+
+#: functions/meta_boxes.php:71
+msgid "Recorded?"
+msgstr ""
+
+#: functions/meta_boxes.php:76 functions/post_types.php:75
+msgid "Instructor"
+msgstr ""
+
+#: functions/meta_boxes.php:83
+msgid "Course Rating"
+msgstr ""
+
+#: functions/meta_boxes.php:91
+msgid "Course Currency"
+msgstr ""
+
+#: functions/meta_boxes.php:95
+msgid "Egyptian Pound"
+msgstr ""
+
+#: functions/meta_boxes.php:100
+msgid "Course Date"
+msgstr ""
+
+#: functions/meta_boxes.php:134
+msgid "lecture settings"
+msgstr ""
+
+#: functions/meta_boxes.php:140
+msgid "Course "
+msgstr ""
+
+#: functions/meta_boxes.php:143
+msgid "The parent course of this lecture"
+msgstr ""
+
+#: functions/post_types.php:6 functions/post_types.php:27
+#: functions/post_types.php:40
+#: templates/blocks/courses-list/courses-list.php:47
+#: templates/blocks/our-stats/our-stats.php:48
+msgid "Courses"
+msgstr ""
+
+#: functions/post_types.php:7
+#: templates/blocks/course-sidebar/course-sidebar.php:33
+#: templates/blocks/home-slider/home-slider.php:26
+msgid "Course"
+msgstr ""
+
+#: functions/post_types.php:8 functions/post_types.php:76
+#: functions/post_types.php:144
+msgid "Add New"
+msgstr ""
+
+#: functions/post_types.php:9
+msgid "Add new course"
+msgstr ""
+
+#: functions/post_types.php:10
+msgid "Edit Course"
+msgstr ""
+
+#: functions/post_types.php:11
+msgid "New Course"
+msgstr ""
+
+#: functions/post_types.php:12
+msgid "View Course"
+msgstr ""
+
+#: functions/post_types.php:13
+msgid "View Courses"
+msgstr ""
+
+#: functions/post_types.php:14
+msgid "Search Courses"
+msgstr ""
+
+#: functions/post_types.php:15
+msgid "No courses found"
+msgstr ""
+
+#: functions/post_types.php:16
+msgid "No courses found in Trash"
+msgstr ""
+
+#: functions/post_types.php:17
+msgid "Parent Course:"
+msgstr ""
+
+#: functions/post_types.php:18
+msgid "All Courses"
+msgstr ""
+
+#: functions/post_types.php:19
+msgid "Course Archives"
+msgstr ""
+
+#: functions/post_types.php:20
+msgid "Course Attributes"
+msgstr ""
+
+#: functions/post_types.php:21
+msgid "Insert into course"
+msgstr ""
+
+#: functions/post_types.php:22
+msgid "Uploaded to this course"
+msgstr ""
+
+#: functions/post_types.php:23 functions/post_types.php:91
+#: functions/post_types.php:159
+msgid "Featured image"
+msgstr ""
+
+#: functions/post_types.php:24 functions/post_types.php:92
+#: functions/post_types.php:160
+msgid "Set featured image"
+msgstr ""
+
+#: functions/post_types.php:25 functions/post_types.php:93
+#: functions/post_types.php:161
+msgid "Remove featured image"
+msgstr ""
+
+#: functions/post_types.php:26 functions/post_types.php:94
+#: functions/post_types.php:162
+msgid "Use as featured image"
+msgstr ""
+
+#: functions/post_types.php:28
+msgid "Filter courses list"
+msgstr ""
+
+#: functions/post_types.php:30
+msgid "Courses list navigation"
+msgstr ""
+
+#: functions/post_types.php:31
+msgid "Courses list"
+msgstr ""
+
+#: functions/post_types.php:32
+msgid "Course published"
+msgstr ""
+
+#: functions/post_types.php:33
+msgid "Course published privately"
+msgstr ""
+
+#: functions/post_types.php:34
+msgid "Course reverted to draft"
+msgstr ""
+
+#: functions/post_types.php:35
+msgid "Course scheduled"
+msgstr ""
+
+#: functions/post_types.php:36
+msgid "Course updated"
+msgstr ""
+
+#: functions/post_types.php:37 functions/post_types.php:105
+#: functions/post_types.php:173 functions/post_types.php:232
+msgid "imp"
+msgstr ""
+
+#: functions/post_types.php:74 functions/post_types.php:95
+#: functions/post_types.php:108
+msgid "Instructors"
+msgstr ""
+
+#: functions/post_types.php:77
+msgid "Add new instructor"
+msgstr ""
+
+#: functions/post_types.php:78
+msgid "Edit Instructor"
+msgstr ""
+
+#: functions/post_types.php:79
+msgid "New Instructor"
+msgstr ""
+
+#: functions/post_types.php:80
+msgid "View Instructor"
+msgstr ""
+
+#: functions/post_types.php:81
+msgid "View Instructors"
+msgstr ""
+
+#: functions/post_types.php:82
+msgid "Search Instructors"
+msgstr ""
+
+#: functions/post_types.php:83
+msgid "No instructors found"
+msgstr ""
+
+#: functions/post_types.php:84
+msgid "No instructors found in Trash"
+msgstr ""
+
+#: functions/post_types.php:85
+msgid "Parent Instructor:"
+msgstr ""
+
+#: functions/post_types.php:86
+msgid "All Instructors"
+msgstr ""
+
+#: functions/post_types.php:87
+msgid "Instructor Archives"
+msgstr ""
+
+#: functions/post_types.php:88
+msgid "Instructor Attributes"
+msgstr ""
+
+#: functions/post_types.php:89
+msgid "Insert into instructor"
+msgstr ""
+
+#: functions/post_types.php:90
+msgid "Uploaded to this instructor"
+msgstr ""
+
+#: functions/post_types.php:96
+msgid "Filter instructors list"
+msgstr ""
+
+#: functions/post_types.php:98
+msgid "Instructors list navigation"
+msgstr ""
+
+#: functions/post_types.php:99
+msgid "Instructors list"
+msgstr ""
+
+#: functions/post_types.php:100
+msgid "Instructor published"
+msgstr ""
+
+#: functions/post_types.php:101
+msgid "Instructor published privately"
+msgstr ""
+
+#: functions/post_types.php:102
+msgid "Instructor reverted to draft"
+msgstr ""
+
+#: functions/post_types.php:103
+msgid "Instructor scheduled"
+msgstr ""
+
+#: functions/post_types.php:104
+msgid "Instructor updated"
+msgstr ""
+
+#: functions/post_types.php:142 functions/post_types.php:163
+#: functions/post_types.php:176 single-course.php:65
+#: templates/blocks/home-slider/home-slider-template.php:88
+msgid "Lectures"
+msgstr ""
+
+#: functions/post_types.php:143
+msgid "Lecture"
+msgstr ""
+
+#: functions/post_types.php:145
+msgid "Add new lecture"
+msgstr ""
+
+#: functions/post_types.php:146
+msgid "Edit Lecture"
+msgstr ""
+
+#: functions/post_types.php:147
+msgid "New Lecture"
+msgstr ""
+
+#: functions/post_types.php:148
+msgid "View Lecture"
+msgstr ""
+
+#: functions/post_types.php:149
+msgid "View Lectures"
+msgstr ""
+
+#: functions/post_types.php:150
+msgid "Search Lectures"
+msgstr ""
+
+#: functions/post_types.php:151
+msgid "No lectures found"
+msgstr ""
+
+#: functions/post_types.php:152
+msgid "No lectures found in Trash"
+msgstr ""
+
+#: functions/post_types.php:153
+msgid "Parent Lecture:"
+msgstr ""
+
+#: functions/post_types.php:154
+msgid "All Lectures"
+msgstr ""
+
+#: functions/post_types.php:155
+msgid "Lecture Archives"
+msgstr ""
+
+#: functions/post_types.php:156
+msgid "Lecture Attributes"
+msgstr ""
+
+#: functions/post_types.php:157
+msgid "Insert into lecture"
+msgstr ""
+
+#: functions/post_types.php:158
+msgid "Uploaded to this lecture"
+msgstr ""
+
+#: functions/post_types.php:164
+msgid "Filter lectures list"
+msgstr ""
+
+#: functions/post_types.php:166
+msgid "Lectures list navigation"
+msgstr ""
+
+#: functions/post_types.php:167
+msgid "Lectures list"
+msgstr ""
+
+#: functions/post_types.php:168
+msgid "Lecture published"
+msgstr ""
+
+#: functions/post_types.php:169
+msgid "Lecture published privately"
+msgstr ""
+
+#: functions/post_types.php:170
+msgid "Lecture reverted to draft"
+msgstr ""
+
+#: functions/post_types.php:171
+msgid "Lecture scheduled"
+msgstr ""
+
+#: functions/post_types.php:172
+msgid "Lecture updated"
+msgstr ""
+
+#: functions/post_types.php:209 functions/post_types.php:211
+#: functions/post_types.php:235
+msgid "Course Categories"
+msgstr ""
+
+#: functions/post_types.php:210
+msgid "Course Category"
+msgstr ""
+
+#: functions/post_types.php:212
+msgid "Search Course Categories"
+msgstr ""
+
+#: functions/post_types.php:213
+msgid "Popular Course Categories"
+msgstr ""
+
+#: functions/post_types.php:214
+msgid "All Course Categories"
+msgstr ""
+
+#: functions/post_types.php:215 functions/post_types.php:216
+msgid "Parent Course Category"
+msgstr ""
+
+#: functions/post_types.php:217
+msgid "Edit Course Category"
+msgstr ""
+
+#: functions/post_types.php:218
+msgid "View Course Category"
+msgstr ""
+
+#: functions/post_types.php:219
+msgid "Update Course Category"
+msgstr ""
+
+#: functions/post_types.php:220
+msgid "Add new course category"
+msgstr ""
+
+#: functions/post_types.php:221
+msgid "New course category name"
+msgstr ""
+
+#: functions/post_types.php:222
+msgid "Separate course categories with commas"
+msgstr ""
+
+#: functions/post_types.php:223
+msgid "Add or remove course categories"
+msgstr ""
+
+#: functions/post_types.php:224
+msgid "Choose most used course categories"
+msgstr ""
+
+#: functions/post_types.php:225
+msgid "No course categories found"
+msgstr ""
+
+#: functions/post_types.php:226
+msgid "No Course Categories"
+msgstr ""
+
+#: functions/post_types.php:227
+msgid "Filter by course category"
+msgstr ""
+
+#: functions/post_types.php:228
+msgid "Course categories list pagination"
+msgstr ""
+
+#: functions/post_types.php:229
+msgid "Course Categories list"
+msgstr ""
+
+#: functions/post_types.php:230
+msgid "Most Used"
+msgstr ""
+
+#: functions/post_types.php:231
+msgid "Back to course categories"
+msgstr ""
+
+#: functions/theme-support.php:89
+msgid "Sunset Orange"
+msgstr ""
+
+#: functions/theme-support.php:94
+msgid "Athens Gray"
+msgstr ""
+
+#: functions/theme-support.php:99
+msgid "Black"
+msgstr ""
+
+#: functions/theme-support.php:104
+msgid "white"
+msgstr ""
+
+#: functions/theme-support.php:113
+msgid "Primary Sidebar"
+msgstr ""
+
+#: functions/theme-support.php:115
+msgid "Widgets displayed at left & Right side of content."
+msgstr ""
+
+#: functions/theme-support.php:122
+msgid "Footer #1 column"
+msgstr ""
+
+#: functions/theme-support.php:124 functions/theme-support.php:133
+#: functions/theme-support.php:142 functions/theme-support.php:151
+msgid "Widgets displayed at footer."
+msgstr ""
+
+#: functions/theme-support.php:131
+msgid "Footer #2 column"
+msgstr ""
+
+#: functions/theme-support.php:140
+msgid "Footer #3 column"
+msgstr ""
+
+#: functions/theme-support.php:149
+msgid "Footer #4 column"
+msgstr ""
+
+#: functions/widgets/imp-contact-list.php:14 functions/widgets/imp-posts.php:14
+msgctxt "Category Posts widget description"
+msgid "Displays the posts with more stylish way"
+msgstr ""
+
+#: functions/widgets/imp-contact-list.php:16
+#, php-format
+msgctxt "Contact List widget name"
+msgid ".: %s - Contact List"
+msgstr ""
+
+#: functions/widgets/imp-contact-list.php:85
+#: functions/widgets/imp-posts.php:151
+#: functions/widgets/imp-social-links.php:120
+msgid "Title:"
+msgstr ""
+
+#: functions/widgets/imp-contact-list.php:89
+msgid "Address:"
+msgstr ""
+
+#: functions/widgets/imp-contact-list.php:93
+msgid "Address Link:"
+msgstr ""
+
+#: functions/widgets/imp-contact-list.php:97
+msgid "Phone:"
+msgstr ""
+
+#: functions/widgets/imp-contact-list.php:101
+msgid "phoneNumber:"
+msgstr ""
+
+#: functions/widgets/imp-contact-list.php:105
+msgid "Email:"
+msgstr ""
+
+#: functions/widgets/imp-contact-list.php:109
+msgid "Fax:"
+msgstr ""
+
+#: functions/widgets/imp-posts.php:16
+#, php-format
+msgctxt "Posts widget name"
+msgid ".: %s - Posts"
+msgstr ""
+
+#: functions/widgets/imp-posts.php:156
+msgid "Post Style :"
+msgstr ""
+
+#: functions/widgets/imp-posts.php:158
+#: functions/widgets/imp-social-links.php:126
+msgid "Style 1"
+msgstr ""
+
+#: functions/widgets/imp-posts.php:159
+#: functions/widgets/imp-social-links.php:127
+msgid "Style 2"
+msgstr ""
+
+#: functions/widgets/imp-posts.php:164
+msgid "Choose category:"
+msgstr ""
+
+#: functions/widgets/imp-posts.php:166
+msgid "- All -"
+msgstr ""
+
+#: functions/widgets/imp-posts.php:174
+msgid "Number of posts:"
+msgstr ""
+
+#: functions/widgets/imp-posts.php:179
+msgid "Order Posts by :"
+msgstr ""
+
+#: functions/widgets/imp-posts.php:181
+msgid "Date"
+msgstr ""
+
+#: functions/widgets/imp-posts.php:182
+msgid "Number of Views"
+msgstr ""
+
+#: functions/widgets/imp-posts.php:183
+msgid "Number of Comments"
+msgstr ""
+
+#: functions/widgets/imp-posts.php:184
+msgid "Random"
+msgstr ""
+
+#: functions/widgets/imp-posts.php:185
+msgid "Manual Post IDs"
+msgstr ""
+
+#: functions/widgets/imp-posts.php:190
+msgid "Order Type :"
+msgstr ""
+
+#: functions/widgets/imp-posts.php:192
+msgid "Descending"
+msgstr ""
+
+#: functions/widgets/imp-posts.php:193
+msgid "Ascending"
+msgstr ""
+
+#: functions/widgets/imp-social-links.php:15
+msgctxt "Tag Cloud widget description"
+msgid "A short description about you."
+msgstr ""
+
+#: functions/widgets/imp-social-links.php:18
+#, php-format
+msgctxt "Social Links widget name"
+msgid ":. %s - Social Links"
+msgstr ""
+
+#: functions/widgets/imp-social-links.php:124
+msgid "Layout Post :"
+msgstr ""
+
+#: functions/widgets/imp-social-links.php:130
+msgid "Social Icons"
+msgstr ""
+
+#: functions/widgets/imp-social-links.php:132
+msgid "Facebook:"
+msgstr ""
+
+#: functions/widgets/imp-social-links.php:136
+msgid "Twitter:"
+msgstr ""
+
+#: functions/widgets/imp-social-links.php:140
+msgid "Instagram:"
+msgstr ""
+
+#: functions/widgets/imp-social-links.php:144
+msgid "Youtube:"
+msgstr ""
+
+#: functions/widgets/imp-social-links.php:148
+msgid "Linkedin:"
+msgstr ""
+
+#: functions/widgets/imp-social-links.php:152
+msgid "Google Plus:"
+msgstr ""
+
+#: functions/widgets/imp-social-links.php:156
+msgid "Behance:"
+msgstr ""
+
+#: functions/widgets/imp-social-links.php:160
+msgid "Vimeo:"
+msgstr ""
+
+#: functions/widgets/imp-social-links.php:164
+msgid "Dribbble:"
+msgstr ""
+
+#: functions/widgets/imp-social-links.php:168
+msgid "Pinterest:"
+msgstr ""
+
+#: functions/widgets/imp-social-links.php:172
+msgid "RSS:"
+msgstr ""
+
+#: functions/widgets/imp-social-links.php:176
+msgid "Skype:"
+msgstr ""
+
+#: functions/widgets/imp-social-links.php:180
+msgid "Whatsapp:"
+msgstr ""
+
+#: node_modules/@babel/parser/lib/index.js:75
+msgid "import.meta may appear only with 'sourceType: \"module\"'"
+msgstr ""
+
+#: node_modules/@babel/parser/lib/index.js:78
+msgid "'import' and 'export' may appear only with 'sourceType: \"module\"'"
+msgstr ""
+
+#: node_modules/@babel/parser/lib/index.js:114
+msgid "'arguments' is only allowed in functions and class methods."
+msgstr ""
+
+#: node_modules/@babel/parser/lib/index.js:115
+msgid ""
+"Async functions can only be declared at the top level or inside a block."
+msgstr ""
+
+#: node_modules/@babel/parser/lib/index.js:116
+msgid "Can not use 'await' as identifier inside an async function."
+msgstr ""
+
+#: node_modules/@babel/parser/lib/index.js:117
+msgid "Can not use 'await' as identifier inside a static block."
+msgstr ""
+
+#: node_modules/@babel/parser/lib/index.js:118
+msgid "'await' is not allowed in async function parameters."
+msgstr ""
+
+#: node_modules/@babel/parser/lib/index.js:119
+msgid ""
+"'await' is only allowed within async functions and at the top levels of "
+"modules."
+msgstr ""
+
+#: node_modules/@babel/parser/lib/index.js:120
+msgid "'await' is only allowed within async functions."
+msgstr ""
+
+#: node_modules/@babel/parser/lib/index.js:121
+msgid "A 'get' accesor must not have any formal parameters."
+msgstr ""
+
+#: node_modules/@babel/parser/lib/index.js:122
+msgid "A 'set' accesor must have exactly one formal parameter."
+msgstr ""
+
+#: node_modules/@babel/parser/lib/index.js:123
+msgid "A 'set' accesor function argument must not be a rest parameter."
+msgstr ""
+
+#: node_modules/@babel/parser/lib/index.js:124
+msgid "Classes may not have a field named 'constructor'."
+msgstr ""
+
+#: node_modules/@babel/parser/lib/index.js:125
+msgid "Classes may not have a private field named '#constructor'."
+msgstr ""
+
+#: node_modules/@babel/parser/lib/index.js:126
+msgid "Class constructor may not be an accessor."
+msgstr ""
+
+#: node_modules/@babel/parser/lib/index.js:127
+msgid "Constructor can't be an async function."
+msgstr ""
+
+#: node_modules/@babel/parser/lib/index.js:128
+msgid "Constructor can't be a generator."
+msgstr ""
+
+#: node_modules/@babel/parser/lib/index.js:132
+msgid ""
+"Decorators must be placed *before* the 'export' keyword. You can set the "
+"'decoratorsBeforeExport' option to false to use the 'export @decorator class "
+"{}' syntax."
+msgstr ""
+
+#: node_modules/@babel/parser/lib/index.js:133
+msgid ""
+"Decorators can't be used with a constructor. Did you mean '@dec class "
+"{ ... }'?"
+msgstr ""
+
+#: node_modules/@babel/parser/lib/index.js:134
+msgid ""
+"Using the export keyword between a decorator and a class is not allowed. "
+"Please use `export @dec class` instead."
+msgstr ""
+
+#: node_modules/@babel/parser/lib/index.js:135
+msgid "Decorators must not be followed by a semicolon."
+msgstr ""
+
+#: node_modules/@babel/parser/lib/index.js:136
+msgid "Decorators can't be used with a static block."
+msgstr ""
+
+#: node_modules/@babel/parser/lib/index.js:137
+msgid "Deleting a private field is not allowed."
+msgstr ""
+
+#: node_modules/@babel/parser/lib/index.js:138
+msgid ""
+"ES2015 named imports do not destructure. Use another statement for "
+"destructuring after the import."
+msgstr ""
+
+#: node_modules/@babel/parser/lib/index.js:139
+msgid "Duplicate constructor in the same class."
+msgstr ""
+
+#: node_modules/@babel/parser/lib/index.js:140
+msgid "Only one default export allowed per module."
+msgstr ""
+
+#: node_modules/@babel/parser/lib/index.js:144
+msgid "Redefinition of __proto__ property."
+msgstr ""
+
+#: node_modules/@babel/parser/lib/index.js:145
+msgid "Duplicate regular expression flag."
+msgstr ""
+
+#: node_modules/@babel/parser/lib/index.js:146
+msgid "Rest element must be last element."
+msgstr ""
+
+#: node_modules/@babel/parser/lib/index.js:147
+msgid "Invalid Unicode escape."
+msgstr ""
+
+#: node_modules/@babel/parser/lib/index.js:152
+msgid "'from' is not allowed as an identifier after 'export default'."
+msgstr ""
+
+#: node_modules/@babel/parser/lib/index.js:155
+msgid "ForInStatement"
+msgstr ""
+
+#: node_modules/@babel/parser/lib/index.js:156
+msgid "The left-hand side of a for-of loop may not be 'async'."
+msgstr ""
+
+#: node_modules/@babel/parser/lib/index.js:157
+msgid "The left-hand side of a for-of loop may not start with 'let'."
+msgstr ""
+
+#: node_modules/@babel/parser/lib/index.js:158
+msgid "Generators can only be declared at the top level or inside a block."
+msgstr ""
+
+#: node_modules/@babel/parser/lib/index.js:161
+msgid "BreakStatement"
+msgstr ""
+
+#: node_modules/@babel/parser/lib/index.js:162
+msgid ""
+"Illegal 'use strict' directive in function with non-simple parameter list."
+msgstr ""
+
+#: node_modules/@babel/parser/lib/index.js:163
+msgid "'return' outside of function."
+msgstr ""
+
+#: node_modules/@babel/parser/lib/index.js:167
+msgid "Trailing comma is disallowed inside import(...) arguments."
+msgstr ""
+
+#: node_modules/@babel/parser/lib/index.js:170
+msgid "one argument"
+msgstr ""
+
+#: node_modules/@babel/parser/lib/index.js:171
+msgid "Cannot use new with import(...)."
+msgstr ""
+
+#: node_modules/@babel/parser/lib/index.js:172
+msgid "`...` is not allowed in `import()`."
+msgstr ""
+
+#: node_modules/@babel/parser/lib/index.js:173
+msgid ""
+"The 'u' and 'v' regular expression flags cannot be enabled at the same time."
+msgstr ""
+
+#: node_modules/@babel/parser/lib/index.js:174
+msgid "Invalid BigIntLiteral."
+msgstr ""
+
+#: node_modules/@babel/parser/lib/index.js:175
+msgid "Code point out of bounds."
+msgstr ""
+
+#: node_modules/@babel/parser/lib/index.js:176
+msgid "Invalid shorthand property initializer."
+msgstr ""
+
+#: node_modules/@babel/parser/lib/index.js:177
+msgid "Invalid decimal."
+msgstr ""
+
+#: node_modules/@babel/parser/lib/index.js:181
+msgid "Bad character escape sequence."
+msgstr ""
+
+#: node_modules/@babel/parser/lib/index.js:182
+msgid "Invalid escape sequence in template."
+msgstr ""
+
+#: node_modules/@babel/parser/lib/index.js:195
+msgid "Invalid number."
+msgstr ""
+
+#: node_modules/@babel/parser/lib/index.js:196
+msgid "Floating-point numbers require a valid exponent after the 'e'."
+msgstr ""
+
+#: node_modules/@babel/parser/lib/index.js:200
+msgid "Invalid parenthesized assignment pattern."
+msgstr ""
+
+#: node_modules/@babel/parser/lib/index.js:204
+msgid "Binding member expression."
+msgstr ""
+
+#: node_modules/@babel/parser/lib/index.js:205
+msgid "Only properties and spread elements are allowed in record definitions."
+msgstr ""
+
+#: node_modules/@babel/parser/lib/index.js:206
+msgid "Invalid rest operator's argument."
+msgstr ""
+
+#: node_modules/@babel/parser/lib/index.js:210
+msgid ""
+"'let' is not allowed to be used as a name in 'let' or 'const' declarations."
+msgstr ""
+
+#: node_modules/@babel/parser/lib/index.js:211
+msgid "No line break is allowed before '=>'."
+msgstr ""
+
+#: node_modules/@babel/parser/lib/index.js:212
+msgid "Invalid regular expression flag."
+msgstr ""
+
+#: node_modules/@babel/parser/lib/index.js:213
+msgid "A class name is required."
+msgstr ""
+
+#: node_modules/@babel/parser/lib/index.js:214
+msgid "Only '=' operator can be used for specifying default value."
+msgstr ""
+
+#: node_modules/@babel/parser/lib/index.js:215
+msgid "Missing semicolon."
+msgstr ""
+
+#: node_modules/@babel/parser/lib/index.js:222
+msgid "Expecting Unicode escape sequence \\uXXXX."
+msgstr ""
+
+#: node_modules/@babel/parser/lib/index.js:223
+msgid ""
+"Nullish coalescing operator(??) requires parens when mixing with logical "
+"operators."
+msgstr ""
+
+#: node_modules/@babel/parser/lib/index.js:224
+msgid "The only accepted module attribute is `type`."
+msgstr ""
+
+#: node_modules/@babel/parser/lib/index.js:225
+msgid "Only string literals are allowed as module attribute values."
+msgstr ""
+
+#: node_modules/@babel/parser/lib/index.js:235
+msgid "Multiple default clauses."
+msgstr ""
+
+#: node_modules/@babel/parser/lib/index.js:236
+msgid "Illegal newline after throw."
+msgstr ""
+
+#: node_modules/@babel/parser/lib/index.js:237
+msgid "Missing catch or finally clause."
+msgstr ""
+
+#: node_modules/@babel/parser/lib/index.js:238
+msgid "Identifier directly after number."
+msgstr ""
+
+#: node_modules/@babel/parser/lib/index.js:239
+msgid ""
+"Numeric separators are not allowed inside unicode escape sequences or hex "
+"escape sequences."
+msgstr ""
+
+#: node_modules/@babel/parser/lib/index.js:240
+msgid ""
+"'await*' has been removed from the async functions proposal. Use Promise."
+"all() instead."
+msgstr ""
+
+#: node_modules/@babel/parser/lib/index.js:241
+msgid "Constructors in/after an Optional Chain are not allowed."
+msgstr ""
+
+#: node_modules/@babel/parser/lib/index.js:242
+msgid "Tagged Template Literals are not allowed in optionalChain."
+msgstr ""
+
+#: node_modules/@babel/parser/lib/index.js:243
+msgid "'override' modifier cannot appear on a constructor declaration."
+msgstr ""
+
+#: node_modules/@babel/parser/lib/index.js:244
+msgid "Argument name clash."
+msgstr ""
+
+#: node_modules/@babel/parser/lib/index.js:245
+msgid "Object pattern can't contain getter or setter."
+msgstr ""
+
+#: node_modules/@babel/parser/lib/index.js:246
+msgid "Object pattern can't contain methods."
+msgstr ""
+
+#: node_modules/@babel/parser/lib/index.js:253
+msgid ""
+"Record expressions ending with '|}' are only allowed when the 'syntaxType' "
+"option of the 'recordAndTuple' plugin is set to 'bar'."
+msgstr ""
+
+#: node_modules/@babel/parser/lib/index.js:254
+msgid ""
+"Record expressions starting with '{|' are only allowed when the 'syntaxType' "
+"option of the 'recordAndTuple' plugin is set to 'bar'."
+msgstr ""
+
+#: node_modules/@babel/parser/lib/index.js:255
+msgid ""
+"Record expressions starting with '#{' are only allowed when the 'syntaxType' "
+"option of the 'recordAndTuple' plugin is set to 'hash'."
+msgstr ""
+
+#: node_modules/@babel/parser/lib/index.js:256
+msgid "'__proto__' is not allowed in Record expressions."
+msgstr ""
+
+#: node_modules/@babel/parser/lib/index.js:257
+msgid "Unexpected trailing comma after rest element."
+msgstr ""
+
+#: node_modules/@babel/parser/lib/index.js:258
+msgid ""
+"In non-strict mode code, functions can only be declared at top level, inside "
+"a block, or as the body of an if statement."
+msgstr ""
+
+#: node_modules/@babel/parser/lib/index.js:259
+msgid "Classes may not have static property named prototype."
+msgstr ""
+
+#: node_modules/@babel/parser/lib/index.js:260
+msgid ""
+"`super()` is only valid inside a class constructor of a subclass. Maybe a "
+"typo in the method name ('constructor') or not extending another class?"
+msgstr ""
+
+#: node_modules/@babel/parser/lib/index.js:261
+msgid "Private fields can't be accessed on super."
+msgstr ""
+
+#: node_modules/@babel/parser/lib/index.js:262
+msgid "Decorators must be attached to a class element."
+msgstr ""
+
+#: node_modules/@babel/parser/lib/index.js:263
+msgid ""
+"Tuple expressions ending with '|]' are only allowed when the 'syntaxType' "
+"option of the 'recordAndTuple' plugin is set to 'bar'."
+msgstr ""
+
+#: node_modules/@babel/parser/lib/index.js:264
+msgid ""
+"Tuple expressions starting with '[|' are only allowed when the 'syntaxType' "
+"option of the 'recordAndTuple' plugin is set to 'bar'."
+msgstr ""
+
+#: node_modules/@babel/parser/lib/index.js:265
+msgid ""
+"Tuple expressions starting with '#[' are only allowed when the 'syntaxType' "
+"option of the 'recordAndTuple' plugin is set to 'hash'."
+msgstr ""
+
+#: node_modules/@babel/parser/lib/index.js:266
+msgid "Unexpected argument placeholder."
+msgstr ""
+
+#: node_modules/@babel/parser/lib/index.js:267
+msgid ""
+"Unexpected \"await\" after pipeline body; await must have parentheses in "
+"minimal proposal."
+msgstr ""
+
+#: node_modules/@babel/parser/lib/index.js:268
+msgid "Unexpected digit after hash token."
+msgstr ""
+
+#: node_modules/@babel/parser/lib/index.js:269
+msgid "'import' and 'export' may only appear at the top level."
+msgstr ""
+
+#: node_modules/@babel/parser/lib/index.js:273
+msgid "Leading decorators must be attached to a class declaration."
+msgstr ""
+
+#: node_modules/@babel/parser/lib/index.js:274
+msgid "Lexical declaration cannot appear in a single-statement context."
+msgstr ""
+
+#: node_modules/@babel/parser/lib/index.js:275
+msgid "`new.target` can only be used in functions or class properties."
+msgstr ""
+
+#: node_modules/@babel/parser/lib/index.js:276
+msgid "A numeric separator is only allowed between two digits."
+msgstr ""
+
+#: node_modules/@babel/parser/lib/index.js:277
+msgid "Unexpected private name."
+msgstr ""
+
+#: node_modules/@babel/parser/lib/index.js:281
+msgid "'super' is only allowed in object methods and classes."
+msgstr ""
+
+#: node_modules/@babel/parser/lib/index.js:286
+msgid ""
+"Illegal expression. Wrap left hand side or entire exponentiation in "
+"parentheses."
+msgstr ""
+
+#: node_modules/@babel/parser/lib/index.js:287
+msgid "Binding should be performed on object property."
+msgstr ""
+
+#: node_modules/@babel/parser/lib/index.js:288
+msgid "A decorated export must export a class declaration."
+msgstr ""
+
+#: node_modules/@babel/parser/lib/index.js:289
+msgid ""
+"Only expressions, functions or classes are allowed as the `default` export."
+msgstr ""
+
+#: node_modules/@babel/parser/lib/index.js:290
+msgid "`import` can only be used in `import()` or `import.meta`."
+msgstr ""
+
+#: node_modules/@babel/parser/lib/index.js:295
+msgid "Decorators cannot be used to decorate parameters."
+msgstr ""
+
+#: node_modules/@babel/parser/lib/index.js:296
+msgid "Decorators cannot be used to decorate object literal properties."
+msgstr ""
+
+#: node_modules/@babel/parser/lib/index.js:297
+msgid ""
+"'super' can only be used with function calls (i.e. super()) or in property "
+"accesses (i.e. super.prop or super[prop])."
+msgstr ""
+
+#: node_modules/@babel/parser/lib/index.js:298
+msgid "Unterminated comment."
+msgstr ""
+
+#: node_modules/@babel/parser/lib/index.js:299
+msgid "Unterminated regular expression."
+msgstr ""
+
+#: node_modules/@babel/parser/lib/index.js:300
+msgid "Unterminated string constant."
+msgstr ""
+
+#: node_modules/@babel/parser/lib/index.js:301
+msgid "Unterminated template."
+msgstr ""
+
+#: node_modules/@babel/parser/lib/index.js:305
+msgid "Can not use 'yield' as identifier inside a generator."
+msgstr ""
+
+#: node_modules/@babel/parser/lib/index.js:306
+msgid "Yield expression is not allowed in formal parameters."
+msgstr ""
+
+#: node_modules/@babel/parser/lib/index.js:307
+msgid "Numeric separator can not be used after leading 0."
+msgstr ""
+
+#: node_modules/@babel/parser/lib/index.js:311
+msgid "Deleting local variable in strict mode."
+msgstr ""
+
+#: node_modules/@babel/parser/lib/index.js:318
+msgid ""
+"In strict mode code, functions can only be declared at top level or inside a "
+"block."
+msgstr ""
+
+#: node_modules/@babel/parser/lib/index.js:319
+msgid "The only valid numeric escape in strict mode is '\\0'."
+msgstr ""
+
+#: node_modules/@babel/parser/lib/index.js:320
+msgid "Legacy octal literals are not allowed in strict mode."
+msgstr ""
+
+#: node_modules/@babel/parser/lib/index.js:321
+msgid "'with' in strict mode."
+msgstr ""
+
+#: node_modules/@babel/parser/lib/index.js:326
+msgid ""
+"Unexpected yield after pipeline body; any yield expression acting as Hack-"
+"style pipe body must be parenthesized due to its loose operator precedence."
+msgstr ""
+
+#: node_modules/@babel/parser/lib/index.js:327
+#: node_modules/@babel/parser/lib/index.js:343
+msgid ""
+"Topic reference is used, but the pipelineOperator plugin was not passed a "
+"\"proposal\": \"hack\" or \"smart\" option."
+msgstr ""
+
+#: node_modules/@babel/parser/lib/index.js:328
+msgid "Topic reference is unbound; it must be inside a pipe body."
+msgstr ""
+
+#: node_modules/@babel/parser/lib/index.js:332
+msgid ""
+"Hack-style pipe body does not contain a topic reference; Hack-style pipes "
+"must use topic at least once."
+msgstr ""
+
+#: node_modules/@babel/parser/lib/index.js:338
+msgid ""
+"Unexpected arrow \"=>\" after pipeline body; arrow function in pipeline body "
+"must be parenthesized."
+msgstr ""
+
+#: node_modules/@babel/parser/lib/index.js:339
+msgid "Pipeline body may not be a comma-separated sequence expression."
+msgstr ""
+
+#: node_modules/@babel/parser/lib/index.js:340
+msgid "Pipeline head should not be a comma-separated sequence expression."
+msgstr ""
+
+#: node_modules/@babel/parser/lib/index.js:341
+msgid "Pipeline is in topic style but does not use topic reference."
+msgstr ""
+
+#: node_modules/@babel/parser/lib/index.js:342
+msgid "Topic reference was used in a lexical context without topic binding."
+msgstr ""
+
+#: node_modules/@babel/parser/lib/index.js:4324
+msgid ""
+"Ambiguous expression: wrap the arrow functions in parentheses to "
+"disambiguate."
+msgstr ""
+
+#: node_modules/@babel/parser/lib/index.js:4325
+msgid ""
+"Found both `declare module.exports` and `declare export` in the same module. "
+"Modules can only have 1 since they are either an ES module or they are a "
+"CommonJS module."
+msgstr ""
+
+#: node_modules/@babel/parser/lib/index.js:4329
+msgid "The `declare` modifier can only appear on class fields."
+msgstr ""
+
+#: node_modules/@babel/parser/lib/index.js:4330
+msgid "Initializers are not allowed in fields with the `declare` modifier."
+msgstr ""
+
+#: node_modules/@babel/parser/lib/index.js:4331
+msgid "Duplicate `declare module.exports` statement."
+msgstr ""
+
+#: node_modules/@babel/parser/lib/index.js:4375
+msgid "A getter cannot have a `this` parameter."
+msgstr ""
+
+#: node_modules/@babel/parser/lib/index.js:4376
+msgid ""
+"The `type` and `typeof` keywords on named imports can only be used on "
+"regular `import` statements. It cannot be used with `import type` or `import "
+"typeof` statements."
+msgstr ""
+
+#: node_modules/@babel/parser/lib/index.js:4377
+msgid ""
+"Explicit inexact syntax cannot appear inside an explicit exact object type."
+msgstr ""
+
+#: node_modules/@babel/parser/lib/index.js:4378
+msgid ""
+"Explicit inexact syntax cannot appear in class or interface definitions."
+msgstr ""
+
+#: node_modules/@babel/parser/lib/index.js:4379
+msgid "Explicit inexact syntax cannot have variance."
+msgstr ""
+
+#: node_modules/@babel/parser/lib/index.js:4380
+msgid ""
+"Imports within a `declare module` body must always be `import type` or "
+"`import typeof`."
+msgstr ""
+
+#: node_modules/@babel/parser/lib/index.js:4381
+msgid ""
+"Type parameter declaration needs a default, since a preceding type parameter "
+"declaration has a default."
+msgstr ""
+
+#: node_modules/@babel/parser/lib/index.js:4382
+msgid "`declare module` cannot be used inside another `declare module`."
+msgstr ""
+
+#: node_modules/@babel/parser/lib/index.js:4383
+msgid "Cannot have a flow comment inside another flow comment."
+msgstr ""
+
+#: node_modules/@babel/parser/lib/index.js:4384
+msgid ""
+"A binding pattern parameter cannot be optional in an implementation "
+"signature."
+msgstr ""
+
+#: node_modules/@babel/parser/lib/index.js:4387
+msgid "A setter cannot have a `this` parameter."
+msgstr ""
+
+#: node_modules/@babel/parser/lib/index.js:4388
+msgid "Spread properties cannot have variance."
+msgstr ""
+
+#: node_modules/@babel/parser/lib/index.js:4389
+msgid "A type annotation is required for the `this` parameter."
+msgstr ""
+
+#: node_modules/@babel/parser/lib/index.js:4390
+msgid ""
+"Constructors cannot have a `this` parameter; constructors don't bind `this` "
+"like other functions."
+msgstr ""
+
+#: node_modules/@babel/parser/lib/index.js:4391
+msgid "The `this` parameter cannot be optional."
+msgstr ""
+
+#: node_modules/@babel/parser/lib/index.js:4392
+msgid "The `this` parameter must be the first function parameter."
+msgstr ""
+
+#: node_modules/@babel/parser/lib/index.js:4393
+msgid "The `this` parameter may not have a default value."
+msgstr ""
+
+#: node_modules/@babel/parser/lib/index.js:4394
+msgid ""
+"Type annotations must come before default assignments, e.g. instead of `age "
+"= 25: number` use `age: number = 25`."
+msgstr ""
+
+#: node_modules/@babel/parser/lib/index.js:4395
+msgid "The type cast expression is expected to be wrapped with parenthesis."
+msgstr ""
+
+#: node_modules/@babel/parser/lib/index.js:4396
+msgid "Explicit inexact syntax must appear at the end of an inexact object."
+msgstr ""
+
+#: node_modules/@babel/parser/lib/index.js:4400
+msgid "`_` is only allowed as a type argument to call or new."
+msgstr ""
+
+#: node_modules/@babel/parser/lib/index.js:4401
+msgid "Spaces between `%` and `checks` are not allowed here."
+msgstr ""
+
+#: node_modules/@babel/parser/lib/index.js:4402
+msgid "Spread operator cannot appear in class or interface definitions."
+msgstr ""
+
+#: node_modules/@babel/parser/lib/index.js:4403
+msgid "Unexpected token, expected \"number\" or \"bigint\"."
+msgstr ""
+
+#: node_modules/@babel/parser/lib/index.js:4404
+msgid "Expected an arrow function after this type parameter declaration."
+msgstr ""
+
+#: node_modules/@babel/parser/lib/index.js:4405
+msgid ""
+"Type parameters must come after the async keyword, e.g. instead of `<T> "
+"async () => {}`, use `async <T>() => {}`."
+msgstr ""
+
+#: node_modules/@babel/parser/lib/index.js:4410
+msgid "Only declares and type imports are allowed inside declare module."
+msgstr ""
+
+#: node_modules/@babel/parser/lib/index.js:4411
+msgid "Unterminated flow-comment."
+msgstr ""
+
+#: node_modules/@babel/parser/lib/index.js:7585
+msgid "JSX attributes must only be assigned a non-empty expression."
+msgstr ""
+
+#: node_modules/@babel/parser/lib/index.js:7589
+msgid "Expected corresponding JSX closing tag for <>."
+msgstr ""
+
+#: node_modules/@babel/parser/lib/index.js:7590
+msgid ""
+"Sequence expressions cannot be directly nested inside JSX. Did you mean to "
+"wrap it in parentheses (...)?"
+msgstr ""
+
+#: node_modules/@babel/parser/lib/index.js:7595
+msgid "JSX value should be either an expression or a quoted JSX text."
+msgstr ""
+
+#: node_modules/@babel/parser/lib/index.js:7596
+msgid "Unterminated JSX contents."
+msgstr ""
+
+#: node_modules/@babel/parser/lib/index.js:7597
+msgid ""
+"Adjacent JSX elements must be wrapped in an enclosing tag. Did you want a "
+"JSX fragment <>...</>?"
+msgstr ""
+
+#: node_modules/asset-resolver/node_modules/yargs-parser/index.js:372
+#: node_modules/meow/node_modules/yargs-parser/build/lib/yargs-parser.js:419
+#: node_modules/yargs-parser/build/lib/yargs-parser.js:422
+#: node_modules/yargs/node_modules/yargs-parser/index.js:372
+#, javascript-format
+msgid "Argument unexpected for: %s"
+msgstr ""
+
+#: node_modules/asset-resolver/node_modules/yargs-parser/index.js:382
+#: node_modules/asset-resolver/node_modules/yargs-parser/index.js:392
+#: node_modules/asset-resolver/node_modules/yargs-parser/index.js:446
+#: node_modules/gulp-cli/node_modules/yargs-parser/index.js:302
+#: node_modules/meow/node_modules/yargs-parser/build/lib/yargs-parser.js:428
+#: node_modules/meow/node_modules/yargs-parser/build/lib/yargs-parser.js:442
+#: node_modules/meow/node_modules/yargs-parser/build/lib/yargs-parser.js:495
+#: node_modules/sass-graph/node_modules/yargs-parser/index.js:367
+#: node_modules/yargs-parser/build/lib/yargs-parser.js:431
+#: node_modules/yargs-parser/build/lib/yargs-parser.js:445
+#: node_modules/yargs-parser/build/lib/yargs-parser.js:498
+#: node_modules/yargs/node_modules/yargs-parser/index.js:382
+#: node_modules/yargs/node_modules/yargs-parser/index.js:392
+#: node_modules/yargs/node_modules/yargs-parser/index.js:446
+#, javascript-format
+msgid "Not enough arguments following: %s"
+msgstr ""
+
+#: node_modules/asset-resolver/node_modules/yargs-parser/index.js:591
+#: node_modules/gulp-cli/node_modules/yargs-parser/index.js:450
+#: node_modules/meow/node_modules/yargs-parser/build/lib/yargs-parser.js:634
+#: node_modules/sass-graph/node_modules/yargs-parser/index.js:541
+#: node_modules/yargs-parser/build/lib/yargs-parser.js:635
+#: node_modules/yargs/node_modules/yargs-parser/index.js:591
+#, javascript-format
+msgid "Invalid JSON config file: %s"
+msgstr ""
+
+#: node_modules/asset-resolver/node_modules/yargs-parser/index.js:941
+#: node_modules/meow/node_modules/yargs-parser/build/lib/yargs-parser.js:963
+#: node_modules/yargs-parser/build/lib/yargs-parser.js:964
+#: node_modules/yargs/node_modules/yargs-parser/index.js:941
+#, javascript-format
+msgid "Invalid configuration: %s, opts.count excludes opts.array."
+msgstr ""
+
+#: node_modules/asset-resolver/node_modules/yargs-parser/index.js:944
+#: node_modules/meow/node_modules/yargs-parser/build/lib/yargs-parser.js:967
+#: node_modules/yargs-parser/build/lib/yargs-parser.js:968
+#: node_modules/yargs/node_modules/yargs-parser/index.js:944
+#, javascript-format
+msgid "Invalid configuration: %s, opts.count excludes opts.narg."
+msgstr ""
+
+#: node_modules/domexception/node_modules/webidl-conversions/lib/index.js:105
+msgid "is not a finite number"
+msgstr ""
+
+#: node_modules/domexception/node_modules/webidl-conversions/lib/index.js:172
+#: node_modules/domexception/node_modules/webidl-conversions/lib/index.js:188
+msgid "is not a finite floating-point value"
+msgstr ""
+
+#: node_modules/domexception/node_modules/webidl-conversions/lib/index.js:198
+msgid "is outside the range of a single-precision floating-point value"
+msgstr ""
+
+#: node_modules/domexception/node_modules/webidl-conversions/lib/index.js:228
+msgid "is a symbol, which cannot be converted to a string"
+msgstr ""
+
+#: node_modules/domexception/node_modules/webidl-conversions/lib/index.js:239
+msgid "is not a valid ByteString"
+msgstr ""
+
+#: node_modules/domexception/node_modules/webidl-conversions/lib/index.js:276
+msgid "is not an object"
+msgstr ""
+
+#: node_modules/domexception/node_modules/webidl-conversions/lib/index.js:288
+msgid "is not a function"
+msgstr ""
+
+#: node_modules/domexception/node_modules/webidl-conversions/lib/index.js:308
+msgid "is not a view on an ArrayBuffer object"
+msgstr ""
+
+#: node_modules/domexception/node_modules/webidl-conversions/lib/index.js:320
+msgid "is not a view on an DataView object"
+msgstr ""
+
+#: node_modules/gulp-cli/node_modules/yargs/lib/usage.js:169
+#: node_modules/sass-graph/node_modules/yargs/lib/usage.js:203
+#: node_modules/yargs/build/lib/usage.js:198
+msgid "Commands:"
+msgstr ""
+
+#: node_modules/gulp-cli/node_modules/yargs/lib/usage.js:177
+#: node_modules/gulp-cli/node_modules/yargs/lib/usage.js:407
+#: node_modules/sass-graph/node_modules/yargs/lib/usage.js:223
+#: node_modules/sass-graph/node_modules/yargs/lib/usage.js:458
+#: node_modules/yargs/build/lib/usage.js:457
+msgid "default:"
+msgstr ""
+
+#: node_modules/gulp-cli/node_modules/yargs/lib/usage.js:179
+#: node_modules/sass-graph/node_modules/yargs/lib/usage.js:225
+#: node_modules/yargs/build/lib/usage.js:215
+msgid "aliases:"
+msgstr ""
+
+#: node_modules/gulp-cli/node_modules/yargs/lib/usage.js:241
+#: node_modules/sass-graph/node_modules/yargs/lib/usage.js:288
+#: node_modules/yargs/build/lib/usage.js:290
+msgid "boolean"
+msgstr ""
+
+#: node_modules/gulp-cli/node_modules/yargs/lib/usage.js:242
+#: node_modules/sass-graph/node_modules/yargs/lib/usage.js:289
+#: node_modules/yargs/build/lib/usage.js:292
+msgid "count"
+msgstr ""
+
+#: node_modules/gulp-cli/node_modules/yargs/lib/usage.js:243
+#: node_modules/gulp-cli/node_modules/yargs/lib/usage.js:244
+#: node_modules/sass-graph/node_modules/yargs/lib/usage.js:290
+#: node_modules/sass-graph/node_modules/yargs/lib/usage.js:291
+#: node_modules/webpack-stream/node_modules/terser/dist/bundle.min.js:1
+#: node_modules/yargs/build/lib/usage.js:294
+#: node_modules/yargs/build/lib/usage.js:296
+msgid "string"
+msgstr ""
+
+#: node_modules/gulp-cli/node_modules/yargs/lib/usage.js:245
+#: node_modules/sass-graph/node_modules/yargs/lib/usage.js:292
+#: node_modules/yargs/build/lib/usage.js:298
+msgid "array"
+msgstr ""
+
+#: node_modules/gulp-cli/node_modules/yargs/lib/usage.js:246
+#: node_modules/sass-graph/node_modules/yargs/lib/usage.js:293
+#: node_modules/yargs/build/lib/usage.js:300
+msgid "number"
+msgstr ""
+
+#: node_modules/gulp-cli/node_modules/yargs/lib/usage.js:251
+#: node_modules/sass-graph/node_modules/yargs/lib/usage.js:298
+#: node_modules/yargs/build/lib/usage.js:308
+msgid "choices:"
+msgstr ""
+
+#: node_modules/gulp-cli/node_modules/yargs/lib/usage.js:270
+#: node_modules/sass-graph/node_modules/yargs/lib/usage.js:317
+#: node_modules/yargs/build/lib/usage.js:321
+msgid "Examples:"
+msgstr ""
+
+#: node_modules/gulp-cli/node_modules/yargs/lib/usage.js:385
+#: node_modules/sass-graph/node_modules/yargs/lib/usage.js:436
+#: node_modules/yargs/build/lib/usage.js:438
+msgid "generated-value"
+msgstr ""
+
+#: node_modules/gulp-cli/node_modules/yargs/lib/validation.js:26
+#: node_modules/gulp-cli/node_modules/yargs/lib/validation.js:49
+#: node_modules/sass-graph/node_modules/yargs/lib/validation.js:29
+#: node_modules/sass-graph/node_modules/yargs/lib/validation.js:52
+#, javascript-format
+msgid "Not enough non-option arguments: got %s, need at least %s"
+msgstr ""
+
+#: node_modules/gulp-cli/node_modules/yargs/lib/validation.js:37
+#: node_modules/sass-graph/node_modules/yargs/lib/validation.js:40
+#, javascript-format
+msgid "Too many non-option arguments: got %s, maximum of %s"
+msgstr ""
+
+#: node_modules/gulp-cli/node_modules/yargs/lib/validation.js:185
+#: node_modules/sass-graph/node_modules/yargs/lib/validation.js:147
+#: node_modules/yargs/build/lib/validation.js:155
+msgid "Invalid values:"
+msgstr ""
+
+#: node_modules/gulp-cli/node_modules/yargs/lib/validation.js:188
+#: node_modules/sass-graph/node_modules/yargs/lib/validation.js:150
+#: node_modules/yargs/build/lib/validation.js:157
+#, javascript-format
+msgid "Argument: %s, Given: %s, Choices: %s"
+msgstr ""
+
+#: node_modules/gulp-cli/node_modules/yargs/lib/validation.js:218
+#: node_modules/sass-graph/node_modules/yargs/lib/validation.js:180
+#: node_modules/yargs/build/lib/validation.js:181
+#, javascript-format
+msgid "Argument check failed: %s"
+msgstr ""
+
+#: node_modules/gulp-cli/node_modules/yargs/lib/validation.js:283
+#: node_modules/sass-graph/node_modules/yargs/lib/validation.js:256
+#: node_modules/yargs/build/lib/validation.js:248
+msgid "Implications failed:"
+msgstr ""
+
+#: node_modules/gulp-cli/node_modules/yargs/lib/validation.js:313
+#: node_modules/sass-graph/node_modules/yargs/lib/validation.js:295
+#: node_modules/yargs/build/lib/validation.js:284
+#, javascript-format
+msgid "Arguments %s and %s are mutually exclusive"
+msgstr ""
+
+#: node_modules/gulp-cli/node_modules/yargs/lib/validation.js:332
+#: node_modules/sass-graph/node_modules/yargs/lib/validation.js:316
+#: node_modules/yargs/build/lib/validation.js:303
+#, javascript-format
+msgid "Did you mean %s?"
+msgstr ""
+
+#: node_modules/sass-graph/node_modules/yargs/lib/usage.js:92
+#: node_modules/yargs/build/lib/usage.js:90
+msgid "Positionals:"
+msgstr ""
+
+#: node_modules/sass-graph/node_modules/yargs/lib/usage.js:192
+#: node_modules/sass-graph/node_modules/yargs/lib/usage.js:194
+#: node_modules/yargs/build/lib/usage.js:187
+#: node_modules/yargs/build/lib/usage.js:190
+msgid "command"
+msgstr ""
+
+#: node_modules/webpack-stream/node_modules/terser/dist/bundle.min.js:1
+msgid "big_int"
+msgstr ""
+
+#: node_modules/webpack-stream/node_modules/terser/dist/bundle.min.js:1
+msgid "num"
+msgstr ""
+
+#: node_modules/webpack-stream/node_modules/terser/dist/bundle.min.js:1
+msgid "template_head"
+msgstr ""
+
+#: node_modules/webpack-stream/node_modules/terser/dist/bundle.min.js:1
+msgid "comment2"
+msgstr ""
+
+#: node_modules/webpack-stream/node_modules/terser/dist/bundle.min.js:1
+msgid "regexp"
+msgstr ""
+
+#: node_modules/webpack-stream/node_modules/terser/dist/bundle.min.js:1
+msgid "operator"
+msgstr ""
+
+#: node_modules/webpack-stream/node_modules/terser/dist/bundle.min.js:1
+msgid "eof"
+msgstr ""
+
+#: node_modules/webpack-stream/node_modules/terser/dist/bundle.min.js:1
+msgid "expand"
+msgstr ""
+
+#: node_modules/webpack-stream/node_modules/terser/dist/bundle.min.js:1
+msgid "punc"
+msgstr ""
+
+#: node_modules/webpack-stream/node_modules/terser/dist/bundle.min.js:1
+msgid "arrow"
+msgstr ""
+
+#: node_modules/webpack-stream/node_modules/terser/dist/bundle.min.js:1
+msgid "name"
+msgstr ""
+
+#: node_modules/webpack-stream/node_modules/terser/dist/bundle.min.js:1
+msgid "atom"
+msgstr ""
+
+#: node_modules/webpack-stream/node_modules/terser/dist/bundle.min.js:1
+msgid "keyword"
+msgstr ""
+
+#: node_modules/webpack-stream/node_modules/terser/dist/bundle.min.js:1
+msgid "("
+msgstr ""
+
+#: node_modules/webpack-stream/node_modules/terser/dist/bundle.min.js:1
+msgid ")"
+msgstr ""
+
+#: node_modules/webpack-stream/node_modules/terser/dist/bundle.min.js:1
+msgid ":"
+msgstr ""
+
+#: node_modules/webpack-stream/node_modules/terser/dist/bundle.min.js:1
+msgid ";"
+msgstr ""
+
+#: node_modules/webpack-stream/node_modules/terser/dist/bundle.min.js:1
+msgid ","
+msgstr ""
+
+#: node_modules/webpack-stream/node_modules/terser/dist/bundle.min.js:1
+msgid "]"
+msgstr ""
+
+#: node_modules/webpack-stream/node_modules/terser/dist/bundle.min.js:1
+msgid "}"
+msgstr ""
+
+#: node_modules/webpack-stream/node_modules/terser/dist/bundle.min.js:1
+msgid "{"
+msgstr ""
+
+#: node_modules/webpack-stream/node_modules/terser/dist/bundle.min.js:1
+msgid "["
+msgstr ""
+
+#: node_modules/yargs/build/lib/usage.js:213
+msgid "default"
+msgstr ""
+
+#: node_modules/yargs/build/lib/usage.js:219
+#: node_modules/yargs/build/lib/usage.js:302
+#, javascript-format
+msgid "deprecated: %s"
+msgstr ""
+
+#: node_modules/yargs/build/lib/usage.js:222
+#: node_modules/yargs/build/lib/usage.js:303
+msgid "deprecated"
+msgstr ""
+
+#: node_modules/yargs/build/lib/usage.js:241
+msgid "Options:"
+msgstr ""
+
+#: single-course.php:42 single-course.php:125
+#: templates/blocks/home-slider/home-slider-template.php:103
+msgid "GET COURES"
+msgstr ""
+
+#: single-course.php:54
+msgid "Level: "
+msgstr ""
+
+#: single-course.php:88
+msgid "Related Courses"
+msgstr ""
+
+#: templates/blocks/about-header/about-header.php:14
+msgid "about header"
+msgstr ""
+
+#: templates/blocks/about-header/about-header.php:27
+msgid "Block image"
+msgstr ""
+
+#: templates/blocks/about-header/about-header.php:32
+msgid "Prefix"
+msgstr ""
+
+#: templates/blocks/about-header/about-header.php:37
+#: templates/blocks/accordion/accordion.php:41
+#: templates/blocks/contact-cards/contact-cards.php:43
+#: templates/blocks/course-tabs/course-tabs.php:36
+#: templates/blocks/course-tabs/course-tabs.php:50
+#: templates/blocks/course-tabs/course-tabs.php:87
+msgid "Title"
+msgstr ""
+
+#: templates/blocks/about-header/about-header.php:47
+msgid "Bullet point"
+msgstr ""
+
+#: templates/blocks/about-header/about-header.php:54
+msgid "Button"
+msgstr ""
+
+#: templates/blocks/about-header/about-header.php:59
+msgid "Use custom link"
+msgstr ""
+
+#: templates/blocks/about-header/about-header.php:64
+msgid "Text"
+msgstr ""
+
+#: templates/blocks/about-header/about-header.php:69
+msgid "Button's post"
+msgstr ""
+
+#: templates/blocks/about-header/about-header.php:80
+msgid "Button's custom link"
+msgstr ""
+
+#: templates/blocks/accordion/accordion.php:17
+msgid " - Accordion"
+msgstr ""
+
+#: templates/blocks/accordion/accordion.php:32
+msgid "Accordion"
+msgstr ""
+
+#: templates/blocks/categories-overview/categories-overview.php:15
+msgid "Categories Overview Block"
+msgstr ""
+
+#: templates/blocks/categories-overview/categories-overview.php:30
+msgid "course Category"
+msgstr ""
+
+#: templates/blocks/categories-overview/categories-overview.php:33
+msgid "Select Multiple categories"
+msgstr ""
+
+#: templates/blocks/clients-slider/clients-slider.php:14
+msgid "clients slider block"
+msgstr ""
+
+#: templates/blocks/clients-slider/clients-slider.php:27
+msgid "Block's Title"
+msgstr ""
+
+#: templates/blocks/clients-slider/clients-slider.php:32
+msgid "Clients"
+msgstr ""
+
+#: templates/blocks/contact-cards/contact-cards.php:14
+msgid "Contact Cards"
+msgstr ""
+
+#: templates/blocks/contact-cards/contact-cards.php:26
+msgid "Contact Card"
+msgstr ""
+
+#: templates/blocks/contact-cards/contact-cards.php:33
+msgid "Type"
+msgstr ""
+
+#: templates/blocks/contact-cards/contact-cards.php:37
+msgid "Phone"
+msgstr ""
+
+#: templates/blocks/contact-cards/contact-cards.php:38
+msgid "Email"
+msgstr ""
+
+#: templates/blocks/contact-cards/contact-cards.php:39
+msgid "Location"
+msgstr ""
+
+#: templates/blocks/contact-cards/contact-cards.php:48
+msgid "Info"
+msgstr ""
+
+#: templates/blocks/course-sidebar/course-sidebar.php:14
+msgid "Course Sidebar"
+msgstr ""
+
+#: templates/blocks/course-sidebar/course-sidebar.php:27
+msgid "Detect from post"
+msgstr ""
+
+#: templates/blocks/course-sidebar/course-sidebar.php:30
+msgid "Do you want to detect the current course automatically?"
+msgstr ""
+
+#: templates/blocks/course-sidebar/course-sidebar.php:36
+msgid "Which course should we use"
+msgstr ""
+
+#: templates/blocks/course-tabs/course-tabs-template.php:41
+msgid "Course Description"
+msgstr ""
+
+#: templates/blocks/course-tabs/course-tabs-template.php:46
+msgid "Curriculum"
+msgstr ""
+
+#: templates/blocks/course-tabs/course-tabs-template.php:51
+#: templates/blocks/course-tabs/course-tabs.php:78
+msgid "FAQ"
+msgstr ""
+
+#: templates/blocks/course-tabs/course-tabs-template.php:56
+#: templates/blocks/course-tabs/course-tabs.php:99
+msgid "Announcement"
+msgstr ""
+
+#: templates/blocks/course-tabs/course-tabs.php:14
+msgid "Course Tabs Block"
+msgstr ""
+
+#: templates/blocks/course-tabs/course-tabs.php:27
+msgid "Curriculum Tab"
+msgstr ""
+
+#: templates/blocks/course-tabs/course-tabs.php:41
+msgid "Curriculum Title"
+msgstr ""
+
+#: templates/blocks/courses-list/courses-list.php:8
+msgid "Courses List Block"
+msgstr ""
+
+#: templates/blocks/courses-list/courses-list.php:21
+msgid "Filter Shown Courses"
+msgstr ""
+
+#: templates/blocks/courses-list/courses-list.php:24
+msgid "Select courses by "
+msgstr ""
+
+#: templates/blocks/courses-list/courses-list.php:26
+#: templates/blocks/courses-list/courses-list.php:65
+#: templates/blocks/news-list/news-list.php:26
+msgid "Show All"
+msgstr ""
+
+#: templates/blocks/courses-list/courses-list.php:27
+#: templates/blocks/news-list/news-list.php:27
+msgid "By Category"
+msgstr ""
+
+#: templates/blocks/courses-list/courses-list.php:28
+#: templates/blocks/news-list/news-list.php:28
+msgid "Custom"
+msgstr ""
+
+#: templates/blocks/courses-list/courses-list.php:34
+msgid "Courses Categories"
+msgstr ""
+
+#: templates/blocks/courses-list/courses-list.php:37
+#: templates/blocks/news-list/news-list.php:37
+msgid "Select the categories you want to include"
+msgstr ""
+
+#: templates/blocks/courses-list/courses-list.php:50
+msgid "Select Shown Courses"
+msgstr ""
+
+#: templates/blocks/courses-list/courses-list.php:60
+msgid "Live-Recorded Filter"
+msgstr ""
+
+#: templates/blocks/courses-list/courses-list.php:63
+msgid "Filter selected courses by live or recorded"
+msgstr ""
+
+#: templates/blocks/courses-list/courses-list.php:66
+msgid "Show Recorded Only"
+msgstr ""
+
+#: templates/blocks/courses-list/courses-list.php:67
+msgid "Show Live Only"
+msgstr ""
+
+#: templates/blocks/courses-list/courses-list.php:76
+#: templates/blocks/news-list/news-list.php:60
+msgid "Number of Posts"
+msgstr ""
+
+#: templates/blocks/courses-list/courses-list.php:79
+msgid ""
+"How many posts should be displayed? (leave as -1 to display all courses)"
+msgstr ""
+
+#: templates/blocks/home-slider/home-slider-template.php:48
+msgid "Teacher"
+msgstr ""
+
+#: templates/blocks/home-slider/home-slider-template.php:62
+#: templates/page-title/pagetitle-template.php:28
+msgid "Category"
+msgstr ""
+
+#: templates/blocks/home-slider/home-slider.php:13
+msgid "Home Slider"
+msgstr ""
+
+#: templates/blocks/imp-banner/imp-banner.php:15
+msgid "Banner Section block"
+msgstr ""
+
+#: templates/blocks/imp-banner/imp-banner.php:28
+msgid "Banner Text"
+msgstr ""
+
+#: templates/blocks/imp-banner/imp-banner.php:33
+msgid "Banner Button"
+msgstr ""
+
+#: templates/blocks/imp-banner/imp-banner.php:38
+msgid "Button Text"
+msgstr ""
+
+#: templates/blocks/imp-banner/imp-banner.php:46
+msgid "Use custom link for button?"
+msgstr ""
+
+#: templates/blocks/imp-banner/imp-banner.php:49
+msgid "Button's Post"
+msgstr ""
+
+#: templates/blocks/imp-banner/imp-banner.php:60
+msgid "Custom URL"
+msgstr ""
+
+#: templates/blocks/imp-content/imp-content.php:15
+msgid "IMP content Block"
+msgstr ""
+
+#: templates/blocks/imp-content/imp-content.php:28
+msgid "Padding Top"
+msgstr ""
+
+#: templates/blocks/imp-content/imp-content.php:33
+msgid "Padding Bottom"
+msgstr ""
+
+#: templates/blocks/imp-content/imp-content.php:38
+msgid "Background Color"
+msgstr ""
+
+#: templates/blocks/imp-content/imp-content.php:41
+msgid ""
+"Input #fea203 for primary theme color and #21225F for theme dark blue and "
+"#f6f8fa for light grey"
+msgstr ""
+
+#: templates/blocks/inner-header/inner-header.php:15
+msgid "Inner Header Block"
+msgstr ""
+
+#: templates/blocks/inner-header/inner-header.php:28
+msgid "Background Image"
+msgstr ""
+
+#: templates/blocks/news-list/news-list.php:8
+msgid "News List Block"
+msgstr ""
+
+#: templates/blocks/news-list/news-list.php:21
+msgid "Filter Shown News"
+msgstr ""
+
+#: templates/blocks/news-list/news-list.php:24
+msgid "Select news by "
+msgstr ""
+
+#: templates/blocks/news-list/news-list.php:34
+msgid "News Categories"
+msgstr ""
+
+#: templates/blocks/news-list/news-list.php:47
+msgid "News"
+msgstr ""
+
+#: templates/blocks/news-list/news-list.php:50
+msgid "Select Shown News"
+msgstr ""
+
+#: templates/blocks/news-list/news-list.php:63
+msgid "How many posts should be displayed? (leave as -1 to display all news)"
+msgstr ""
+
+#: templates/blocks/our-stats/our-stats.php:13
+msgid "Our Stats"
+msgstr ""
+
+#: templates/blocks/our-stats/our-stats.php:26
+msgid "Stat Group"
+msgstr ""
+
+#: templates/blocks/our-stats/our-stats.php:33
+msgid "Count"
+msgstr ""
+
+#: templates/blocks/our-stats/our-stats.php:38
+msgid "Suffix"
+msgstr ""
+
+#: templates/blocks/our-stats/our-stats.php:43
+msgid "Icon"
+msgstr ""
+
+#: templates/blocks/our-stats/our-stats.php:47
+msgid "Videos"
+msgstr ""
+
+#: templates/blocks/our-stats/our-stats.php:49
+msgid "Students"
+msgstr ""
+
+#: templates/blocks/our-stats/our-stats.php:50
+msgid "Satisfaction"
+msgstr ""
+
+#: templates/blocks/payment/payment.php:17
+msgid " - Payment - Paymob"
+msgstr ""
+
+#: templates/blocks/payment/payment.php:30
+msgid "Paymob iframe link"
+msgstr ""
+
+#: templates/blocks/section-title/section-title-template.php:41
+msgid "Explore more"
+msgstr ""
+
+#: templates/blocks/section-title/section-title.php:14
+msgid "Section Title Block"
+msgstr ""
+
+#: templates/blocks/section-title/section-title.php:27
+msgid "Section Title Prefix"
+msgstr ""
+
+#: templates/blocks/section-title/section-title.php:32
+msgid "Section title"
+msgstr ""
+
+#: templates/blocks/section-title/section-title.php:37
+msgid "Section Subtitle"
+msgstr ""
+
+#: templates/blocks/section-title/section-title.php:42
+msgid "Call To Action"
+msgstr ""
+
+#: templates/blocks/section-title/section-title.php:49
+msgid "Has Padding Top"
+msgstr ""
+
+#: templates/blocks/section-title/section-title.php:52
+msgid "Should a 150px padding top be added to the section's top and bottom?"
+msgstr ""
+
+#: templates/blocks/section-title/section-title.php:55
+msgid "Has Padding Bottom"
+msgstr ""
+
+#: templates/blocks/section-title/section-title.php:58
+msgid "Should a 150px padding bottom be added to the section's top and bottom?"
+msgstr ""
+
+#: templates/blocks/section-title/section-title.php:61
+msgid "Light mode"
+msgstr ""
+
+#: templates/blocks/section-title/section-title.php:64
+msgid "This removes the grey background of this section"
+msgstr ""
+
+#: templates/header/header-category.php:3
+msgid "Search..."
+msgstr ""
+
+#: templates/header/header-template.php:29
+msgid "Assign a menu at Appearance > Menus"
+msgstr ""
+
+#: templates/header/header-template.php:67
+msgid "Log in"
+msgstr ""
+
+#: templates/page-title/pagetitle-template.php:24
+msgid "Blog"
+msgstr ""
+
+#: templates/page-title/pagetitle-template.php:25
+msgid "Our recent posts"
+msgstr ""
+
+#: templates/page-title/pagetitle-template.php:31
+msgid "Tag"
+msgstr ""
+
+#: templates/page-title/pagetitle-template.php:34
+msgid "Search Results "
+msgstr ""
+
+#: templates/page-title/pagetitle-template.php:49
+#: templates/page-title/pagetitle-template.php:58
+msgid "Product category"
+msgstr ""
+
+#: templates/page-title/pagetitle-template.php:52
+msgid "Undefined"
+msgstr ""
+
+#: templates/page-title/pagetitle-template.php:53
+msgid "Author"
+msgstr ""
+
+#: templates/page-title/pagetitle-template.php:67
+msgid "Product tag"
+msgstr ""
+
+#: templates/page-title/pagetitle-template.php:72
+msgid "Page not found!"
+msgstr ""
+
+#: templates/parts/content-none.php:17
+#, php-format
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+
+#: templates/parts/content-none.php:21 templates/parts/content-none.php:27
+msgid "Nothing Found"
+msgstr ""
+
+#: templates/parts/content-none.php:22
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+
+#: templates/parts/content-none.php:28
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+
+#: templates/parts/course-card-rend.php:10 templates/parts/course-card.php:11
+msgid "Recorded"
+msgstr ""
+
+#: templates/parts/course-card-rend.php:12 templates/parts/course-card.php:13
+msgid "Live"
+msgstr ""
+
+#: templates/parts/course-card-rend.php:37 templates/parts/course-card.php:38
+msgid "hours"
+msgstr ""
+
+#: templates/parts/news-card.php:25 templates/parts/search-card.php:18
+msgid "Read More"
+msgstr ""
+
+#: templates/single-post/style1.php:38
+msgid "Views"
+msgstr ""
+
+#: templates/single-post/style1.php:39
+msgid "Print"
+msgstr ""
+
+#: templates/single-post/style1.php:42
+msgid "EMail"
+msgstr ""
+
+#: templates/single-post/style1.php:65
+msgid "Pages:"
+msgstr ""

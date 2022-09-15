@@ -51,5 +51,6 @@ section {
 }
 
 div.pagination {
+  flex-wrap: inherit;
   @include h.my-pagination();
 }

@@ -120,7 +120,8 @@ class IMPCourse
         $hours = self::get_course_property('course_hours', $courseId);
         $rating = self::get_course_property('course_rating', $courseId);
         $currency = self::get_course_property('course_currency', $courseId);
-        return new IMPCourseFeatures($price, $isDiscounted, $discountPrice, $recorded, $hours, $level, $rating, $currency);
+        $dates = self::get_course_property('course_dates', $courseId);
+        return new IMPCourseFeatures($price, $isDiscounted, $discountPrice, $recorded, $hours, $level, $rating, $currency, $dates);
     }
 
     public static function icon_language_flags($section = 'header') {
@@ -130,7 +131,7 @@ class IMPCourse
 			if (!empty($languages)) {
 				foreach ($languages as $language) { ?>
 					<?php if (!$language['active']) { ?>
-					<div class="wbkz-languages-switcher  inline-module">			
+					<div class="imp-languages-switcher  inline-module">			
 						<a href="<?php echo esc_url($language['url'])?>">
 							<span><?php echo esc_attr($language['native_name'])?></span>
 						</a>					
@@ -138,6 +139,27 @@ class IMPCourse
 					<?php } ?>
 				<?php }
 			}
+		}
+	}
+    
+    public static function icon_language_flagsss($section = 'header') {
+		if (function_exists('icl_get_languages')) {
+			$languages = icl_get_languages('skip_missing=0&orderby=code');
+			print_r($languages);
+			if (!empty($languages)) { ?>
+                <a href="#" class="imp-language-action"><span><?php echo esc_html__('Language','imp' )?></span></a>
+                <div class="imp-language-menu">
+                    <?php foreach ($languages as $language) { ?>
+                        <?php if (!$language['active']) { ?>
+                        <div class="imp-languages-switcher  inline-module">			
+                            <a href="<?php echo esc_url($language['url'])?>">
+                                <span><?php echo esc_attr($language['native_name'])?></span>
+                            </a>					
+                        </div>
+                        <?php } ?>
+                    <?php } ?>
+                </div>
+            <?php }
 		}
 	}
 

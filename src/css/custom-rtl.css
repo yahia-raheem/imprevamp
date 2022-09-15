@@ -1,0 +1,12 @@
+section.home-slider .splide__arrows .splide__arrow--next {
+    right: auto;
+}
+section.home-slider .splide__arrows .splide__arrow--prev {
+    left: auto;
+}
+.has-text-align-left {
+    text-align: right;
+}
+.splide--rtl {
+    direction: rtl;
+}

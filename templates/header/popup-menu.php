@@ -15,11 +15,6 @@
 				<?php wp_nav_menu( array( 'theme_location' => 'primary', 'container' => false, 'menu_class' => 'fullscreen-menu-wrap') ); ?>
 			</nav>
 			<?php IMPCourse::icon_language_flags('top_header', false); ?>
-			<div class="imp-small--nav">
-				<nav class="fullscreen-menu">
-					<?php wp_nav_menu( array( 'theme_location' => 'toggle-menu', 'container' => false, 'menu_class' => 'fullscreen-menu-wrap') ); ?>
-				</nav>
-			</div>
 		</div>
 	</div>
 	<div class="sidebar-overlay imp-close-sidemenu"></div>

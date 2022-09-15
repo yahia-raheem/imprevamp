@@ -35,7 +35,7 @@ function imp_news_list_block( $meta_boxes ) {
                 'id'                => $prefix . 'taxonomy_advanced_z1yrusenrkn',
                 'type'              => 'taxonomy_advanced',
                 'label_description' => __( 'Select the categories you want to include', 'imp' ),
-                'taxonomy'          => ['category'],
+                'taxonomy'          => ['blog-category'],
                 'field_type'        => 'select_advanced',
                 'multiple'          => true,
                 'visible'           => [
@@ -48,7 +48,7 @@ function imp_news_list_block( $meta_boxes ) {
                 'id'                => $prefix . 'news',
                 'type'              => 'post',
                 'label_description' => __( 'Select Shown News', 'imp' ),
-                'post_type'         => 'post',
+                'post_type'         => 'blog',
                 'field_type'        => 'select_advanced',
                 'multiple'          => true,
                 'visible'           => [

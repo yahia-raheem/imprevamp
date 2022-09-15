@@ -41,7 +41,7 @@ $button = mb_get_block_field('button');
                                 <div class="check">
                                     <i class="fa-solid fa-check"></i>
                                 </div>
-                                <?php echo $bullet; ?>
+                                <p><?php echo $bullet; ?></p>
                             </li>
                         <?php endforeach; ?>
                     </ul>

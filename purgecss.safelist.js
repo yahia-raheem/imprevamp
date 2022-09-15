@@ -28,5 +28,7 @@ export default {
     /^dropdown/,
     /^splide/,
     /^wpcf7/,
+    /^checkout-contactform/,
+    /^wpcf7-response-output/,
   ],
 };

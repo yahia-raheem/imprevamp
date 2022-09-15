@@ -38,7 +38,7 @@ if ( ! is_admin() ) {
                 <ul class="nav nav-pills" id="myTab" role="tablist">
                     <li class="nav-item" role="presentation">
                         <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#description" type="button" role="tab" aria-controls="home" aria-selected="true">
-                            <?php echo esc_html__( 'Description', 'imp' )?>
+                            <?php echo esc_html__( 'Course Description', 'imp' )?>
                         </button>
                     </li>
                     <li class="nav-item" role="presentation">

@@ -92,10 +92,31 @@ function imp_course_meta($meta_boxes)
                 'id'      => $prefix . 'course_currency',
                 'type'    => 'select',
                 'options' => [
-                    '$'   => __('Dollars', 'imp'),
                     'EGP' => __('Egyptian Pound', 'imp'),
                 ],
                 'std'     => 'EGP',
+            ],
+            [
+                'name'        => __('Course Date', 'wk'),
+                'id'          => $prefix . 'course_dates',
+                'type'        => 'group',
+                'collapsible' => true,
+                'group_title' => '{#}',
+                'clone'       => true,
+                'sort_clone'  => true,
+                'fields'      => [
+                    [
+                        'name'       => 'Date',
+                        'id'         => 'course_date',
+                        'type'       => 'date',
+                        'js_options' => [
+                            'dateFormat'      => 'yy-mm-dd',
+                            'showButtonPanel' => false,
+                        ],
+                        'inline'    => false,
+                        'timestamp' => false,
+                    ],
+                ],
             ],
         ],
     ];

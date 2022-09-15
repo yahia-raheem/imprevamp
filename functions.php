@@ -11,8 +11,14 @@ require_once THEME_DIR . '/classes/classes.php';
 function imp_assets()
 {
     wp_deregister_script('jquery');
-    wp_enqueue_style('imp-stylesheet-base', get_stylesheet_directory_uri() . '/dist/assets/css/base.css', array(), '1.0.0', 'all');
-    wp_enqueue_script('imp-scripts', get_stylesheet_directory_uri() . '/dist/assets/js/bundle.js', array(), '1.0.0', true);
+    if (is_rtl()) {
+        wp_enqueue_style('imp-stylesheet-base', get_stylesheet_directory_uri() . '/dist/assets/css/base-rtl.css', array(), '1.0.0', 'all');
+        wp_enqueue_script('imp-scripts', get_stylesheet_directory_uri() . '/dist/assets/js/bundle-rtl.js', array(), '1.0.0', true);
+        wp_enqueue_style('imp-custom', get_stylesheet_directory_uri() . '/dist/css/custom-rtl.css', array(), '1.0.0', 'all');
+    } else {
+        wp_enqueue_style('imp-stylesheet-base', get_stylesheet_directory_uri() . '/dist/assets/css/base.css', array(), '1.0.0', 'all');
+        wp_enqueue_script('imp-scripts', get_stylesheet_directory_uri() . '/dist/assets/js/bundle.js', array(), '1.0.0', true);
+    } 
     wp_enqueue_script('fontawesome', 'https://kit.fontawesome.com/18b7943afb.js', array(), '1.0.0', true);
 }
 
@@ -58,6 +64,22 @@ function imp_blocks_category($categories)
     );
 };
 add_action('block_categories', 'imp_blocks_category', 10, 9);
+
+
+function remove_pages_from_search() {
+    global $wp_post_types;
+    $wp_post_types['page']->exclude_from_search = true;
+}
+add_action('init', 'remove_pages_from_search');
+
+/* IMP Excerpt Words */
+function imp_string_limit_words($string, $word_limit) {
+	$words = explode(' ', $string, ($word_limit + 1));
+	if(count($words) > $word_limit) {
+		array_pop($words);
+	}
+	return implode(' ', $words);
+}
 
 require_once THEME_DIR . '/templates/blocks/blocks.php';
 

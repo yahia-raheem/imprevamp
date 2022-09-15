@@ -1,8 +1,9 @@
 .course-price {
     display: flex;
     flex-direction: column;
-
+    padding: 10px 0;
     &.discounted {
+        padding: 0;
         .original {
            text-decoration: line-through;
            opacity: 0.5;

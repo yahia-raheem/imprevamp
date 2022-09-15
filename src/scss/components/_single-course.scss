@@ -1,43 +1,90 @@
 .imp-single-course-details {
-    position: relative;
-    padding-block-start: 30px;
-    .imp-single-course--action {
-        .cta-row {
-            margin-block-end: 30px;
-            .price-btn {
-                @include h.hover-slide(darken($color: h.$primary, $amount: 5));
-                padding: 5px 20px;
-                border-radius: 0;
-                background-color: h.$primary;
-                color: white;
-                justify-content: space-between;
-                width: 100%;
-                font-size: 16px;
-                align-items: center;
-            }
+  padding-block-start: 30px;
+  .imp-single-course--action {
+    .cta-row {
+      margin-block-end: 30px;
+      .price-btn {
+        @include h.hover-slide(darken($color: h.$primary, $amount: 5));
+        padding: 5px 20px;
+        border-radius: 0;
+        background-color: h.$primary;
+        color: white;
+        justify-content: space-between;
+        width: 100%;
+        font-size: 16px;
+        align-items: center;
+        @include h.media("<740px") {
+            display: none;
         }
+      }
     }
-    .imp-single-course-details--action {
-        .attributes-row {
-            position: relative;
-            .course-attribute {
-                display: flex;
-                align-items: center;
-                align-content: center;
-                justify-content: space-between;
-                padding-block: 15px;
-                border-bottom: 1px Solid #f0f4fa;
-                * {
-                    color: h.$theme-black;
-                }
-                i {
-                    color: h.$primary;
-                    font-size: h.$font-size-h2;
-                }
-                &:last-child {
-                    border: 0;
-                }
-            }
+  }
+  .imp-single-course-details--action {
+    .attributes-row {
+      position: relative;
+      .course-attribute {
+        display: flex;
+        align-items: center;
+        align-content: center;
+        justify-content: space-between;
+        padding-block: 15px;
+        border-bottom: 1px Solid #f0f4fa;
+        text-transform: capitalize;
+        * {
+          color: h.$theme-black;
         }
+        i {
+          color: h.$primary;
+          font-size: h.$font-size-h2;
+        }
+        &:last-child {
+          border: 0;
+        }
+      }
     }
+  }
 }
+
+.imp-payment-iframe {
+  width: 100vw;
+  background: #fff;
+  height: 100vh;
+  iframe {
+    width: 100%;
+    height: 100vh;
+  }
+  a {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: h.$primary;
+  }
+  &.active {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+.imp-single-course-mobile {
+    display: none;
+    @include h.media('<740px') {
+      display: block;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+      z-index: 11;
+      width: 90%;
+      padding: 0;
+    }
+    .price-btn {
+      @include h.media('<740px') {
+        display: flex !important;
+      }
+    }
+  }
+
+  .smg-related-course {
+    padding-block: 50px;
+  }

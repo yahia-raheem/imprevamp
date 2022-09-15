@@ -6,6 +6,6 @@ CRITICALSIZES:
     height: 768
 
 SCRAPPEREXTRACT: true
-SCRAPPERLINK: "http://IMP.local/"
+SCRAPPERLINK: "http://imprevamp.local/"
 GENCRITICAL: False
 BUILDBUNDLE: false

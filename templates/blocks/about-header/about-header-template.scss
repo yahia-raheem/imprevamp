@@ -40,7 +40,7 @@ section.about-header {
   .bullets {
     list-style: none;
     padding-inline-start: 0;
-    display: flex;
+    // display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
@@ -67,6 +67,11 @@ section.about-header {
           color: white;
           font-size: 16px;
         }
+      }
+
+      p {
+        flex: 1;
+        line-height: 1.7;
       }
     }
   }
@@ -105,7 +110,7 @@ section.about-header {
         font-size: 18px;
         font-weight: 600;
         color: h.$theme-black;
-        width: 50%;
+        width: 100%;
   
         .check {
           margin-inline-end: 15px;

@@ -3,6 +3,8 @@
 	$user_id = get_the_author_meta( 'ID');
 	cps_set_post_views($post->ID);
 	$views = cps_get_post_views(get_the_ID());
+	$comments = get_comments_number();
+	$term_list = wp_get_post_terms($post->ID, 'blog-category');
 ?>
 
 
@@ -18,7 +20,9 @@
 							<header class="cps-entry-header">
 								<div class="cps-post--metabox">
 									<div class="cps-post--category">
-										<?php cps_category_name_color(); ?>										
+										<div class="cps-post-cat">
+											<?php echo $term_list[0]->name; ?>	
+										</div>												
 										<div class="cps-post--data"><?php the_time( get_option('date_format') ); ?></div>
 									</div>
 								</div>
@@ -28,7 +32,9 @@
 							</header>
 							<div class="cps-post--metabox">
 								<ul class="cps-post--meta">
+									<?php if($comments !== '0') {?>
 									<li class="post-data"><i class="far fa-comments"></i><?php cps_post_comments_count(); ?></li>
+									<?php } ?>
 									<li class="post-data"><i class="far fa-eye"></i><?php echo esc_attr($views); ?> <?php echo esc_html__('Views', 'cps'); ?></li>
 									<li class="post-data"><a href="" onClick="window.print()"><i class="ti ti-printer"></i><?php echo esc_html__('Print', 'cps'); ?> </a></li>
 									<li class="post-data">

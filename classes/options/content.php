@@ -12,6 +12,15 @@ Redux::setSection( $theme_options, array(
 	'icon' => 'ti ti-layout-accordion-merged',
 	'fields' => array(
 		array(
+			'id' => 'header--social_links',
+			'type' => 'sortable',
+			'mode' => 'checkbox',
+			'title' => esc_html__('Social links', 'cps'),
+			'subtitle' => esc_html__('Enable social links to be displayed.', 'cps'),
+			'options' => self::$social_icons,
+			'default' => self::$social_icons_default,
+		),
+		array(
 			'id' => 'content_styles_padding',
 			'type' => 'spacing',	
 			'mode' => 'padding',

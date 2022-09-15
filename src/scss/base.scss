@@ -46,7 +46,7 @@
 // fonts
 @import "./base/font-face";
 @import "./base/font-cust";
-@import "../../fonts/icomoon/style.css";
+// @import "../../fonts/icomoon/style.css";
 
 a {
   text-decoration: none;
@@ -66,4 +66,54 @@ body {
   .imp-site-wrapper {
     margin-block-end: 30px;
   }
+}
+
+
+.checkout-contactform {
+  position: relative;
+  padding: 30px;
+  background: #f5f5f5;
+  border-radius: 5px;
+  label {
+    margin-block-end: 15px;
+    font-size: 14px;
+  }
+  input {
+    &::placeholder {
+      color: h.$gray-text;
+    }
+  }
+  .wpcf7-response-output {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    margin: 0 !important;
+    background: #FFF;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    border-color: h.$primary !important;
+    font-size: 18px;
+    text-align: center;
+  }
+}
+
+input[readonly="readonly"] {
+  background: #eaeaea !important;
+  color: #898989 !important;
+}
+
+::-webkit-input-placeholder { /* Edge */
+  color: #898989 !important;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #898989 !important;
+}
+
+::placeholder {
+  color: #898989 !important;
 }

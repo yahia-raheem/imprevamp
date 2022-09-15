@@ -78,9 +78,10 @@ function my_pagination($max_num_of_pages)
         'format' => '?paged=%#%',
         'current' => max(1, get_query_var('paged')),
         'total' => $max_num_of_pages,
-        'show_all' => true,
+        'show_all' => false,
         'prev_text' => '<i class="fas fa-arrow-left"></i>' . 'Prev',
-        'next_text' => 'Next' . '<i class="fas fa-arrow-right"></i>'
+        'next_text' => 'Next' . '<i class="fas fa-arrow-right"></i>',
+		'mid_size'  => 3 // number of page links to display on either side of current page
     ));
     return $pagination;
 }
