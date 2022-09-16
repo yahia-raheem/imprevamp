@@ -1,12 +1,12 @@
 // Components
-import "./components/sidebar";
+import "./components/sidebar.js";
 // Blocks
-import "./blocks/home-slider";
-import "./blocks/accordion";
-import "./blocks/clients-slider";
-import "./blocks/imp-content";
-import "./paymob/paymob";
-import "../../node_modules/bootstrap/js/dist/tab"
+import "./blocks/home-slider.js";
+import "./blocks/accordion.js";
+import "./blocks/clients-slider.js";
+import "./blocks/imp-content.js";
+import "./paymob/paymob.js";
+import "../../node_modules/bootstrap/js/dist/tab.js"
 
 document.addEventListener("DOMContentLoaded", () => {
     //payment-open

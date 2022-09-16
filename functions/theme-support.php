@@ -1,6 +1,6 @@
 <?php
 
-function webkeyz_theme_support()
+function imp_theme_support()
 {
     add_theme_support('menus');
     // Add default posts and comments RSS feed links to head.
@@ -165,4 +165,4 @@ function webkeyz_theme_support()
     add_theme_support('align-wide');
 }
 
-add_action('after_setup_theme', 'webkeyz_theme_support');
+add_action('after_setup_theme', 'imp_theme_support');

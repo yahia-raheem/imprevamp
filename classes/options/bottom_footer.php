@@ -61,7 +61,7 @@ Redux::setSection( $theme_options, array(
 				'type' => 'editor',
 				'title' => esc_html__('Text module content', 'wbkz'),
 				'subtitle' => esc_html__('Place any text to be displayed in bottom footer.', 'wbkz'),
-				'default' => 'All rights reserved. Powered by <a href="http://web-keyz.com/">Webkeyz Theme</a>.',
+				'default' => 'All rights reserved. Powered by <a href="#">imp Theme</a>.',
 				'required' => array('bottom_footer--text', '=', 1),
 			),
 
@@ -70,7 +70,7 @@ Redux::setSection( $theme_options, array(
 				'type' => 'editor',
 				'title' => esc_html__('Text module content AR', 'wbkz'),
 				'subtitle' => esc_html__('Place any text to be displayed in bottom footer.', 'wbkz'),
-				'default' => 'All rights reserved. Powered by <a href="http://web-keyz.com/">Webkeyz Theme</a>.',
+				'default' => 'All rights reserved. Powered by <a href="#">imp Theme</a>.',
 			),
 
 		array(

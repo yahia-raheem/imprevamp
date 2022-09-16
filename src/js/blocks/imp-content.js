@@ -1,4 +1,4 @@
-import { wpEditorDone } from "../components/helper-funcs";
+import { wpEditorDone } from "../components/helper-funcs.js";
 
 const init = () => {
   const innerHeaderSection = document.querySelectorAll("section.imp-content");

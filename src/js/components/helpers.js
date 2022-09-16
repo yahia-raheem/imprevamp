@@ -1,4 +1,4 @@
-import { magnify } from "./helper-funcs";
+import { magnify } from "./helper-funcs.js";
 
 // trims strings to be as long as the provided length in the 'data-trim' attribute
 export const trimText = () => {

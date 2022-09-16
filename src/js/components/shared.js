@@ -1,4 +1,4 @@
-import { elementObserver, imgTosvg } from './helper-funcs'
+import { elementObserver, imgTosvg } from './helper-funcs.js'
 
 document.addEventListener('DOMContentLoaded', () => {
   const svgImages = document.querySelectorAll('.style-svg')
